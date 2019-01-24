@@ -2,54 +2,104 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerFunctions))]
 public class PlayerController : MonoBehaviour
 {
-    private Camera playerCamera;
+    [SerializeField]
+    private float playerSpeed = 5f;
+    private float cameraSensitivity = 3f;
+    private bool isGrounded;
+    private bool fire = true;
+
+    #region
+    public bool electricBeam = false;
+    public bool iceBeam = false;
+    public bool fireBeam = false;
+    public bool higherJump = false;
+    #endregion
+
+    public int currentBeam = 0;
+
+    private PlayerFunctions pf;
 
     void Start()
     {
-        playerCamera = Camera.main;
+        pf = GetComponent<PlayerFunctions>();
     }
 
     void Update()
     {
-        GetInput();
+        float moveX = Input.GetAxis("LeftStickX");
+        float moveZ = Input.GetAxis("LeftStickY");
+
+        //Movement
+        Vector3 moveHorizontal = transform.right * moveX;
+        Vector3 moveVertical = transform.forward * -moveZ;
+
+        Vector3 velocity = (moveHorizontal + moveVertical).normalized * playerSpeed;
+
+        //calls function from PlayerFunctions script to Move
+        pf.Move(velocity);
+
+        //Camera Movement
+        float rotateX = Input.GetAxis("RightStickY");
+        Vector3 rotation = new Vector3(0f, rotateX, 0f) * cameraSensitivity;
+
+        pf.Rotate(rotation);
+
+        float rotateY = Input.GetAxis("RightStickX");
+        Vector3 cameraRotation = new Vector3(rotateY, 0f, 0f) * cameraSensitivity;
+
+        pf.RotateCamera(cameraRotation);
+
+        if (Input.GetButtonDown("AButton") && isGrounded)
+        {
+            isGrounded = false;
+            pf.Jump();
+
+            if (Input.GetButtonDown("AButton") && higherJump)
+            {
+                pf.Jump();
+            }
+        }
+
+        if (Input.GetAxis("UpandDownDPad") == 1)
+        {
+            currentBeam = 0;
+        }
+
+        if (Input.GetAxis("UpandDownDPad") == -1 && iceBeam)
+        {
+            currentBeam = 2;
+        }
+
+        if (Input.GetAxis("LeftandRightDPad") == 1 && fireBeam)
+        {
+            currentBeam = 1;
+        }
+
+        if (Input.GetAxis("LeftandRightDPad") == -1 && electricBeam)
+        {
+            currentBeam = 3;
+        }
+
+        if (Input.GetAxis("RightTrigger") >= 0.8 && fire)
+        {
+            fire = false;
+            pf.Fire(currentBeam);
+        }
+
+        if (Input.GetAxis("RightTrigger") <= 0.3 && !fire)
+        {
+            fire = true;
+        }
     }
 
-    void GetInput()
+    public void OnCollisionEnter(Collision collision)
     {
-
-        float moveY = Input.GetAxis("LeftStickY");
-        float moveX = Input.GetAxis("LeftStickX");
-
-        float rotateY = Input.GetAxis("RightStickY");
-        float rotateX = Input.GetAxis("RightStickX");
-
-        transform.Translate(moveX * .1f, 0, -moveY * .1f);
-
-        if (playerCamera.transform.rotation != Quaternion.Euler(rotateX, 90f, 0f))
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            playerCamera.transform.Rotate(rotateX, rotateY, 0);
-        }
-
-        if (Input.GetButtonDown("LeftStickButton"))
-        {
-            Debug.Log("1");
-        }
-
-        if (Input.GetButtonDown("RightStickButton"))
-        {
-            Debug.Log("2");
-        }
-
-        if (Input.GetAxis("LeftTrigger") == 1)
-        {
-            Debug.Log("3");
-        }
-
-        if (Input.GetAxis("RightTrigger") == 1)
-        {
-            Debug.Log("4");
+            isGrounded = true;
         }
     }
 }
