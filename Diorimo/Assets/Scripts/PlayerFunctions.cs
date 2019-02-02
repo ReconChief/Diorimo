@@ -8,6 +8,7 @@ public class PlayerFunctions : MonoBehaviour
     [SerializeField]
     private Camera playerCam;
 
+    public GameObject missile;
     public GameObject[] beamObjects;
     public Transform beamSpawn;
 
@@ -76,5 +77,14 @@ public class PlayerFunctions : MonoBehaviour
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 20f;
 
         Destroy(bullet, 1);
+    }
+
+    public void FireMissile()
+    {
+        GameObject missileShot = (GameObject)Instantiate(missile, beamSpawn.position, beamSpawn.rotation);
+
+        missileShot.GetComponent<Rigidbody>().velocity = missileShot.transform.forward * 20f;
+
+        Destroy(missileShot, 1);
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HigherJumpUpgradeScript : MonoBehaviour
+public class HigherJumpUpgrade : MonoBehaviour
 {
     private GameObject player;
     private PlayerController pc;

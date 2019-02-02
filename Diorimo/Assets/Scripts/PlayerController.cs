@@ -10,12 +10,23 @@ public class PlayerController : MonoBehaviour
     private float cameraSensitivity = 3f;
     private bool isGrounded;
     private bool fire = true;
+    private bool fireMissile = true;
+    public bool ballForm = false;
+
+    public int hp = 99;
+    public int missiles = 5;
+    public int maxCapHp = 99;
+    public int maxMissiles = 5;
 
     #region
     public bool electricBeam = false;
     public bool iceBeam = false;
     public bool fireBeam = false;
     public bool higherJump = false;
+    public bool missilePickedUp = false;
+    public bool morphBall = false;
+    public bool gravtiySuit = false;
+    public bool tempSuit = false;
     #endregion
 
     public int currentBeam = 0;
@@ -52,6 +63,7 @@ public class PlayerController : MonoBehaviour
 
         pf.RotateCamera(cameraRotation);
 
+        //Jump
         if (Input.GetButtonDown("AButton") && isGrounded)
         {
             isGrounded = false;
@@ -62,36 +74,66 @@ public class PlayerController : MonoBehaviour
                 pf.Jump();
             }
         }
+        
+        //Ball Form
+        if (Input.GetButtonDown("XButton") && !ballForm && morphBall)
+        {
+            ballForm = true;
 
-        if (Input.GetAxis("UpandDownDPad") == 1)
+            //turn off Omi model and turn on ball model
+        }
+
+        else if (Input.GetButtonDown("XButton") && ballForm && isGrounded && morphBall)
+        {
+            ballForm = false;
+
+            //turn on Omi model and turn off ball model
+        }
+
+
+        // Beam Selections
+        if (Input.GetAxis("UpandDownDPad") == 1 && !ballForm)
         {
             currentBeam = 0;
         }
 
-        if (Input.GetAxis("UpandDownDPad") == -1 && iceBeam)
+        if (Input.GetAxis("UpandDownDPad") == -1 && iceBeam && !ballForm)
         {
             currentBeam = 2;
         }
 
-        if (Input.GetAxis("LeftandRightDPad") == 1 && fireBeam)
+        if (Input.GetAxis("LeftandRightDPad") == 1 && fireBeam && !ballForm)
         {
             currentBeam = 1;
         }
 
-        if (Input.GetAxis("LeftandRightDPad") == -1 && electricBeam)
+        if (Input.GetAxis("LeftandRightDPad") == -1 && electricBeam && !ballForm)
         {
             currentBeam = 3;
         }
 
-        if (Input.GetAxis("RightTrigger") >= 0.8 && fire)
+        //Firing Modes
+        if (Input.GetAxis("RightTrigger") >= 0.8 && fire && !ballForm)
         {
             fire = false;
             pf.Fire(currentBeam);
         }
 
-        if (Input.GetAxis("RightTrigger") <= 0.3 && !fire)
+        else if (Input.GetAxis("RightTrigger") <= 0.3 && !fire && !ballForm)
         {
             fire = true;
+        }
+
+        if (Input.GetAxis("LeftTrigger") == 1 && missilePickedUp && fireMissile && !ballForm && missiles > 0)
+        {
+            missiles--;
+            fireMissile = false;
+            pf.FireMissile();
+        }
+
+        else if (Input.GetAxis("LeftTrigger") == 0 && missilePickedUp && !fireMissile && !ballForm )
+        {
+            fireMissile = true;
         }
     }
 

@@ -7,7 +7,7 @@ TagManager:
   - Ground
   - Bullet
   - Enemy
-  - higherJumpUpgrade
+  - Missile
   layers:
   - Default
   - TransparentFX
