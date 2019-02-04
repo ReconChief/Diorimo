@@ -5,8 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerFunctions))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private float playerSpeed = 5f;
+    public float playerSpeed = 5f;
     private float cameraSensitivity = 3f;
     private bool isGrounded;
     private bool fire = true;
