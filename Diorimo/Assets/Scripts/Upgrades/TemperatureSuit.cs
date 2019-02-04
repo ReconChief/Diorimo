@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class TemperatureSuit : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private GameObject player;
+    private PlayerController pc;
+
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        pc = player.GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("Player"))
+        {
+            pc.tempSuit = true;
+
+            Destroy(this.gameObject);
+        }
     }
 }
