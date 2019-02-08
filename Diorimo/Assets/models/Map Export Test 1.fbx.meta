@@ -1,0 +1,2045 @@
+fileFormatVersion: 2
+guid: 07bee33f1a9e1cf4794122bb8d8e4efc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Big_Wall
+    100002: Box
+    100004: Box1
+    100006: Box10
+    100008: Box11
+    100010: Box12
+    100012: Box13
+    100014: Box14
+    100016: Box15
+    100018: Box16
+    100020: Box17
+    100022: Box18
+    100024: Box19
+    100026: Box2
+    100028: Box20
+    100030: Box21
+    100032: Box22
+    100034: Box23
+    100036: Box24
+    100038: Box25
+    100040: Box26
+    100042: Box3
+    100044: Box4
+    100046: Box5
+    100048: Box6
+    100050: Box7
+    100052: Box8
+    100054: Box9
+    100056: Boxes
+    100058: Building
+    100060: Building1_Stairs
+    100062: Building1_Stairs1
+    100064: Building1_Wall
+    100066: Building1_Wall10
+    100068: Building1_Wall11
+    100070: Building1_Wall12
+    100072: Building1_Wall13
+    100074: Building1_Wall14
+    100076: Building1_Wall15
+    100078: Building1_Wall16
+    100080: Building1_Wall18
+    100082: Building1_Wall19
+    100084: Building1_Wall2
+    100086: Building1_Wall20
+    100088: Building1_Wall21
+    100090: Building1_Wall23
+    100092: Building1_Wall24
+    100094: Building1_Wall3
+    100096: Building1_Wall4
+    100098: Building1_Wall5
+    100100: Building1_Wall6
+    100102: Building1_Wall9
+    100104: Building1_Wall_With_Hole
+    100106: Building2_Stairs
+    100108: Building2_Wall
+    100110: Building2_Wall1
+    100112: Building2_Wall10
+    100114: Building2_Wall11
+    100116: Building2_Wall12
+    100118: Building2_Wall13
+    100120: Building2_Wall14
+    100122: Building2_Wall2
+    100124: Building2_Wall3
+    100126: Building2_Wall4
+    100128: Building2_Wall5
+    100130: Building2_Wall6
+    100132: Building2_Wall7
+    100134: Building2_Wall8
+    100136: Building2_Wall9
+    100138: Building2_Wall_With_Hole
+    100140: Building3_Wall
+    100142: Building3_Wall1
+    100144: Building3_Wall2
+    100146: Building3_Wall3
+    100148: Building3_Wall4
+    100150: Building3_Wall5
+    100152: Building3_Wall6
+    100154: Building3_Wall7
+    100156: Building4_Wall
+    100158: Building4_Wall1
+    100160: Building4_Wall2
+    100162: Building4_Wall3
+    100164: Building4_Wall4
+    100166: Building4_Wall5
+    100168: Building5
+    100170: Building5_Wall
+    100172: Building5_Wall1
+    100174: Building5_Wall2
+    100176: Building5_Wall3
+    100178: Building5_Wall4
+    100180: Building5_Wall5
+    100182: Building_1
+    100184: Building_2
+    100186: Building_3
+    100188: Building_4
+    100190: Building_5
+    100192: Ceiling
+    100194: Ceiling1
+    100196: Character_Dummy
+    100198: Character_Dummy1
+    100200: Character_Dummy2
+    100202: Character_Dummy3
+    100204: Character_Dummy4
+    100206: Character_Dummy5
+    100208: Character_Dummy6
+    100210: Character_Dummy7
+    100212: Character_Dummy8
+    100214: Character_Dummy9
+    100216: Door_Leveler
+    100218: Door_Leveler1
+    100220: Door_Leveler2
+    100222: Door_Leveler3
+    100224: Door_Leveler4
+    100226: Door_Leveler5
+    100228: First_3D_Character_colors:pCube10
+    100230: First_3D_Character_colors:pCube6
+    100232: First_3D_Character_colors:pCube8
+    100234: First_3D_Character_colors:pCube9
+    100236: First_3D_Character_colors:pTorus1
+    100238: Floor
+    100240: Forest_Area
+    100242: Forest_Floor
+    100244: Forest_Hallway
+    100246: Forest_Hallway_Floor
+    100248: Forest_Wall
+    100250: Heal_Bottom
+    100252: Heal_Bottom1
+    100254: Heal_Bottom2
+    100256: Heal_Station
+    100258: Heal_Top
+    100260: Heal_Top1
+    100262: Main_Room
+    100264: Main_Room_Ceiling
+    100266: Main_Room_Floor
+    100268: //RootNode
+    100270: Medium_Tree
+    100272: pCube10
+    100274: pCube10 1
+    100276: pCube10 2
+    100278: pCube10 3
+    100280: pCube10 4
+    100282: pCube10 5
+    100284: pCube10 6
+    100286: pCube10 7
+    100288: pCube10 8
+    100290: pCube11
+    100292: pCube12
+    100294: pCube13
+    100296: pCube14
+    100298: pCube15
+    100300: pCube16
+    100302: pCube17
+    100304: pCube18
+    100306: pCube6
+    100308: pCube6 1
+    100310: pCube6 2
+    100312: pCube6 3
+    100314: pCube6 4
+    100316: pCube6 5
+    100318: pCube6 6
+    100320: pCube6 7
+    100322: pCube6 8
+    100324: pCube8
+    100326: pCube8 1
+    100328: pCube8 2
+    100330: pCube8 3
+    100332: pCube8 4
+    100334: pCube8 5
+    100336: pCube8 6
+    100338: pCube8 7
+    100340: pCube8 8
+    100342: pCube9
+    100344: pCube9 1
+    100346: pCube9 2
+    100348: pCube9 3
+    100350: pCube9 4
+    100352: pCube9 5
+    100354: pCube9 6
+    100356: pCube9 7
+    100358: pCube9 8
+    100360: Pillar
+    100362: Pillar1
+    100364: Pillar2
+    100366: Pillar_Ring
+    100368: Pillar_Ring1
+    100370: Pillar_Ring2
+    100372: Pillars
+    100374: Platform
+    100376: pTorus1
+    100378: pTorus1 1
+    100380: pTorus1 2
+    100382: pTorus1 3
+    100384: pTorus1 4
+    100386: pTorus1 5
+    100388: pTorus1 6
+    100390: pTorus1 7
+    100392: pTorus1 8
+    100394: Ramp
+    100396: Rock
+    100398: Rock1
+    100400: Rock10
+    100402: Rock11
+    100404: Rock12
+    100406: Rock13
+    100408: Rock14
+    100410: Rock15
+    100412: Rock16
+    100414: Rock17
+    100416: Rock18
+    100418: Rock19
+    100420: Rock2
+    100422: Rock20
+    100424: Rock21
+    100426: Rock22
+    100428: Rock23
+    100430: Rock24
+    100432: Rock25
+    100434: Rock26
+    100436: Rock27
+    100438: Rock28
+    100440: Rock29
+    100442: Rock3
+    100444: Rock30
+    100446: Rock31
+    100448: Rock32
+    100450: Rock33
+    100452: Rock34
+    100454: Rock35
+    100456: Rock36
+    100458: Rock37
+    100460: Rock38
+    100462: Rock39
+    100464: Rock4
+    100466: Rock40
+    100468: Rock41
+    100470: Rock5
+    100472: Rock6
+    100474: Rock7
+    100476: Rock8
+    100478: Rock9
+    100480: Rocks
+    100482: Small_Tree
+    100484: Table
+    100486: Table1
+    100488: Tall_Tree
+    100490: Tall_Tree1
+    100492: Tall_Tree2
+    100494: Tall_Tree3
+    100496: Tall_Tree4
+    100498: Tall_Tree5
+    100500: Tube
+    100502: Tube_Interior
+    100504: Tunnel
+    100506: Under_Water_Area
+    100508: Under_Water_Hallway_Floor
+    100510: Volcano_Area
+    100512: Volcano_Ceiling
+    100514: Volcano_Floor
+    100516: Volcano_Hallway_Floor
+    100518: Volcano_Wall
+    100520: Wall
+    100522: Wall1
+    100524: Wall2
+    100526: Wall3
+    100528: Wall4
+    100530: Wall6
+    100532: Wall8
+    100534: Wall9
+    100536: Window
+    100538: Window1
+    100540: Window10
+    100542: Window11
+    100544: Window12
+    100546: Window13
+    100548: Window14
+    100550: Window15
+    100552: Window16
+    100554: Window17
+    100556: Window18
+    100558: Window19
+    100560: Window2
+    100562: Window20
+    100564: Window3
+    100566: Window4
+    100568: Window5
+    100570: Window6
+    100572: Window7
+    100574: Window8
+    100576: Window9
+    400000: Big_Wall
+    400002: Box
+    400004: Box1
+    400006: Box10
+    400008: Box11
+    400010: Box12
+    400012: Box13
+    400014: Box14
+    400016: Box15
+    400018: Box16
+    400020: Box17
+    400022: Box18
+    400024: Box19
+    400026: Box2
+    400028: Box20
+    400030: Box21
+    400032: Box22
+    400034: Box23
+    400036: Box24
+    400038: Box25
+    400040: Box26
+    400042: Box3
+    400044: Box4
+    400046: Box5
+    400048: Box6
+    400050: Box7
+    400052: Box8
+    400054: Box9
+    400056: Boxes
+    400058: Building
+    400060: Building1_Stairs
+    400062: Building1_Stairs1
+    400064: Building1_Wall
+    400066: Building1_Wall10
+    400068: Building1_Wall11
+    400070: Building1_Wall12
+    400072: Building1_Wall13
+    400074: Building1_Wall14
+    400076: Building1_Wall15
+    400078: Building1_Wall16
+    400080: Building1_Wall18
+    400082: Building1_Wall19
+    400084: Building1_Wall2
+    400086: Building1_Wall20
+    400088: Building1_Wall21
+    400090: Building1_Wall23
+    400092: Building1_Wall24
+    400094: Building1_Wall3
+    400096: Building1_Wall4
+    400098: Building1_Wall5
+    400100: Building1_Wall6
+    400102: Building1_Wall9
+    400104: Building1_Wall_With_Hole
+    400106: Building2_Stairs
+    400108: Building2_Wall
+    400110: Building2_Wall1
+    400112: Building2_Wall10
+    400114: Building2_Wall11
+    400116: Building2_Wall12
+    400118: Building2_Wall13
+    400120: Building2_Wall14
+    400122: Building2_Wall2
+    400124: Building2_Wall3
+    400126: Building2_Wall4
+    400128: Building2_Wall5
+    400130: Building2_Wall6
+    400132: Building2_Wall7
+    400134: Building2_Wall8
+    400136: Building2_Wall9
+    400138: Building2_Wall_With_Hole
+    400140: Building3_Wall
+    400142: Building3_Wall1
+    400144: Building3_Wall2
+    400146: Building3_Wall3
+    400148: Building3_Wall4
+    400150: Building3_Wall5
+    400152: Building3_Wall6
+    400154: Building3_Wall7
+    400156: Building4_Wall
+    400158: Building4_Wall1
+    400160: Building4_Wall2
+    400162: Building4_Wall3
+    400164: Building4_Wall4
+    400166: Building4_Wall5
+    400168: Building5
+    400170: Building5_Wall
+    400172: Building5_Wall1
+    400174: Building5_Wall2
+    400176: Building5_Wall3
+    400178: Building5_Wall4
+    400180: Building5_Wall5
+    400182: Building_1
+    400184: Building_2
+    400186: Building_3
+    400188: Building_4
+    400190: Building_5
+    400192: Ceiling
+    400194: Ceiling1
+    400196: Character_Dummy
+    400198: Character_Dummy1
+    400200: Character_Dummy2
+    400202: Character_Dummy3
+    400204: Character_Dummy4
+    400206: Character_Dummy5
+    400208: Character_Dummy6
+    400210: Character_Dummy7
+    400212: Character_Dummy8
+    400214: Character_Dummy9
+    400216: Door_Leveler
+    400218: Door_Leveler1
+    400220: Door_Leveler2
+    400222: Door_Leveler3
+    400224: Door_Leveler4
+    400226: Door_Leveler5
+    400228: First_3D_Character_colors:pCube10
+    400230: First_3D_Character_colors:pCube6
+    400232: First_3D_Character_colors:pCube8
+    400234: First_3D_Character_colors:pCube9
+    400236: First_3D_Character_colors:pTorus1
+    400238: Floor
+    400240: Forest_Area
+    400242: Forest_Floor
+    400244: Forest_Hallway
+    400246: Forest_Hallway_Floor
+    400248: Forest_Wall
+    400250: Heal_Bottom
+    400252: Heal_Bottom1
+    400254: Heal_Bottom2
+    400256: Heal_Station
+    400258: Heal_Top
+    400260: Heal_Top1
+    400262: Main_Room
+    400264: Main_Room_Ceiling
+    400266: Main_Room_Floor
+    400268: //RootNode
+    400270: Medium_Tree
+    400272: pCube10
+    400274: pCube10 1
+    400276: pCube10 2
+    400278: pCube10 3
+    400280: pCube10 4
+    400282: pCube10 5
+    400284: pCube10 6
+    400286: pCube10 7
+    400288: pCube10 8
+    400290: pCube11
+    400292: pCube12
+    400294: pCube13
+    400296: pCube14
+    400298: pCube15
+    400300: pCube16
+    400302: pCube17
+    400304: pCube18
+    400306: pCube6
+    400308: pCube6 1
+    400310: pCube6 2
+    400312: pCube6 3
+    400314: pCube6 4
+    400316: pCube6 5
+    400318: pCube6 6
+    400320: pCube6 7
+    400322: pCube6 8
+    400324: pCube8
+    400326: pCube8 1
+    400328: pCube8 2
+    400330: pCube8 3
+    400332: pCube8 4
+    400334: pCube8 5
+    400336: pCube8 6
+    400338: pCube8 7
+    400340: pCube8 8
+    400342: pCube9
+    400344: pCube9 1
+    400346: pCube9 2
+    400348: pCube9 3
+    400350: pCube9 4
+    400352: pCube9 5
+    400354: pCube9 6
+    400356: pCube9 7
+    400358: pCube9 8
+    400360: Pillar
+    400362: Pillar1
+    400364: Pillar2
+    400366: Pillar_Ring
+    400368: Pillar_Ring1
+    400370: Pillar_Ring2
+    400372: Pillars
+    400374: Platform
+    400376: pTorus1
+    400378: pTorus1 1
+    400380: pTorus1 2
+    400382: pTorus1 3
+    400384: pTorus1 4
+    400386: pTorus1 5
+    400388: pTorus1 6
+    400390: pTorus1 7
+    400392: pTorus1 8
+    400394: Ramp
+    400396: Rock
+    400398: Rock1
+    400400: Rock10
+    400402: Rock11
+    400404: Rock12
+    400406: Rock13
+    400408: Rock14
+    400410: Rock15
+    400412: Rock16
+    400414: Rock17
+    400416: Rock18
+    400418: Rock19
+    400420: Rock2
+    400422: Rock20
+    400424: Rock21
+    400426: Rock22
+    400428: Rock23
+    400430: Rock24
+    400432: Rock25
+    400434: Rock26
+    400436: Rock27
+    400438: Rock28
+    400440: Rock29
+    400442: Rock3
+    400444: Rock30
+    400446: Rock31
+    400448: Rock32
+    400450: Rock33
+    400452: Rock34
+    400454: Rock35
+    400456: Rock36
+    400458: Rock37
+    400460: Rock38
+    400462: Rock39
+    400464: Rock4
+    400466: Rock40
+    400468: Rock41
+    400470: Rock5
+    400472: Rock6
+    400474: Rock7
+    400476: Rock8
+    400478: Rock9
+    400480: Rocks
+    400482: Small_Tree
+    400484: Table
+    400486: Table1
+    400488: Tall_Tree
+    400490: Tall_Tree1
+    400492: Tall_Tree2
+    400494: Tall_Tree3
+    400496: Tall_Tree4
+    400498: Tall_Tree5
+    400500: Tube
+    400502: Tube_Interior
+    400504: Tunnel
+    400506: Under_Water_Area
+    400508: Under_Water_Hallway_Floor
+    400510: Volcano_Area
+    400512: Volcano_Ceiling
+    400514: Volcano_Floor
+    400516: Volcano_Hallway_Floor
+    400518: Volcano_Wall
+    400520: Wall
+    400522: Wall1
+    400524: Wall2
+    400526: Wall3
+    400528: Wall4
+    400530: Wall6
+    400532: Wall8
+    400534: Wall9
+    400536: Window
+    400538: Window1
+    400540: Window10
+    400542: Window11
+    400544: Window12
+    400546: Window13
+    400548: Window14
+    400550: Window15
+    400552: Window16
+    400554: Window17
+    400556: Window18
+    400558: Window19
+    400560: Window2
+    400562: Window20
+    400564: Window3
+    400566: Window4
+    400568: Window5
+    400570: Window6
+    400572: Window7
+    400574: Window8
+    400576: Window9
+    2100000: aiStandardSurface3
+    2100002: aiStandardSurface4
+    2100004: First_3D_Character_colors_aiStandardSurface7
+    2100006: First_3D_Character_colors_aiStandardSurface6
+    2100008: First_3D_Character_colors_aiStandardSurface5
+    2100010: First_3D_Character_colors_aiStandardSurface8
+    2100012: aiStandardSurface29
+    2100014: aiStandardSurface13
+    2100016: aiStandardSurface33
+    2100018: aiStandardSurface36
+    2100020: aiStandardSurface34
+    2100022: aiStandardSurface35
+    2100024: aiStandardSurface31
+    2100026: aiStandardSurface38
+    2100028: aiStandardSurface39
+    2100030: aiStandardSurface37
+    2100032: aiStandardSurface41
+    2100034: aiStandardSurface40
+    2100036: aiStandardSurface43
+    2100038: aiStandardSurface42
+    2100040: aiStandardSurface45
+    2100042: aiStandardSurface44
+    2100044: aiStandardSurface14
+    2100046: aiStandardSurface7
+    2100048: aiStandardSurface9
+    2100050: lambert1
+    2100052: aiStandardSurface8
+    2100054: aiStandardSurface27
+    2100056: aiStandardSurface10
+    2100058: aiStandardSurface22
+    2100060: aiStandardSurface23
+    2100062: aiStandardSurface24
+    2100064: aiStandardSurface25
+    2100066: aiStandardSurface12
+    2100068: aiStandardSurface15
+    2100070: aiStandardSurface17
+    2100072: aiStandardSurface18
+    2100074: aiStandardSurface16
+    2100076: aiStandardSurface30
+    2100078: aiStandardSurface26
+    2300000: Big_Wall
+    2300002: Box
+    2300004: Box1
+    2300006: Box10
+    2300008: Box11
+    2300010: Box12
+    2300012: Box13
+    2300014: Box14
+    2300016: Box15
+    2300018: Box16
+    2300020: Box17
+    2300022: Box18
+    2300024: Box19
+    2300026: Box2
+    2300028: Box20
+    2300030: Box21
+    2300032: Box22
+    2300034: Box23
+    2300036: Box24
+    2300038: Box25
+    2300040: Box26
+    2300042: Box3
+    2300044: Box4
+    2300046: Box5
+    2300048: Box6
+    2300050: Box7
+    2300052: Box8
+    2300054: Box9
+    2300056: Building
+    2300058: Building1_Stairs
+    2300060: Building1_Stairs1
+    2300062: Building1_Wall
+    2300064: Building1_Wall10
+    2300066: Building1_Wall11
+    2300068: Building1_Wall12
+    2300070: Building1_Wall13
+    2300072: Building1_Wall14
+    2300074: Building1_Wall15
+    2300076: Building1_Wall16
+    2300078: Building1_Wall18
+    2300080: Building1_Wall19
+    2300082: Building1_Wall2
+    2300084: Building1_Wall20
+    2300086: Building1_Wall21
+    2300088: Building1_Wall23
+    2300090: Building1_Wall24
+    2300092: Building1_Wall3
+    2300094: Building1_Wall4
+    2300096: Building1_Wall5
+    2300098: Building1_Wall6
+    2300100: Building1_Wall9
+    2300102: Building1_Wall_With_Hole
+    2300104: Building2_Stairs
+    2300106: Building2_Wall
+    2300108: Building2_Wall1
+    2300110: Building2_Wall10
+    2300112: Building2_Wall11
+    2300114: Building2_Wall12
+    2300116: Building2_Wall13
+    2300118: Building2_Wall14
+    2300120: Building2_Wall2
+    2300122: Building2_Wall3
+    2300124: Building2_Wall4
+    2300126: Building2_Wall5
+    2300128: Building2_Wall6
+    2300130: Building2_Wall7
+    2300132: Building2_Wall8
+    2300134: Building2_Wall9
+    2300136: Building2_Wall_With_Hole
+    2300138: Building3_Wall
+    2300140: Building3_Wall1
+    2300142: Building3_Wall2
+    2300144: Building3_Wall3
+    2300146: Building3_Wall4
+    2300148: Building3_Wall5
+    2300150: Building3_Wall6
+    2300152: Building3_Wall7
+    2300154: Building4_Wall
+    2300156: Building4_Wall1
+    2300158: Building4_Wall2
+    2300160: Building4_Wall3
+    2300162: Building4_Wall4
+    2300164: Building4_Wall5
+    2300166: Building5
+    2300168: Building5_Wall
+    2300170: Building5_Wall1
+    2300172: Building5_Wall2
+    2300174: Building5_Wall3
+    2300176: Building5_Wall4
+    2300178: Building5_Wall5
+    2300180: Ceiling
+    2300182: Ceiling1
+    2300184: Door_Leveler
+    2300186: Door_Leveler1
+    2300188: Door_Leveler2
+    2300190: Door_Leveler3
+    2300192: Door_Leveler4
+    2300194: Door_Leveler5
+    2300196: First_3D_Character_colors:pCube10
+    2300198: First_3D_Character_colors:pCube6
+    2300200: First_3D_Character_colors:pCube8
+    2300202: First_3D_Character_colors:pCube9
+    2300204: First_3D_Character_colors:pTorus1
+    2300206: Floor
+    2300208: Forest_Floor
+    2300210: Forest_Hallway_Floor
+    2300212: Forest_Wall
+    2300214: Heal_Bottom
+    2300216: Heal_Bottom1
+    2300218: Heal_Bottom2
+    2300220: Heal_Top
+    2300222: Heal_Top1
+    2300224: Main_Room_Ceiling
+    2300226: Main_Room_Floor
+    2300228: Medium_Tree
+    2300230: pCube10
+    2300232: pCube10 1
+    2300234: pCube10 2
+    2300236: pCube10 3
+    2300238: pCube10 4
+    2300240: pCube10 5
+    2300242: pCube10 6
+    2300244: pCube10 7
+    2300246: pCube10 8
+    2300248: pCube11
+    2300250: pCube12
+    2300252: pCube13
+    2300254: pCube14
+    2300256: pCube15
+    2300258: pCube16
+    2300260: pCube17
+    2300262: pCube18
+    2300264: pCube6
+    2300266: pCube6 1
+    2300268: pCube6 2
+    2300270: pCube6 3
+    2300272: pCube6 4
+    2300274: pCube6 5
+    2300276: pCube6 6
+    2300278: pCube6 7
+    2300280: pCube6 8
+    2300282: pCube8
+    2300284: pCube8 1
+    2300286: pCube8 2
+    2300288: pCube8 3
+    2300290: pCube8 4
+    2300292: pCube8 5
+    2300294: pCube8 6
+    2300296: pCube8 7
+    2300298: pCube8 8
+    2300300: pCube9
+    2300302: pCube9 1
+    2300304: pCube9 2
+    2300306: pCube9 3
+    2300308: pCube9 4
+    2300310: pCube9 5
+    2300312: pCube9 6
+    2300314: pCube9 7
+    2300316: pCube9 8
+    2300318: Pillar
+    2300320: Pillar1
+    2300322: Pillar2
+    2300324: Pillar_Ring
+    2300326: Pillar_Ring1
+    2300328: Pillar_Ring2
+    2300330: Platform
+    2300332: pTorus1
+    2300334: pTorus1 1
+    2300336: pTorus1 2
+    2300338: pTorus1 3
+    2300340: pTorus1 4
+    2300342: pTorus1 5
+    2300344: pTorus1 6
+    2300346: pTorus1 7
+    2300348: pTorus1 8
+    2300350: Ramp
+    2300352: Rock
+    2300354: Rock1
+    2300356: Rock10
+    2300358: Rock11
+    2300360: Rock12
+    2300362: Rock13
+    2300364: Rock14
+    2300366: Rock15
+    2300368: Rock16
+    2300370: Rock17
+    2300372: Rock18
+    2300374: Rock19
+    2300376: Rock2
+    2300378: Rock20
+    2300380: Rock21
+    2300382: Rock22
+    2300384: Rock23
+    2300386: Rock24
+    2300388: Rock25
+    2300390: Rock26
+    2300392: Rock27
+    2300394: Rock28
+    2300396: Rock29
+    2300398: Rock3
+    2300400: Rock30
+    2300402: Rock31
+    2300404: Rock32
+    2300406: Rock33
+    2300408: Rock34
+    2300410: Rock35
+    2300412: Rock36
+    2300414: Rock37
+    2300416: Rock38
+    2300418: Rock39
+    2300420: Rock4
+    2300422: Rock40
+    2300424: Rock41
+    2300426: Rock5
+    2300428: Rock6
+    2300430: Rock7
+    2300432: Rock8
+    2300434: Rock9
+    2300436: Small_Tree
+    2300438: Table
+    2300440: Table1
+    2300442: Tall_Tree
+    2300444: Tall_Tree1
+    2300446: Tall_Tree2
+    2300448: Tall_Tree3
+    2300450: Tall_Tree4
+    2300452: Tall_Tree5
+    2300454: Tube
+    2300456: Tube_Interior
+    2300458: Tunnel
+    2300460: Under_Water_Hallway_Floor
+    2300462: Volcano_Ceiling
+    2300464: Volcano_Floor
+    2300466: Volcano_Hallway_Floor
+    2300468: Volcano_Wall
+    2300470: Wall
+    2300472: Wall1
+    2300474: Wall2
+    2300476: Wall3
+    2300478: Wall4
+    2300480: Wall6
+    2300482: Wall8
+    2300484: Wall9
+    2300486: Window
+    2300488: Window1
+    2300490: Window10
+    2300492: Window11
+    2300494: Window12
+    2300496: Window13
+    2300498: Window14
+    2300500: Window15
+    2300502: Window16
+    2300504: Window17
+    2300506: Window18
+    2300508: Window19
+    2300510: Window2
+    2300512: Window20
+    2300514: Window3
+    2300516: Window4
+    2300518: Window5
+    2300520: Window6
+    2300522: Window7
+    2300524: Window8
+    2300526: Window9
+    3300000: Big_Wall
+    3300002: Box
+    3300004: Box1
+    3300006: Box10
+    3300008: Box11
+    3300010: Box12
+    3300012: Box13
+    3300014: Box14
+    3300016: Box15
+    3300018: Box16
+    3300020: Box17
+    3300022: Box18
+    3300024: Box19
+    3300026: Box2
+    3300028: Box20
+    3300030: Box21
+    3300032: Box22
+    3300034: Box23
+    3300036: Box24
+    3300038: Box25
+    3300040: Box26
+    3300042: Box3
+    3300044: Box4
+    3300046: Box5
+    3300048: Box6
+    3300050: Box7
+    3300052: Box8
+    3300054: Box9
+    3300056: Building
+    3300058: Building1_Stairs
+    3300060: Building1_Stairs1
+    3300062: Building1_Wall
+    3300064: Building1_Wall10
+    3300066: Building1_Wall11
+    3300068: Building1_Wall12
+    3300070: Building1_Wall13
+    3300072: Building1_Wall14
+    3300074: Building1_Wall15
+    3300076: Building1_Wall16
+    3300078: Building1_Wall18
+    3300080: Building1_Wall19
+    3300082: Building1_Wall2
+    3300084: Building1_Wall20
+    3300086: Building1_Wall21
+    3300088: Building1_Wall23
+    3300090: Building1_Wall24
+    3300092: Building1_Wall3
+    3300094: Building1_Wall4
+    3300096: Building1_Wall5
+    3300098: Building1_Wall6
+    3300100: Building1_Wall9
+    3300102: Building1_Wall_With_Hole
+    3300104: Building2_Stairs
+    3300106: Building2_Wall
+    3300108: Building2_Wall1
+    3300110: Building2_Wall10
+    3300112: Building2_Wall11
+    3300114: Building2_Wall12
+    3300116: Building2_Wall13
+    3300118: Building2_Wall14
+    3300120: Building2_Wall2
+    3300122: Building2_Wall3
+    3300124: Building2_Wall4
+    3300126: Building2_Wall5
+    3300128: Building2_Wall6
+    3300130: Building2_Wall7
+    3300132: Building2_Wall8
+    3300134: Building2_Wall9
+    3300136: Building2_Wall_With_Hole
+    3300138: Building3_Wall
+    3300140: Building3_Wall1
+    3300142: Building3_Wall2
+    3300144: Building3_Wall3
+    3300146: Building3_Wall4
+    3300148: Building3_Wall5
+    3300150: Building3_Wall6
+    3300152: Building3_Wall7
+    3300154: Building4_Wall
+    3300156: Building4_Wall1
+    3300158: Building4_Wall2
+    3300160: Building4_Wall3
+    3300162: Building4_Wall4
+    3300164: Building4_Wall5
+    3300166: Building5
+    3300168: Building5_Wall
+    3300170: Building5_Wall1
+    3300172: Building5_Wall2
+    3300174: Building5_Wall3
+    3300176: Building5_Wall4
+    3300178: Building5_Wall5
+    3300180: Ceiling
+    3300182: Ceiling1
+    3300184: Door_Leveler
+    3300186: Door_Leveler1
+    3300188: Door_Leveler2
+    3300190: Door_Leveler3
+    3300192: Door_Leveler4
+    3300194: Door_Leveler5
+    3300196: First_3D_Character_colors:pCube10
+    3300198: First_3D_Character_colors:pCube6
+    3300200: First_3D_Character_colors:pCube8
+    3300202: First_3D_Character_colors:pCube9
+    3300204: First_3D_Character_colors:pTorus1
+    3300206: Floor
+    3300208: Forest_Floor
+    3300210: Forest_Hallway_Floor
+    3300212: Forest_Wall
+    3300214: Heal_Bottom
+    3300216: Heal_Bottom1
+    3300218: Heal_Bottom2
+    3300220: Heal_Top
+    3300222: Heal_Top1
+    3300224: Main_Room_Ceiling
+    3300226: Main_Room_Floor
+    3300228: Medium_Tree
+    3300230: pCube10
+    3300232: pCube10 1
+    3300234: pCube10 2
+    3300236: pCube10 3
+    3300238: pCube10 4
+    3300240: pCube10 5
+    3300242: pCube10 6
+    3300244: pCube10 7
+    3300246: pCube10 8
+    3300248: pCube11
+    3300250: pCube12
+    3300252: pCube13
+    3300254: pCube14
+    3300256: pCube15
+    3300258: pCube16
+    3300260: pCube17
+    3300262: pCube18
+    3300264: pCube6
+    3300266: pCube6 1
+    3300268: pCube6 2
+    3300270: pCube6 3
+    3300272: pCube6 4
+    3300274: pCube6 5
+    3300276: pCube6 6
+    3300278: pCube6 7
+    3300280: pCube6 8
+    3300282: pCube8
+    3300284: pCube8 1
+    3300286: pCube8 2
+    3300288: pCube8 3
+    3300290: pCube8 4
+    3300292: pCube8 5
+    3300294: pCube8 6
+    3300296: pCube8 7
+    3300298: pCube8 8
+    3300300: pCube9
+    3300302: pCube9 1
+    3300304: pCube9 2
+    3300306: pCube9 3
+    3300308: pCube9 4
+    3300310: pCube9 5
+    3300312: pCube9 6
+    3300314: pCube9 7
+    3300316: pCube9 8
+    3300318: Pillar
+    3300320: Pillar1
+    3300322: Pillar2
+    3300324: Pillar_Ring
+    3300326: Pillar_Ring1
+    3300328: Pillar_Ring2
+    3300330: Platform
+    3300332: pTorus1
+    3300334: pTorus1 1
+    3300336: pTorus1 2
+    3300338: pTorus1 3
+    3300340: pTorus1 4
+    3300342: pTorus1 5
+    3300344: pTorus1 6
+    3300346: pTorus1 7
+    3300348: pTorus1 8
+    3300350: Ramp
+    3300352: Rock
+    3300354: Rock1
+    3300356: Rock10
+    3300358: Rock11
+    3300360: Rock12
+    3300362: Rock13
+    3300364: Rock14
+    3300366: Rock15
+    3300368: Rock16
+    3300370: Rock17
+    3300372: Rock18
+    3300374: Rock19
+    3300376: Rock2
+    3300378: Rock20
+    3300380: Rock21
+    3300382: Rock22
+    3300384: Rock23
+    3300386: Rock24
+    3300388: Rock25
+    3300390: Rock26
+    3300392: Rock27
+    3300394: Rock28
+    3300396: Rock29
+    3300398: Rock3
+    3300400: Rock30
+    3300402: Rock31
+    3300404: Rock32
+    3300406: Rock33
+    3300408: Rock34
+    3300410: Rock35
+    3300412: Rock36
+    3300414: Rock37
+    3300416: Rock38
+    3300418: Rock39
+    3300420: Rock4
+    3300422: Rock40
+    3300424: Rock41
+    3300426: Rock5
+    3300428: Rock6
+    3300430: Rock7
+    3300432: Rock8
+    3300434: Rock9
+    3300436: Small_Tree
+    3300438: Table
+    3300440: Table1
+    3300442: Tall_Tree
+    3300444: Tall_Tree1
+    3300446: Tall_Tree2
+    3300448: Tall_Tree3
+    3300450: Tall_Tree4
+    3300452: Tall_Tree5
+    3300454: Tube
+    3300456: Tube_Interior
+    3300458: Tunnel
+    3300460: Under_Water_Hallway_Floor
+    3300462: Volcano_Ceiling
+    3300464: Volcano_Floor
+    3300466: Volcano_Hallway_Floor
+    3300468: Volcano_Wall
+    3300470: Wall
+    3300472: Wall1
+    3300474: Wall2
+    3300476: Wall3
+    3300478: Wall4
+    3300480: Wall6
+    3300482: Wall8
+    3300484: Wall9
+    3300486: Window
+    3300488: Window1
+    3300490: Window10
+    3300492: Window11
+    3300494: Window12
+    3300496: Window13
+    3300498: Window14
+    3300500: Window15
+    3300502: Window16
+    3300504: Window17
+    3300506: Window18
+    3300508: Window19
+    3300510: Window2
+    3300512: Window20
+    3300514: Window3
+    3300516: Window4
+    3300518: Window5
+    3300520: Window6
+    3300522: Window7
+    3300524: Window8
+    3300526: Window9
+    4300000: Forest_Floor
+    4300002: Forest_Wall
+    4300004: pCube6
+    4300006: pCube8
+    4300008: pCube9
+    4300010: pCube10
+    4300012: pTorus1
+    4300014: Medium_Tree
+    4300016: Tall_Tree
+    4300018: Small_Tree
+    4300020: Rock28
+    4300022: Building1_Wall2
+    4300024: Building1_Wall3
+    4300026: Building1_Wall4
+    4300028: Building1_Wall5
+    4300030: Building1_Wall6
+    4300032: Building1_Wall9
+    4300034: Building1_Wall10
+    4300036: Building1_Wall11
+    4300038: Building1_Wall12
+    4300040: Building1_Wall13
+    4300042: Building1_Wall14
+    4300044: Building1_Wall15
+    4300046: Building1_Wall16
+    4300048: Building1_Stairs
+    4300050: Building1_Wall18
+    4300052: Building1_Wall19
+    4300054: Building1_Wall20
+    4300056: Building1_Wall21
+    4300058: Building1_Wall_With_Hole
+    4300060: Building1_Wall
+    4300062: pCube6
+    4300064: pCube8
+    4300066: pCube9
+    4300068: pCube10
+    4300070: pTorus1
+    4300072: Building1_Stairs1
+    4300074: Door_Leveler
+    4300076: Door_Leveler1
+    4300078: Building1_Wall23
+    4300080: Building1_Wall24
+    4300082: Door_Leveler2
+    4300084: Door_Leveler3
+    4300086: Door_Leveler4
+    4300088: Door_Leveler5
+    4300090: Window
+    4300092: Window1
+    4300094: Window2
+    4300096: Window3
+    4300098: Window4
+    4300100: Window5
+    4300102: Window6
+    4300104: Window7
+    4300106: Window8
+    4300108: Window9
+    4300110: Window10
+    4300112: Window11
+    4300114: Window12
+    4300116: Window13
+    4300118: pCube6
+    4300120: pCube8
+    4300122: pCube9
+    4300124: pCube10
+    4300126: pTorus1
+    4300128: Building2_Wall
+    4300130: Building2_Wall_With_Hole
+    4300132: Building2_Wall1
+    4300134: Building2_Wall2
+    4300136: Building2_Wall3
+    4300138: Building2_Wall4
+    4300140: Building2_Wall5
+    4300142: Building2_Wall6
+    4300144: Building2_Wall7
+    4300146: Building2_Wall8
+    4300148: Building2_Wall9
+    4300150: Building2_Wall10
+    4300152: Building2_Stairs
+    4300154: Building2_Wall11
+    4300156: Building2_Wall12
+    4300158: Building2_Wall13
+    4300160: Building2_Wall14
+    4300162: Window14
+    4300164: Window15
+    4300166: Window16
+    4300168: Window17
+    4300170: Building3_Wall
+    4300172: pCube6
+    4300174: pCube8
+    4300176: pCube9
+    4300178: pCube10
+    4300180: pTorus1
+    4300182: Building3_Wall1
+    4300184: Building3_Wall2
+    4300186: Building3_Wall3
+    4300188: Building3_Wall4
+    4300190: Building3_Wall5
+    4300192: Building3_Wall6
+    4300194: Building3_Wall7
+    4300196: Window18
+    4300198: Building4_Wall
+    4300200: pCube6
+    4300202: pCube8
+    4300204: pCube9
+    4300206: pCube10
+    4300208: pTorus1
+    4300210: Building4_Wall1
+    4300212: Building4_Wall2
+    4300214: Building4_Wall3
+    4300216: Building4_Wall4
+    4300218: Building4_Wall5
+    4300220: Window19
+    4300222: Window20
+    4300224: Rock29
+    4300226: Rock30
+    4300228: Rock31
+    4300230: Rock32
+    4300232: Rock33
+    4300234: Rock34
+    4300236: Building5_Wall
+    4300238: pCube6
+    4300240: pCube8
+    4300242: pCube9
+    4300244: pCube10
+    4300246: pTorus1
+    4300248: Building5_Wall1
+    4300250: Building5_Wall2
+    4300252: Building5_Wall3
+    4300254: Building5_Wall4
+    4300256: Building5_Wall5
+    4300258: Rock40
+    4300260: Rock39
+    4300262: Rock38
+    4300264: Rock37
+    4300266: Rock36
+    4300268: Rock35
+    4300270: Box10
+    4300272: Rock41
+    4300274: Box11
+    4300276: Box12
+    4300278: Box13
+    4300280: Box14
+    4300282: Box15
+    4300284: Box16
+    4300286: Box17
+    4300288: Box18
+    4300290: Box19
+    4300292: Box20
+    4300294: Box21
+    4300296: Box22
+    4300298: Box23
+    4300300: Box24
+    4300302: Box25
+    4300304: Box26
+    4300306: pCube6
+    4300308: pCube8
+    4300310: pCube9
+    4300312: pCube10
+    4300314: pTorus1
+    4300316: Volcano_Wall
+    4300318: Volcano_Ceiling
+    4300320: Volcano_Floor
+    4300322: Platform
+    4300324: pCube6
+    4300326: pCube8
+    4300328: pCube9
+    4300330: pCube10
+    4300332: pTorus1
+    4300334: Ramp
+    4300336: Tunnel
+    4300338: Big_Wall
+    4300340: Ceiling
+    4300342: Floor
+    4300344: Tube
+    4300346: Tube_Interior
+    4300348: Ceiling1
+    4300350: pCube6
+    4300352: pCube8
+    4300354: pCube9
+    4300356: pCube10
+    4300358: pTorus1
+    4300360: Wall1
+    4300362: Wall2
+    4300364: Wall3
+    4300366: Wall4
+    4300368: Building5
+    4300370: Building
+    4300372: Main_Room_Floor
+    4300374: Forest_Hallway_Floor
+    4300376: Volcano_Hallway_Floor
+    4300378: Under_Water_Hallway_Floor
+    4300380: First_3D_Character_colors:pCube6
+    4300382: First_3D_Character_colors:pCube8
+    4300384: First_3D_Character_colors:pCube9
+    4300386: First_3D_Character_colors:pCube10
+    4300388: First_3D_Character_colors:pTorus1
+    4300390: Wall
+    4300392: Wall6
+    4300394: Wall8
+    4300396: Rock13
+    4300398: Rock12
+    4300400: Rock11
+    4300402: Rock10
+    4300404: Rock9
+    4300406: Rock8
+    4300408: Rock7
+    4300410: Rock6
+    4300412: Rock5
+    4300414: Rock4
+    4300416: Rock3
+    4300418: Rock2
+    4300420: Rock1
+    4300422: Rock
+    4300424: Rock14
+    4300426: Rock15
+    4300428: Rock16
+    4300430: Rock17
+    4300432: Rock18
+    4300434: Rock19
+    4300436: Rock20
+    4300438: Rock21
+    4300440: Rock22
+    4300442: Rock23
+    4300444: Rock24
+    4300446: Rock25
+    4300448: Rock26
+    4300450: Rock27
+    4300452: Wall9
+    4300454: Main_Room_Ceiling
+    4300456: Heal_Bottom
+    4300458: Heal_Top
+    4300460: Heal_Top1
+    4300462: Heal_Bottom1
+    4300464: Heal_Bottom2
+    4300466: Table
+    4300468: Table1
+    4300470: Box9
+    4300472: Box8
+    4300474: Box7
+    4300476: Box6
+    4300478: Box5
+    4300480: Box4
+    4300482: Box3
+    4300484: Box2
+    4300486: Box1
+    4300488: Box
+    4300490: Pillar_Ring2
+    4300492: Pillar_Ring1
+    4300494: Pillar_Ring
+    4300496: Pillar2
+    4300498: Pillar1
+    4300500: Pillar
+    4300502: pCube18
+    4300504: pCube17
+    4300506: pCube16
+    4300508: pCube15
+    4300510: pCube14
+    4300512: pCube13
+    4300514: pCube12
+    4300516: pCube11
+    4300518: Tall_Tree1
+    4300520: Tall_Tree2
+    4300522: Tall_Tree3
+    4300524: Tall_Tree4
+    4300526: Tall_Tree5
+    6400000: Big_Wall
+    6400002: Box
+    6400004: Box1
+    6400006: Box10
+    6400008: Box11
+    6400010: Box12
+    6400012: Box13
+    6400014: Box14
+    6400016: Box15
+    6400018: Box16
+    6400020: Box17
+    6400022: Box18
+    6400024: Box19
+    6400026: Box2
+    6400028: Box20
+    6400030: Box21
+    6400032: Box22
+    6400034: Box23
+    6400036: Box24
+    6400038: Box25
+    6400040: Box26
+    6400042: Box3
+    6400044: Box4
+    6400046: Box5
+    6400048: Box6
+    6400050: Box7
+    6400052: Box8
+    6400054: Box9
+    6400056: Building
+    6400058: Building1_Stairs
+    6400060: Building1_Stairs1
+    6400062: Building1_Wall
+    6400064: Building1_Wall10
+    6400066: Building1_Wall11
+    6400068: Building1_Wall12
+    6400070: Building1_Wall13
+    6400072: Building1_Wall14
+    6400074: Building1_Wall15
+    6400076: Building1_Wall16
+    6400078: Building1_Wall18
+    6400080: Building1_Wall19
+    6400082: Building1_Wall2
+    6400084: Building1_Wall20
+    6400086: Building1_Wall21
+    6400088: Building1_Wall23
+    6400090: Building1_Wall24
+    6400092: Building1_Wall3
+    6400094: Building1_Wall4
+    6400096: Building1_Wall5
+    6400098: Building1_Wall6
+    6400100: Building1_Wall9
+    6400102: Building1_Wall_With_Hole
+    6400104: Building2_Stairs
+    6400106: Building2_Wall
+    6400108: Building2_Wall1
+    6400110: Building2_Wall10
+    6400112: Building2_Wall11
+    6400114: Building2_Wall12
+    6400116: Building2_Wall13
+    6400118: Building2_Wall14
+    6400120: Building2_Wall2
+    6400122: Building2_Wall3
+    6400124: Building2_Wall4
+    6400126: Building2_Wall5
+    6400128: Building2_Wall6
+    6400130: Building2_Wall7
+    6400132: Building2_Wall8
+    6400134: Building2_Wall9
+    6400136: Building2_Wall_With_Hole
+    6400138: Building3_Wall
+    6400140: Building3_Wall1
+    6400142: Building3_Wall2
+    6400144: Building3_Wall3
+    6400146: Building3_Wall4
+    6400148: Building3_Wall5
+    6400150: Building3_Wall6
+    6400152: Building3_Wall7
+    6400154: Building4_Wall
+    6400156: Building4_Wall1
+    6400158: Building4_Wall2
+    6400160: Building4_Wall3
+    6400162: Building4_Wall4
+    6400164: Building4_Wall5
+    6400166: Building5
+    6400168: Building5_Wall
+    6400170: Building5_Wall1
+    6400172: Building5_Wall2
+    6400174: Building5_Wall3
+    6400176: Building5_Wall4
+    6400178: Building5_Wall5
+    6400180: Ceiling
+    6400182: Ceiling1
+    6400184: Door_Leveler
+    6400186: Door_Leveler1
+    6400188: Door_Leveler2
+    6400190: Door_Leveler3
+    6400192: Door_Leveler4
+    6400194: Door_Leveler5
+    6400196: First_3D_Character_colors:pCube10
+    6400198: First_3D_Character_colors:pCube6
+    6400200: First_3D_Character_colors:pCube8
+    6400202: First_3D_Character_colors:pCube9
+    6400204: First_3D_Character_colors:pTorus1
+    6400206: Floor
+    6400208: Forest_Floor
+    6400210: Forest_Hallway_Floor
+    6400212: Forest_Wall
+    6400214: Heal_Bottom
+    6400216: Heal_Bottom1
+    6400218: Heal_Bottom2
+    6400220: Heal_Top
+    6400222: Heal_Top1
+    6400224: Main_Room_Ceiling
+    6400226: Main_Room_Floor
+    6400228: Medium_Tree
+    6400230: pCube10
+    6400232: pCube10 1
+    6400234: pCube10 2
+    6400236: pCube10 3
+    6400238: pCube10 4
+    6400240: pCube10 5
+    6400242: pCube10 6
+    6400244: pCube10 7
+    6400246: pCube10 8
+    6400248: pCube11
+    6400250: pCube12
+    6400252: pCube13
+    6400254: pCube14
+    6400256: pCube15
+    6400258: pCube16
+    6400260: pCube17
+    6400262: pCube18
+    6400264: pCube6
+    6400266: pCube6 1
+    6400268: pCube6 2
+    6400270: pCube6 3
+    6400272: pCube6 4
+    6400274: pCube6 5
+    6400276: pCube6 6
+    6400278: pCube6 7
+    6400280: pCube6 8
+    6400282: pCube8
+    6400284: pCube8 1
+    6400286: pCube8 2
+    6400288: pCube8 3
+    6400290: pCube8 4
+    6400292: pCube8 5
+    6400294: pCube8 6
+    6400296: pCube8 7
+    6400298: pCube8 8
+    6400300: pCube9
+    6400302: pCube9 1
+    6400304: pCube9 2
+    6400306: pCube9 3
+    6400308: pCube9 4
+    6400310: pCube9 5
+    6400312: pCube9 6
+    6400314: pCube9 7
+    6400316: pCube9 8
+    6400318: Pillar
+    6400320: Pillar1
+    6400322: Pillar2
+    6400324: Pillar_Ring
+    6400326: Pillar_Ring1
+    6400328: Pillar_Ring2
+    6400330: Platform
+    6400332: pTorus1
+    6400334: pTorus1 1
+    6400336: pTorus1 2
+    6400338: pTorus1 3
+    6400340: pTorus1 4
+    6400342: pTorus1 5
+    6400344: pTorus1 6
+    6400346: pTorus1 7
+    6400348: pTorus1 8
+    6400350: Ramp
+    6400352: Rock
+    6400354: Rock1
+    6400356: Rock10
+    6400358: Rock11
+    6400360: Rock12
+    6400362: Rock13
+    6400364: Rock14
+    6400366: Rock15
+    6400368: Rock16
+    6400370: Rock17
+    6400372: Rock18
+    6400374: Rock19
+    6400376: Rock2
+    6400378: Rock20
+    6400380: Rock21
+    6400382: Rock22
+    6400384: Rock23
+    6400386: Rock24
+    6400388: Rock25
+    6400390: Rock26
+    6400392: Rock27
+    6400394: Rock28
+    6400396: Rock29
+    6400398: Rock3
+    6400400: Rock30
+    6400402: Rock31
+    6400404: Rock32
+    6400406: Rock33
+    6400408: Rock34
+    6400410: Rock35
+    6400412: Rock36
+    6400414: Rock37
+    6400416: Rock38
+    6400418: Rock39
+    6400420: Rock4
+    6400422: Rock40
+    6400424: Rock41
+    6400426: Rock5
+    6400428: Rock6
+    6400430: Rock7
+    6400432: Rock8
+    6400434: Rock9
+    6400436: Small_Tree
+    6400438: Table
+    6400440: Table1
+    6400442: Tall_Tree
+    6400444: Tall_Tree1
+    6400446: Tall_Tree2
+    6400448: Tall_Tree3
+    6400450: Tall_Tree4
+    6400452: Tall_Tree5
+    6400454: Tube
+    6400456: Tube_Interior
+    6400458: Tunnel
+    6400460: Under_Water_Hallway_Floor
+    6400462: Volcano_Ceiling
+    6400464: Volcano_Floor
+    6400466: Volcano_Hallway_Floor
+    6400468: Volcano_Wall
+    6400470: Wall
+    6400472: Wall1
+    6400474: Wall2
+    6400476: Wall3
+    6400478: Wall4
+    6400480: Wall6
+    6400482: Wall8
+    6400484: Wall9
+    6400486: Window
+    6400488: Window1
+    6400490: Window10
+    6400492: Window11
+    6400494: Window12
+    6400496: Window13
+    6400498: Window14
+    6400500: Window15
+    6400502: Window16
+    6400504: Window17
+    6400506: Window18
+    6400508: Window19
+    6400510: Window2
+    6400512: Window20
+    6400514: Window3
+    6400516: Window4
+    6400518: Window5
+    6400520: Window6
+    6400522: Window7
+    6400524: Window8
+    6400526: Window9
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: First_3D_Character_colors_aiStandardSurface5
+    second: {fileID: 2100000, guid: 55089360f1d54ff44a894ec987486bc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: First_3D_Character_colors_aiStandardSurface6
+    second: {fileID: 2100000, guid: 86e5cfc559c0dff4abff270f67169ec1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: First_3D_Character_colors_aiStandardSurface7
+    second: {fileID: 2100000, guid: e1446bb50e193434597d7c5560632726, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: First_3D_Character_colors_aiStandardSurface8
+    second: {fileID: 2100000, guid: 6ca894e768d446f489119a50603cdb3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface10
+    second: {fileID: 2100000, guid: 0aab198f0ec8adf42870ad9dd3d8dcbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface12
+    second: {fileID: 2100000, guid: 8f5c65e2cd47ef9449dc91ff05010136, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface13
+    second: {fileID: 2100000, guid: f3718f666c650a543a163d2ad3843b07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface14
+    second: {fileID: 2100000, guid: 0845f611beabc464eae3a0c5d10b2662, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface15
+    second: {fileID: 2100000, guid: a9a6833c83b943546a7038c0e4f02c0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface16
+    second: {fileID: 2100000, guid: db1e8a78fb26dc34f97d6c33a834437a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface17
+    second: {fileID: 2100000, guid: 033c20a06ac930f4ca95e1fb800f3897, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface18
+    second: {fileID: 2100000, guid: 414845145dc5c1b4fb219de0900b3e45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface22
+    second: {fileID: 2100000, guid: 674c3770d5224224fabb2db78063e41f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface23
+    second: {fileID: 2100000, guid: 5c50c82bac961404f8b6c9a01cef9d2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface24
+    second: {fileID: 2100000, guid: ab63208b9d3f26843b2521affd84e749, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface25
+    second: {fileID: 2100000, guid: d9eaf141c6c9746448a91dffc838e3cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface26
+    second: {fileID: 2100000, guid: 5dd17bdbd1c4a1c4cad7b7a8d3ff3a54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface27
+    second: {fileID: 2100000, guid: ca17ad444c2483645a59f7efe96735d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface29
+    second: {fileID: 2100000, guid: be78c9e40dcd0a64e94ee16c103a52da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface3
+    second: {fileID: 2100000, guid: b72cb6c24d3335843b70807099f014b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface30
+    second: {fileID: 2100000, guid: 2a9bff14b5271d746b8ac0e66bfd7eab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface31
+    second: {fileID: 2100000, guid: 53a8cc67229f6964cbecfa79aa9f21c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface33
+    second: {fileID: 2100000, guid: 5fb60d8c19fe4be4e8c147c126e496b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface34
+    second: {fileID: 2100000, guid: 1c8fb97a4a88aa847958c0b08c41bdc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface35
+    second: {fileID: 2100000, guid: ade95966567f4c240990e6c61bdf0e59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface36
+    second: {fileID: 2100000, guid: cda3300245b8899408754f6166e2d09e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface37
+    second: {fileID: 2100000, guid: d82f3514d33b4a2429a8805ca8cf4497, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface38
+    second: {fileID: 2100000, guid: 8bd9776a5a7e3e740848df153013f6ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface39
+    second: {fileID: 2100000, guid: 2437f697fbffcaa41b93c4482db6126c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface4
+    second: {fileID: 2100000, guid: 9b140c0316a24af41bbb92c2cbf26273, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface40
+    second: {fileID: 2100000, guid: a8257c455270ff84da4a34aa0ac72d90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface41
+    second: {fileID: 2100000, guid: 770f0b8ae00df9244a92bf45dbc5adfa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface42
+    second: {fileID: 2100000, guid: 9f7562e01ce715c448aafa4ee78c4db0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface43
+    second: {fileID: 2100000, guid: 1c0bfc527322add48a9790212559a7d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface44
+    second: {fileID: 2100000, guid: e884b8f27a3edea449c1e6ad1dc9b04a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface45
+    second: {fileID: 2100000, guid: cc5fd747b012adc44b29ae2d394f4ae2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface7
+    second: {fileID: 2100000, guid: 5563bda3347df3346a5ed504e75f4f97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface8
+    second: {fileID: 2100000, guid: a7ef5d05c7156e54b83125cdc7a3be46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface9
+    second: {fileID: 2100000, guid: d0aef8784ebf1d147a9f18d2bfbbf2bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 3b0e2be7c50762549a55264e5bc3093a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1
+    second: {fileID: 2800000, guid: 1d397da2f8058194e9fb3e99d847c6f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 13-stone-seamless-concrete-textures
+    second: {fileID: 2800000, guid: 378a163568204384dba1b4d87543dd51, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 16995985-image-of-stone-rock-texture-wall-background-closeup
+    second: {fileID: 2800000, guid: 9092c1e9b8bacf04786bec94a856c62b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 6285936917_03ba2af134_b
+    second: {fileID: 2800000, guid: 6c8ca0c99041a6e4f82c769464de683c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 800px_COLOURBOX11547864
+    second: {fileID: 2800000, guid: b7393d8cd60e91d4f879a461b8ebc58d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 800px_COLOURBOX24356987
+    second: {fileID: 2800000, guid: 926d3a8617a36c64482735ed61003513, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DD-Dark-Wood-Texture-22123-Preview
+    second: {fileID: 2800000, guid: ff4ed3c19073ada4c80118f7821ea3fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MossyStonesB_S
+    second: {fileID: 2800000, guid: e90c928942f048c4f8d417112453374a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: b0a74aa9fb6afae5d9742fa9ceee9c23
+    second: {fileID: 2800000, guid: a7c668237607bad4d8a76dcdc5ecafd7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: creative-temp-
+    second: {fileID: 2800000, guid: b8cdb653ba3d3d345a8bb17a27a05ff8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark-rock-texture
+    second: {fileID: 2800000, guid: d5e065af7f0092b4d9b2b1412c15c539, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: download (1)
+    second: {fileID: 2800000, guid: 2b60e39b41384d744a9d22b0c1b41bb1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: old-cement-wall-texture_1149-1280
+    second: {fileID: 2800000, guid: 1483f7e0e0472ba43a9a536864bed40d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: preview
+    second: {fileID: 2800000, guid: 5229d9fbc47658e46bdf80b329feaa33, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: texture___lava_rock__4k__by_reconditearcana_d7rt0r4-pre
+    second: {fileID: 2800000, guid: 322a94830f99dd940ad85b4ceba0b96d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tron-emboss-no-light
+    second: {fileID: 2800000, guid: a004fbce48af8b94097eca6afb51c6c8, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 45
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
