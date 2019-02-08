@@ -1,132 +1,63 @@
 fileFormatVersion: 2
-guid: 5da8b9b402944074181e67707b415f28
+guid: b889581711e34b44d88f7c84bb45f1f0
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: joint10
-    100004: joint12
-    100006: joint13
-    100008: joint15
-    100010: joint16
-    100012: joint18
-    100014: joint19
-    100016: joint21
-    100018: joint22
-    100020: joint6
-    100022: joint7
-    100024: joint9
-    100026: LB
-    100028: LBH
-    100030: LF
-    100032: LFH
-    100034: LM
-    100036: LMH
-    100038: Neck
-    100040: pCube1
-    100042: pCube2
-    100044: pCube3
-    100046: pCube4
-    100048: polySurface1
-    100050: polySurface10
-    100052: polySurface11
-    100054: polySurface12
-    100056: polySurface2
-    100058: polySurface3
-    100060: polySurface4
-    100062: polySurface5
-    100064: polySurface6
-    100066: polySurface7
-    100068: polySurface8
-    100070: polySurface9
-    100072: RB
-    100074: RBH
-    100076: RF
-    100078: RFH
-    100080: RM
-    100082: RMH
-    100084: skeleton
-    100086: SpineB
-    100088: SpineF
-    100090: transform1
-    100092: transform10
-    100094: transform11
-    100096: transform12
-    100098: transform13
-    100100: transform14
-    100102: transform2
-    100104: transform3
-    100106: transform4
-    100108: transform5
-    100110: transform6
-    100112: transform7
-    100114: transform8
-    100116: transform9
-    400000: //RootNode
-    400002: joint10
-    400004: joint12
-    400006: joint13
-    400008: joint15
-    400010: joint16
-    400012: joint18
-    400014: joint19
-    400016: joint21
-    400018: joint22
-    400020: joint6
-    400022: joint7
-    400024: joint9
-    400026: LB
-    400028: LBH
-    400030: LF
-    400032: LFH
-    400034: LM
-    400036: LMH
-    400038: Neck
-    400040: pCube1
-    400042: pCube2
-    400044: pCube3
-    400046: pCube4
-    400048: polySurface1
-    400050: polySurface10
-    400052: polySurface11
-    400054: polySurface12
-    400056: polySurface2
-    400058: polySurface3
-    400060: polySurface4
-    400062: polySurface5
-    400064: polySurface6
-    400066: polySurface7
-    400068: polySurface8
-    400070: polySurface9
-    400072: RB
-    400074: RBH
-    400076: RF
-    400078: RFH
-    400080: RM
-    400082: RMH
-    400084: skeleton
-    400086: SpineB
-    400088: SpineF
-    400090: transform1
-    400092: transform10
-    400094: transform11
-    400096: transform12
-    400098: transform13
-    400100: transform14
-    400102: transform2
-    400104: transform3
-    400106: transform4
-    400108: transform5
-    400110: transform6
-    400112: transform7
-    400114: transform8
-    400116: transform9
+    100000: group1
+    100002: //RootNode
+    100004: polySurface1
+    100006: polySurface10
+    100008: polySurface2
+    100010: polySurface3
+    100012: polySurface4
+    100014: polySurface5
+    100016: polySurface6
+    100018: polySurface7
+    100020: polySurface8
+    100022: polySurface9
+    100024: transform1
+    100026: transform2
+    100028: transform3
+    100030: transform4
+    100032: transform5
+    400000: group1
+    400002: //RootNode
+    400004: polySurface1
+    400006: polySurface10
+    400008: polySurface2
+    400010: polySurface3
+    400012: polySurface4
+    400014: polySurface5
+    400016: polySurface6
+    400018: polySurface7
+    400020: polySurface8
+    400022: polySurface9
+    400024: transform1
+    400026: transform2
+    400028: transform3
+    400030: transform4
+    400032: transform5
     2100000: lambert1
-    4300000: polySurface12
-    7400000: Walking
+    2300000: polySurface1
+    2300002: polySurface10
+    2300004: polySurface4
+    2300006: polySurface5
+    2300008: polySurface7
+    2300010: polySurface9
+    3300000: polySurface1
+    3300002: polySurface10
+    3300004: polySurface4
+    3300006: polySurface5
+    3300008: polySurface7
+    3300010: polySurface9
+    4300000: polySurface7
+    4300002: polySurface10
+    4300004: polySurface5
+    4300006: polySurface9
+    4300008: polySurface1
+    4300010: polySurface4
+    7400000: Take 001
     9500000: //RootNode
-    13700000: polySurface12
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -156,10 +87,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walking
+      name: Take 001
       takeName: Take 001
-      firstFrame: 1
-      lastFrame: 120
+      firstFrame: 2
+      lastFrame: 360
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -167,7 +98,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -186,7 +117,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 25
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -207,7 +138,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.25
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
