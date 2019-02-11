@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
         //calls function from PlayerFunctions script to Move
         pf.Move(velocity);
 
+        
         //Camera Movement
         float rotateX = Input.GetAxis("RightStickY");
         Vector3 rotation = new Vector3(0f, rotateX, 0f) * cameraSensitivity;
