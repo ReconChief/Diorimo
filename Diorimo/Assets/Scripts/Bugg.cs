@@ -2,22 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bugg : MonoBehaviour
+public class Bugg : Enemy
 {
-    public GameObject player;
+    
     public Vector3[] targets;
     public int point;
     Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        pc = player.GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (enemyHP <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+
         transform.position = Vector3.MoveTowards(transform.position, targets[point], 4.5f * Time.deltaTime);
         if (transform.position == targets[point])
             point++;

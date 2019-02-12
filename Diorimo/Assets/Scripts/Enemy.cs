@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private int enemyHP = 5;
+    public int enemyHP = 5;
     public GameObject player;
     public PlayerController pc;
-
+    public GameObject splat;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -47,8 +47,13 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
+            Instantiate(splat, transform);
             --enemyHP;
             Destroy(other.gameObject);
         }
     }
+    
+       
+
+    
 }

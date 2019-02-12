@@ -29,12 +29,15 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     public int currentBeam = 0;
-
+    public GameObject body;
+    public GameObject otherCam;
     private PlayerFunctions pf;
+    private Rigidbody rb;
 
     void Start()
     {
         pf = GetComponent<PlayerFunctions>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -79,15 +82,23 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("XButton") && !ballForm && morphBall)
         {
             ballForm = true;
-
+            body.SetActive(false);
+            otherCam.SetActive(true);
             //turn off Omi model and turn on ball model
         }
 
         else if (Input.GetButtonDown("XButton") && ballForm && isGrounded && morphBall)
         {
             ballForm = false;
-
+            gameObject.transform.Translate(0, 1, 0);
+            body.SetActive(true);
+            otherCam.SetActive(false);
             //turn on Omi model and turn off ball model
+        }
+       
+        if (Input.GetButtonDown("RightBumper"))
+        {
+           
         }
 
 
@@ -126,7 +137,9 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetAxis("LeftTrigger") == 1 && missilePickedUp && fireMissile && !ballForm && missiles > 0)
         {
+            Vector3 jerk=new Vector3(0,0,1);
             missiles--;
+            rb.AddForce(jerk, ForceMode.Impulse);
             fireMissile = false;
             pf.FireMissile();
         }
