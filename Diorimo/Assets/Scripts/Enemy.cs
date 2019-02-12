@@ -51,6 +51,13 @@ public class Enemy : MonoBehaviour
             --enemyHP;
             Destroy(other.gameObject);
         }
+
+        if (other.gameObject.CompareTag("Missile"))
+        {
+            Instantiate(splat, transform);
+            enemyHP-= 2;
+            Destroy(other.gameObject);
+        }
     }
     
        
