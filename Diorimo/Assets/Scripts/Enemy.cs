@@ -58,9 +58,5 @@ public class Enemy : MonoBehaviour
             enemyHP-= 2;
             Destroy(other.gameObject);
         }
-    }
-    
-       
-
-    
+    }    
 }
