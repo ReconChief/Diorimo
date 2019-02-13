@@ -23,12 +23,25 @@ public class Bugg : Enemy
         {
             Destroy(this.gameObject);
         }
+        if (Vector3.Distance(transform.position, pc.transform.position) > 10)
+            Patrol();
+        else
+            Attack();
+       
+    }
 
+    void Patrol() {
         transform.position = Vector3.MoveTowards(transform.position, targets[point], 4.5f * Time.deltaTime);
         if (transform.position == targets[point])
             point++;
         if (point == targets.Length)
             point = 0;
+        Vector3 targetDirection = targets[point] - transform.position;
+        transform.rotation = Quaternion.LookRotation(targetDirection);
+
+    }
+    void Attack() {
+        transform.position = Vector3.MoveTowards(transform.position, pc.transform.position, 4.5f * Time.deltaTime);
         Vector3 targetDirection = targets[point] - transform.position;
         transform.rotation = Quaternion.LookRotation(targetDirection);
     }
