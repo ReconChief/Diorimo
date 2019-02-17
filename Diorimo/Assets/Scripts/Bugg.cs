@@ -42,7 +42,7 @@ public class Bugg : Enemy
     }
     void Attack() {
         transform.position = Vector3.MoveTowards(transform.position, pc.transform.position, 4.5f * Time.deltaTime);
-        Vector3 targetDirection = targets[point] - transform.position;
+        Vector3 targetDirection = pc.transform.position - transform.position;
         transform.rotation = Quaternion.LookRotation(targetDirection);
     }
 }

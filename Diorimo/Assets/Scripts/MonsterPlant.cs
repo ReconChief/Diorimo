@@ -27,7 +27,7 @@ public class MonsterPlant : Enemy
             Attack();
     }
     void Attack() {
-        Vector3 adjust = new Vector3(0, 2, 0);
+        Vector3 adjust = new Vector3(0, 0.5f, 0);
         Vector3 targetDirection = pc.transform.position- transform.position-adjust;
         transform.rotation = Quaternion.LookRotation(targetDirection);
         GameObject EBullet=Instantiate(EnemyBullet, new Vector3(BulletPoint.transform.position.x, BulletPoint.transform.position.y, BulletPoint.transform.position.z),Quaternion.identity);
