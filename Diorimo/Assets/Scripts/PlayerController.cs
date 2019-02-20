@@ -61,10 +61,13 @@ public class PlayerController : MonoBehaviour
 
         pf.Rotate(rotation);
 
-        float rotateY = Input.GetAxis("RightStickX");
-        Vector3 cameraRotation = new Vector3(rotateY, 0f, 0f) * cameraSensitivity;
+        if (!ballForm)
+        {
+            float rotateY = Input.GetAxis("RightStickX");
+            Vector3 cameraRotation = new Vector3(rotateY, 0f, 0f) * cameraSensitivity;
 
-        pf.RotateCamera(cameraRotation);
+            pf.RotateCamera(cameraRotation);
+        }
 
         //Jump
         if (Input.GetButtonDown("AButton") && isGrounded)
