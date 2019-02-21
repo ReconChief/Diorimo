@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject respawnPoint;
-    public GameObject player;
+    private GameObject respawnPoint;
+    private GameObject player;
     private PlayerController pc;
 
     // Start is called before the first frame update

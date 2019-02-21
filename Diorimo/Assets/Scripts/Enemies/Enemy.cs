@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public int randomizer = 0;
     public int enemyHP = 5;
+
+    public GameObject[] regenerateHPItems = new GameObject [2];
+    public GameObject regenerateMissileItem;
+
     public GameObject player;
-    public PlayerController pc;
+    private PlayerController pc;
     public GameObject splat;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -18,6 +24,29 @@ public class Enemy : MonoBehaviour
     {
         if (enemyHP <= 0)
         {
+            if (pc.hp <= pc.maxCapHp)
+            {
+                randomizer = Random.Range(0, 14);
+
+                if (randomizer == 0 || randomizer == 1 || randomizer == 2)
+                {
+                    //Small Health Packs
+                    GameObject healthpack = (GameObject)Instantiate(regenerateHPItems[0], this.transform.position, this.transform.rotation);
+                }
+
+                else if (randomizer == 6 || randomizer == 7)
+                {
+                    //Medium Health Packs
+                    GameObject healthpack = (GameObject)Instantiate(regenerateHPItems[1], this.transform.position, this.transform.rotation);
+                }
+
+                else if (randomizer == 11)
+                {
+                    //Large Health Packs
+                    GameObject healthpack = (GameObject)Instantiate(regenerateHPItems[2], this.transform.position, this.transform.rotation);\
+                }
+            }
+
             Destroy(this.gameObject);
         }
     }

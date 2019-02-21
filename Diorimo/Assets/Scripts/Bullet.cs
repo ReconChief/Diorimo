@@ -16,9 +16,14 @@ public class Bullet : MonoBehaviour
     {
         
     }
+
     public void OnTriggerEnter(Collider collision)
-    {if (!collision.gameObject.CompareTag("Enemy")) { 
-        Instantiate(splat, transform);
-        Destroy(gameObject);}
+    {
+        if (!collision.gameObject.CompareTag("Enemy"))
+        {
+            Instantiate(splat, transform);
+        }
+
+        Destroy(gameObject);
     }
 }

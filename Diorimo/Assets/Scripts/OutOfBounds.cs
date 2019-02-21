@@ -13,6 +13,9 @@ public class OutOfBounds : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        gc.RespawnPlayer();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            gc.RespawnPlayer();
+        }
     }
 }
