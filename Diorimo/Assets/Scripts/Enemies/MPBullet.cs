@@ -30,12 +30,8 @@ public class MPBullet : MonoBehaviour
             else
             {
                 pc.hp -= 13;
-            }
-           
-        }
-       
+            }           
+        }       
             Destroy(this.gameObject);
-
-
     }
 }

@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int randomizer = 0;
+    private int randomizer = 0;
     public int enemyHP = 5;
 
-    public GameObject[] regenerateHPItems = new GameObject [2];
+    public GameObject[] regenerateHPItems = new GameObject [3];
     public GameObject regenerateMissileItem;
+    public Vector3 fixPosition = new Vector3(0, 0.4f, 0);
 
     public GameObject player;
-    private PlayerController pc;
+    public PlayerController pc;
     public GameObject splat;
 
     void Start()
@@ -24,26 +25,69 @@ public class Enemy : MonoBehaviour
     {
         if (enemyHP <= 0)
         {
-            if (pc.hp <= pc.maxCapHp)
+            //Regenerate if HP and Missiles are lower than max
+            if (pc.hp < pc.maxCapHp && pc.missiles < pc.maxMissiles)
             {
                 randomizer = Random.Range(0, 14);
 
                 if (randomizer == 0 || randomizer == 1 || randomizer == 2)
                 {
-                    //Small Health Packs
-                    GameObject healthpack = (GameObject)Instantiate(regenerateHPItems[0], this.transform.position, this.transform.rotation);
+                    //Small Health Pack
+                    GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[0],this.transform.position + fixPosition, this.transform.rotation);
                 }
 
                 else if (randomizer == 6 || randomizer == 7)
                 {
-                    //Medium Health Packs
-                    GameObject healthpack = (GameObject)Instantiate(regenerateHPItems[1], this.transform.position, this.transform.rotation);
+                    //Medium Health Pack
+                    GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[1], this.transform.position + fixPosition, this.transform.rotation);
                 }
 
                 else if (randomizer == 11)
                 {
-                    //Large Health Packs
-                    GameObject healthpack = (GameObject)Instantiate(regenerateHPItems[2], this.transform.position, this.transform.rotation);\
+                    //Large Health Pack
+                    GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[2], this.transform.position + fixPosition, this.transform.rotation);
+                }
+
+                else if (randomizer == 14)
+                {
+                    //Missile Pack
+                    GameObject missilePack = (GameObject)Instantiate(regenerateMissileItem, this.transform.position + fixPosition, this.transform.rotation);
+                }
+            }
+
+            //Regenerate if HP is lower than max
+            if (pc.hp < pc.maxCapHp)
+            {
+                randomizer = Random.Range(0, 14);
+
+                if (randomizer == 0 || randomizer == 1 || randomizer == 2)
+                {
+                    //Small Health Pack
+                    GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[0], this.transform.position + fixPosition, this.transform.rotation);
+                }
+
+                else if (randomizer == 6 || randomizer == 7)
+                {
+                    //Medium Health Pack
+                    GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[1], this.transform.position + fixPosition, this.transform.rotation);
+                }
+
+                else if (randomizer == 11)
+                {
+                    //Large Health Pack
+                    GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[2], this.transform.position + fixPosition, this.transform.rotation);
+                }
+            }
+
+            //Regenerate if Missles is lower than max
+            if (pc.missiles < pc.maxMissiles)
+            {
+                randomizer = Random.Range(0, 2);
+                
+                if (randomizer == 1)
+                {
+                    //Missile Pack
+                    GameObject missilePack = (GameObject)Instantiate(regenerateMissileItem, this.transform.position + fixPosition, this.transform.rotation);
                 }
             }
 

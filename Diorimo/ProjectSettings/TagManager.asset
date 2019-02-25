@@ -9,6 +9,10 @@ TagManager:
   - Enemy
   - Missile
   - EnemyBullet
+  - RegenSmall
+  - RegenMedium
+  - RegenLarge
+  - RegenMissile
   layers:
   - Default
   - TransparentFX

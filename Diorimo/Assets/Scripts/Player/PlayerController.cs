@@ -98,12 +98,6 @@ public class PlayerController : MonoBehaviour
             otherCam.SetActive(false);
             //turn on Omi model and turn off ball model
         }
-       
-        if (Input.GetButtonDown("RightBumper"))
-        {
-           
-        }
-
 
         // Beam Selections
         if (Input.GetAxis("UpandDownDPad") == 1 && !ballForm)
