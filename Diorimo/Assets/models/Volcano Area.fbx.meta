@@ -717,7 +717,57 @@ ModelImporter:
     6400222: Volcano_Platform
     6400224: Volcano_Wall
     6400226: Wall_To_Block_Outside
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface13
+    second: {fileID: 2100000, guid: 5ebb16bc9347be349b4037e29bdc7d05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface14
+    second: {fileID: 2100000, guid: 5e992f2be69ac8d41a6bd46557de64b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface30
+    second: {fileID: 2100000, guid: 988759ebce17aed4badd21b5717940e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface46
+    second: {fileID: 2100000, guid: 4d48695291afb0b4cae094346ba0ef8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface47
+    second: {fileID: 2100000, guid: aea7a921cec6dca4ab34245ccd5198e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface48
+    second: {fileID: 2100000, guid: 7b7b201ad11e7784999c3725406ff402, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface49
+    second: {fileID: 2100000, guid: a7246068653a5c143a32a9e56058e32b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface50
+    second: {fileID: 2100000, guid: 52263b5781d78d641a68bd2951493411, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface7
+    second: {fileID: 2100000, guid: c497a3ce9a0f83845be4e77a72fa47cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface9
+    second: {fileID: 2100000, guid: cec0f24651a715b4e92732a874a7671b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
