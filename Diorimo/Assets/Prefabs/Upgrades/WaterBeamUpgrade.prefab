@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7919253996707565706}
   - component: {fileID: 7919253996707565707}
   m_Layer: 0
-  m_Name: IceBeamUpgrade
+  m_Name: WaterBeamUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
