@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WaterEffect : MonoBehaviour
 {
-    private int enemyHP = 5;
     private GameObject player;
     private PlayerController pc;
     private WaterEffect water;
@@ -22,12 +21,12 @@ public class WaterEffect : MonoBehaviour
     {
         if (!pc.gravtiySuit)
         {
-            pc.playerSpeed = 2;
+            pc.playerSpeed = 3f;
         }
 
         else
         {
-            pc.playerSpeed = 5;
+            pc.playerSpeed = 4.5f;
         }
     }
 
@@ -43,6 +42,6 @@ public class WaterEffect : MonoBehaviour
     {
         water.enabled = false;
 
-        pc.playerSpeed = 5;
+        pc.playerSpeed = 4.5f;
     }
 }

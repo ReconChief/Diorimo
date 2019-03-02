@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerFunctions))]
 public class PlayerController : MonoBehaviour
 {
-    public float playerSpeed = 5f;
+    public float playerSpeed = 4.5f;
     private float cameraSensitivity = 3f;
     private bool isGrounded;
     private bool fire = true;
@@ -26,11 +26,13 @@ public class PlayerController : MonoBehaviour
     public bool morphBall = false;
     public bool gravtiySuit = false;
     public bool tempSuit = false;
+    public bool light = false;
     #endregion
 
     public int currentBeam = 0;
     public GameObject body;
     public GameObject otherCam;
+    public GameObject flashLight;
     private PlayerFunctions pf;
     private Rigidbody rb;
 
@@ -49,7 +51,7 @@ public class PlayerController : MonoBehaviour
         Vector3 moveHorizontal = transform.right * moveX;
         Vector3 moveVertical = transform.forward * -moveZ;
 
-        Vector3 velocity = (moveHorizontal + moveVertical).normalized * playerSpeed;
+        Vector3 velocity = (moveHorizontal + moveVertical) * playerSpeed;
 
         //calls function from PlayerFunctions script to Move
         pf.Move(velocity);
@@ -87,7 +89,6 @@ public class PlayerController : MonoBehaviour
             ballForm = true;
             body.SetActive(false);
             otherCam.SetActive(true);
-            //turn off Omi model and turn on ball model
         }
 
         else if (Input.GetButtonDown("XButton") && ballForm && isGrounded && morphBall)
@@ -96,7 +97,19 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.Translate(0, 1, 0);
             body.SetActive(true);
             otherCam.SetActive(false);
-            //turn on Omi model and turn off ball model
+        }
+
+        //Flash Light
+        if (Input.GetButtonDown("YButton") && !ballForm && !light)
+        {
+            flashLight.SetActive(true);
+            light = true;
+        }
+
+        else if (Input.GetButtonDown("YButton") && !ballForm && light)
+        {
+            flashLight.SetActive(false);
+            light = false;
         }
 
         // Beam Selections
