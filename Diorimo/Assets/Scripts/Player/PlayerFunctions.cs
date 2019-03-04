@@ -8,6 +8,9 @@ public class PlayerFunctions : MonoBehaviour
     [SerializeField]
     private Camera playerCam;
 
+    public GameObject player;
+    public PlayerController pc;
+
     public GameObject missile;
     public GameObject[] beamObjects;
     public Transform beamSpawn;
@@ -24,6 +27,8 @@ public class PlayerFunctions : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        pc = player.GetComponent<PlayerController>();
     }
 
     public void Move(Vector3 velocity)
@@ -49,7 +54,7 @@ public class PlayerFunctions : MonoBehaviour
 
     void PerformMovement()
     {
-        if (velocity != Vector3.zero)
+        if (velocity != Vector3.zero && !pc.hardened)
         {
             rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
         }

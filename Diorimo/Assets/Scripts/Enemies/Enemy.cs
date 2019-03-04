@@ -99,7 +99,12 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (pc.tempSuit)
+            if (pc.hardened)
+            {
+                pc.hp -= 0;
+            }
+
+            else if (pc.tempSuit)
             {
                 if (pc.gravtiySuit)
                 {
