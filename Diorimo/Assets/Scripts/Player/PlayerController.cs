@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public bool ballForm = false;
 
     public int transformation = 1;
-    private bool transformed= false;
+    public bool transformed= false;
     public bool hardened = false;
 
     public int hp = 99;
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     public bool higherJump = false;
     public bool missilePickedUp = false;
     public bool morphBall = false;
-    public bool gravtiySuit = false;
+    public bool gravitySuit = false;
     public bool tempSuit = false;
     public bool light = false;
     #endregion
@@ -86,12 +86,20 @@ public class PlayerController : MonoBehaviour
         //Jump
         if (Input.GetButtonDown("AButton") && isGrounded)
         {
-            isGrounded = false;
-            pf.Jump();
-
-            if (Input.GetButtonDown("AButton") && higherJump)
+            if (transformed)
             {
+
+            }
+
+            else
+            {
+                isGrounded = false;
                 pf.Jump();
+
+                if (Input.GetButtonDown("AButton") && higherJump)
+                {
+                    pf.Jump();
+                }
             }
         }
         
@@ -151,12 +159,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxis("RightTrigger") >= 0.8 && fire && !ballForm && !transformed)
         {
             fire = false;
+            hardened = false;
             pf.Fire(currentBeam);
         }
 
         else if (Input.GetAxis("RightTrigger") <= 0.3 && !fire && !ballForm && !transformed)
         {
             fire = true;
+            hardened = false;
         }
 
         //Charger Ability
@@ -166,13 +176,17 @@ public class PlayerController : MonoBehaviour
         }
 
         //Pogo Ability
-        else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 2)
+        else if (Input.GetButtonUp("AButton") && isGrounded && !ballForm && transformed && transformation == 2)
         {
             isGrounded = false;
             pf.Jump();
             pf.Jump();
-            pf.Jump();
-            pf.Jump();
+
+            if (higherJump)
+            {
+                pf.Jump();
+                pf.Jump();
+            }
         }
 
         //Turtle Ability
@@ -230,6 +244,7 @@ public class PlayerController : MonoBehaviour
         //Transformation Code: Turtle
         else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 3)
         {
+            playerSpeed = 2;
             transformed = true;
             body.SetActive(false);
             playerModel.SetActive(false);
@@ -241,6 +256,8 @@ public class PlayerController : MonoBehaviour
         //Transform Back
         else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && transformed)
         {
+            playerSpeed = 4.5f;
+
             transformed = false;
 
             gameObject.transform.Translate(0, 1, 0);

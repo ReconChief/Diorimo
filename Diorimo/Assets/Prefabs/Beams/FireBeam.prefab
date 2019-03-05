@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8669156879215030512}
   m_Layer: 0
   m_Name: FireBeam
-  m_TagString: Bullet
+  m_TagString: FireBeam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

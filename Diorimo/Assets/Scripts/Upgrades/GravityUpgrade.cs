@@ -17,7 +17,7 @@ public class GravityUpgrade : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            pc.gravtiySuit = true;
+            pc.gravitySuit = true;
 
             Destroy(this.gameObject);
         }

@@ -17,14 +17,14 @@ public class MPBullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (pc.hardened)
+            if (pc.hardened != null && pc.hardened)
             {
                 pc.hp -= 0;
             }
 
-            else if (pc.tempSuit)
+            else if (pc.tempSuit != null && pc.tempSuit)
             {
-                if (pc.gravtiySuit)
+                if (pc.gravitySuit != null && pc.gravitySuit)
                 {
                     pc.hp -= 5;
                 }

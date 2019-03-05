@@ -99,14 +99,20 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (pc.hardened)
+            if (pc.transformed != null && pc.transformed && pc.transformation == 1)
+            {
+                pc.hp -= 5;
+                enemyHP -= 4;
+            }
+
+            else if (pc.hardened != null && pc.hardened)
             {
                 pc.hp -= 0;
             }
 
-            else if (pc.tempSuit)
+            else if (pc.tempSuit != null && pc.tempSuit)
             {
-                if (pc.gravtiySuit)
+                if (pc.gravitySuit != null && pc.gravitySuit)
                 {
                     pc.hp -= 4;
                 }
@@ -123,7 +129,7 @@ public class Enemy : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Bullet"))
+        if (other.gameObject.CompareTag("Bullet") || other.gameObject.CompareTag("ElectricBeam") || other.gameObject.CompareTag("WaterBeam") || other.gameObject.CompareTag("FireBeam"))
         {
             Instantiate(splat, transform);
             --enemyHP;
@@ -133,7 +139,7 @@ public class Enemy : MonoBehaviour
         if (other.gameObject.CompareTag("Missile"))
         {
             Instantiate(splat, transform);
-            enemyHP-= 2;
+            enemyHP-= 3;
             Destroy(other.gameObject);
         }
     }    

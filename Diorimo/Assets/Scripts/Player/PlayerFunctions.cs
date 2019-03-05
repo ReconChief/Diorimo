@@ -72,7 +72,7 @@ public class PlayerFunctions : MonoBehaviour
 
     public void Jump()
     {
-        rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+        rb.AddForce(jump * jumpForce, ForceMode.Impulse);           
     }
 
     public void Fire(int currentBeam)

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7037894871699562435}
   m_Layer: 0
   m_Name: IceBeam
-  m_TagString: Bullet
+  m_TagString: WaterBeam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
