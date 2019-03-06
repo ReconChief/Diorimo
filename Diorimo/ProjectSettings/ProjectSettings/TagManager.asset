@@ -13,9 +13,6 @@ TagManager:
   - RegenMedium
   - RegenLarge
   - RegenMissile
-  - FireBeam
-  - WaterBeam
-  - ElectricBeam
   layers:
   - Default
   - TransparentFX
