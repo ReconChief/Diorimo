@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public float playerSpeed = 4.5f;
     private float cameraSensitivity = 3f;
+    private float xAxisClamp;
     private bool isGrounded;
     private bool fire = true;
     private bool fireMissile = true;
@@ -54,11 +55,14 @@ public class PlayerController : MonoBehaviour
     public bool walking=false;
     public bool pressed=false;
     public bool released=false;
+
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         pf = GetComponent<PlayerFunctions>();
         rb = GetComponent<Rigidbody>();
+
+        xAxisClamp = 0.0f;
     }
 
     void Update()
@@ -83,23 +87,15 @@ public class PlayerController : MonoBehaviour
             walking = true;
         else
             walking = false;
+
         //calls function from PlayerFunctions script to Move
         pf.Move(velocity);
         
-
         //Camera Movement
         float rotateX = Input.GetAxis("RightStickY");
         Vector3 rotation = new Vector3(0f, rotateX, 0f) * cameraSensitivity;
 
         pf.Rotate(rotation);
-
-        if (!ballForm && !transformed)
-        {
-            float rotateY = Input.GetAxis("RightStickX");
-            Vector3 cameraRotation = new Vector3(rotateY, 0f, 0f) * cameraSensitivity;
-
-            pf.RotateCamera(cameraRotation);
-        }
 
         //Jump
         if (Input.GetButtonDown("AButton") && isGrounded)
@@ -236,7 +232,6 @@ public class PlayerController : MonoBehaviour
         {
             fireMissile = true;
         }
-
 
         //Transfomation Modes
 
