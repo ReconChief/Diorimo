@@ -49,14 +49,25 @@ public class PlayerController : MonoBehaviour
     private PlayerFunctions pf;
     private Rigidbody rb;
 
+    //Animation shit
+    private Animator anim;
+    public bool walking=false;
+    public bool pressed=false;
+    public bool released=false;
     void Start()
     {
+        anim = gameObject.GetComponent<Animator>();
         pf = GetComponent<PlayerFunctions>();
         rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
+        //More Animator shit
+        anim.SetBool("PogoActive", transformation == 2&&transformed);
+        //anim.SetBool("IsMoving", walking);
+        
+            
         float moveX = Input.GetAxis("LeftStickX");
         float moveZ = Input.GetAxis("LeftStickY");
 
@@ -66,8 +77,15 @@ public class PlayerController : MonoBehaviour
 
         Vector3 velocity = (moveHorizontal + moveVertical) * playerSpeed;
 
+        //pogo movement
+
+        if (velocity != Vector3.zero && isGrounded)
+            walking = true;
+        else
+            walking = false;
         //calls function from PlayerFunctions script to Move
         pf.Move(velocity);
+        
 
         //Camera Movement
         float rotateX = Input.GetAxis("RightStickY");
@@ -88,7 +106,7 @@ public class PlayerController : MonoBehaviour
         {
             if (transformed)
             {
-
+                pressed = true;
             }
 
             else
@@ -178,6 +196,9 @@ public class PlayerController : MonoBehaviour
         //Pogo Ability
         else if (Input.GetButtonUp("AButton") && isGrounded && !ballForm && transformed && transformation == 2)
         {
+            
+            released=true;
+            pressed = false;
             isGrounded = false;
             pf.Jump();
             pf.Jump();
@@ -239,6 +260,9 @@ public class PlayerController : MonoBehaviour
 
             otherCam.SetActive(true);
             transformationLava.SetActive(true);
+            transformationLava.GetComponent<Animator>().enabled = true; 
+           
+
         }
 
         //Transformation Code: Turtle

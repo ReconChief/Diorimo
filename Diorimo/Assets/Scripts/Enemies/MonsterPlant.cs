@@ -8,9 +8,13 @@ public class MonsterPlant : Enemy
     public GameObject EnemyBullet;
     public GameObject BulletPoint;
     private int timer;
+    private Animator anim;
+    public bool isDead=false;
+    public bool isAttacking = false;
     // Start is called before the first frame update
     void Start()
     {
+        anim = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         pc = player.GetComponent<PlayerController>();
     }
@@ -18,15 +22,27 @@ public class MonsterPlant : Enemy
     // Update is called once per frame
     void Update()
     {
+       
+       
         if (enemyHP <= 0)
-        {
-            Destroy(this.gameObject);
+        {anim.SetBool("IsDead", true);
+            isDead = true;
+            //Animation Dying = gameObject.GetComponent<Animation>();
+            //Destroy(this.gameObject,Dying.clip.length);
         }
         timer--;
-        if (Vector3.Distance(transform.position, pc.transform.position) < 50&&timer<=0)
+
+        if (Vector3.Distance(transform.position, pc.transform.position) < 10f && timer <= 0 && !isDead)
+        {
             Attack();
+            //isAttacking = false;
+        }
+        if (Vector3.Distance(transform.position, pc.transform.position) > 10f && timer <= 0 && !isDead)
+            anim.SetBool("IsAttacking", false);
+
     }
     void Attack() {
+        anim.SetBool("IsAttacking",true);
         Vector3 adjust = new Vector3(0, 0.5f, 0);
         Vector3 targetDirection = pc.transform.position- transform.position-adjust;
         transform.rotation = Quaternion.LookRotation(targetDirection);
