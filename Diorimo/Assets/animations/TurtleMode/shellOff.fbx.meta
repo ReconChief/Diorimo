@@ -38,7 +38,12 @@ ModelImporter:
     7400000: shellOff
     9500000: //RootNode
     13700000: pCube1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pCubeShape1_color
+    second: {fileID: 2800000, guid: 055f4ccac78f4664fb5941e23fbed316, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -69,7 +74,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 12
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

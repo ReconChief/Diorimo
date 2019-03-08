@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 7807902713284922666}
   m_Layer: 0
   m_Name: enemyBullet
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5323996498418241853
 Transform:
@@ -45,8 +45,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.17473185
+  m_Center: {x: 0, y: 0.0035705566, z: -0.0007597208}
 --- !u!54 &4447668153858698933
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -87,6 +87,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 93c7315b55cb76748b0bea274f937c2f, type: 3}
       propertyPath: m_Name
       value: mpSeedBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93c7315b55cb76748b0bea274f937c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93c7315b55cb76748b0bea274f937c2f, type: 3}
       propertyPath: m_LocalPosition.x

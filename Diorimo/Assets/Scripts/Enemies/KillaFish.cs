@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bugg : Enemy
+public class KillaFish : Enemy
 {
 
     public Vector3[] targets;

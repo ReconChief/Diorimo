@@ -36,7 +36,16 @@ public class MPBullet : MonoBehaviour
             {
                 pc.hp -= 13;
             }           
-        }       
+        }
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+        }
+        else { 
+            Destroy(this.gameObject);}
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
             Destroy(this.gameObject);
+        }
+        
     }
 }

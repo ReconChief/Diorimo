@@ -175,6 +175,9 @@ public class PlayerController : MonoBehaviour
             fire = false;
             hardened = false;
             pf.Fire(currentBeam);
+            Vector3 jerk = new Vector3(0, 0, -1);
+            
+            rb.AddForce(jerk, ForceMode.Impulse);
         }
 
         else if (Input.GetAxis("RightTrigger") <= 0.3 && !fire && !ballForm && !transformed)
@@ -209,19 +212,22 @@ public class PlayerController : MonoBehaviour
         //Turtle Ability
         else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 3)
         {
+            
+            
             hardened = true;
         }
 
         else if (Input.GetAxis("RightTrigger") <= 0.8 && isGrounded && !ballForm && transformed && transformation == 3)
         {
             hardened = false;
+            
         }
 
         //Firing Missile
 
         if (Input.GetAxis("LeftTrigger") == 1 && missilePickedUp && fireMissile && !ballForm && missiles > 0 && !transformed)
         {
-            Vector3 jerk=new Vector3(0,0,1);
+            Vector3 jerk=new Vector3(0,0,-1);
             missiles--;
             rb.AddForce(jerk, ForceMode.Impulse);
             fireMissile = false;
@@ -270,6 +276,7 @@ public class PlayerController : MonoBehaviour
 
             otherCam.SetActive(true);
             transformationWater.SetActive(true);
+            transformationWater.GetComponent<Animator>().enabled = true;
         }
 
         //Transform Back

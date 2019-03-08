@@ -99,7 +99,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (pc.transformed != null && pc.transformed && pc.transformation == 1)
+            if ( pc.transformed && pc.transformation == 1)
             {
                 pc.hp -= 5;
                 enemyHP -= 4;

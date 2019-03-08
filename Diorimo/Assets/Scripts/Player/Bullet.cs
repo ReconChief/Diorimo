@@ -23,6 +23,10 @@ public class Bullet : MonoBehaviour
         {
             Instantiate(splat, transform);
         }
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            Destroy(collision.gameObject);
+        }
 
         Destroy(gameObject);
     }

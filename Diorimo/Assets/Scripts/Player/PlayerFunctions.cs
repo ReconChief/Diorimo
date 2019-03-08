@@ -16,7 +16,7 @@ public class PlayerFunctions : MonoBehaviour
     public Transform beamSpawn;
 
     private Vector3 velocity = Vector3.zero;
-    private Vector3 rotation = Vector3.zero;
+    public Vector3 rotation = Vector3.zero;
     private Vector3 cameraRotation = Vector3.zero;
 
     public Vector3 jump = new Vector3(0.0f, 2.0f, 0.0f);

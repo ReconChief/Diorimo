@@ -7,6 +7,7 @@ public class MonsterPlant : Enemy
    
     public GameObject EnemyBullet;
     public GameObject BulletPoint;
+    public GameObject target;
     private int timer;
     private Animator anim;
     public bool isDead=false;
@@ -27,6 +28,7 @@ public class MonsterPlant : Enemy
         if (enemyHP <= 0)
         {anim.SetBool("IsDead", true);
             isDead = true;
+            Destroy(gameObject, 3);
             //Animation Dying = gameObject.GetComponent<Animation>();
             //Destroy(this.gameObject,Dying.clip.length);
         }
@@ -43,12 +45,12 @@ public class MonsterPlant : Enemy
     }
     void Attack() {
         anim.SetBool("IsAttacking",true);
-        Vector3 adjust = new Vector3(0, 0.5f, 0);
+        Vector3 adjust = new Vector3(0, 1.5f, 0);
         Vector3 targetDirection = pc.transform.position- transform.position-adjust;
         transform.rotation = Quaternion.LookRotation(targetDirection);
         GameObject EBullet=Instantiate(EnemyBullet, new Vector3(BulletPoint.transform.position.x, BulletPoint.transform.position.y, BulletPoint.transform.position.z),Quaternion.identity);
         EBullet.GetComponent<Rigidbody>().velocity = transform.forward * 20.5f;
-        Destroy(EBullet, 1);
+        Destroy(EBullet, 3);
         timer = 120;
     }
 }

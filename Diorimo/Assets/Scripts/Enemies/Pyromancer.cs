@@ -10,7 +10,9 @@ public class Pyromancer : Enemy
     Animator animator;
     public GameObject EnemyBullet;
     public GameObject BulletPoint;
-    private int timer;
+    public GameObject target;
+    private double timer;
+    private bool isDead;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,19 +28,31 @@ public class Pyromancer : Enemy
         if (enemyHP <= 0)
         {
             animator.SetBool("IsDead", true);
+            isDead = true;
+            Destroy(gameObject,1);
         }
-        if (Vector3.Distance(transform.position, pc.transform.position) > 10&& timer <= 0 )
+        if (Vector3.Distance(transform.position, pc.transform.position) > 20&&!isDead)
+        {
             Patrol();
-        else
+
+        }
+
+        else if (timer<=0&&!isDead)
+        {
+            animator.SetBool("Aiming", true);
+
             Attack();
+        }
+       
+
 
     }
 
     void Patrol()
     {
         animator.SetBool("IsAttacking", false);
-
-        transform.position = Vector3.MoveTowards(transform.position, targets[point], 4.5f * Time.deltaTime);
+        animator.SetBool("Aiming", false);
+        transform.position = Vector3.MoveTowards(transform.position, targets[point], 1.5f * Time.deltaTime);
         if (transform.position == targets[point])
             point++;
         if (point == targets.Length)
@@ -49,13 +63,15 @@ public class Pyromancer : Enemy
     }
     void Attack()
     {
-        animator.SetBool("Aiming", true);
-        Vector3 adjust = new Vector3(0, 0.5f, 0);
-        Vector3 targetDirection = pc.transform.position - transform.position - adjust;
+        animator.SetBool("IsAttacking", true);
+
+
+        Vector3 adjust = new Vector3(1.5f, 0,0 );
+        Vector3 targetDirection = target.transform.position - transform.position-adjust;
         transform.rotation = Quaternion.LookRotation(targetDirection);
         GameObject EBullet = Instantiate(EnemyBullet, new Vector3(BulletPoint.transform.position.x, BulletPoint.transform.position.y, BulletPoint.transform.position.z), Quaternion.identity);
-        EBullet.GetComponent<Rigidbody>().velocity = transform.forward * 20.5f;
+        EBullet.GetComponent<Rigidbody>().velocity = transform.forward * 10.5f;
         Destroy(EBullet, 3);
-        timer = 350;
+        timer = 55;
     }
 }
