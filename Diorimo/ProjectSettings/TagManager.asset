@@ -16,6 +16,7 @@ TagManager:
   - FireBeam
   - WaterBeam
   - ElectricBeam
+  - Water
   layers:
   - Default
   - TransparentFX

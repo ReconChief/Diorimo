@@ -19,15 +19,19 @@ public class Bullet : MonoBehaviour
 
     public void OnTriggerEnter(Collider collision)
     {
-        if (!collision.gameObject.CompareTag("Enemy"))
+        if (!collision.gameObject.CompareTag("Water"))
         {
-            Instantiate(splat, transform);
-        }
-        if (collision.gameObject.CompareTag("EnemyBullet"))
-        {
-            Destroy(collision.gameObject);
-        }
+            if (!collision.gameObject.CompareTag("Enemy"))
+            {
+                Instantiate(splat, transform);
+            }
 
-        Destroy(gameObject);
+            if (collision.gameObject.CompareTag("EnemyBullet"))
+            {
+                Destroy(collision.gameObject);
+            }
+
+            Destroy(gameObject);
+        }
     }
 }
