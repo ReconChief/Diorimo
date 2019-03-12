@@ -1,15 +1,26 @@
 fileFormatVersion: 2
-guid: 8502eb77337aaca439ec51585301af5a
+guid: 46ec256fd463f1040bd853b6ffe85a6d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pSphere1
-    2186277476908879412: ImportLogs
+    100000: Seaweed 1
+    100002: Seaweed1
+    100004: Seaweed2
+    100006: //RootNode
+    400000: Seaweed 1
+    400002: Seaweed1
+    400004: Seaweed2
+    400006: //RootNode
+    2100000: aiStandardSurface1
+    2300000: Seaweed 1
+    2300002: Seaweed1
+    2300004: Seaweed2
+    3300000: Seaweed 1
+    3300002: Seaweed1
+    3300004: Seaweed2
+    4300000: Seaweed
+    4300002: Seaweed1
+    4300004: Seaweed2
   externalObjects: {}
   materials:
     importMaterials: 1

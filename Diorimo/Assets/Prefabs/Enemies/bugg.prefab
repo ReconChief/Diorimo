@@ -50,12 +50,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHP: 5
   regenerateHPItems:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  regenerateMissileItem: {fileID: 0}
+  - {fileID: 2439233715755988507, guid: 728d7995c5198da44925c4353059752d, type: 3}
+  - {fileID: 1619147830534342818, guid: a328a6e3d27a63944b4cdfb9f0627f72, type: 3}
+  - {fileID: 511138989474768403, guid: 12ec34b3d107cc146bc883585f2c9e71, type: 3}
+  regenerateMissileItem: {fileID: 3616177753720908406, guid: 0fc5fba3472fce34dbc309ae293fe857,
+    type: 3}
   fixPosition: {x: 0, y: 0.4, z: 0}
-  player: {fileID: 0}
+  player: {fileID: 3616177753720908406, guid: 0fc5fba3472fce34dbc309ae293fe857, type: 3}
   pc: {fileID: 0}
   splat: {fileID: 7275467792594512880, guid: db5d3b6f948d7134e8ff7f13cd8d61d7, type: 3}
   targets:

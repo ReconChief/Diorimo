@@ -1,15 +1,14 @@
 fileFormatVersion: 2
-guid: 8502eb77337aaca439ec51585301af5a
+guid: 1da95c13a229f7b4b8a4f84c3765d03c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: aiStandardSurface3
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pSphere1
-    2186277476908879412: ImportLogs
+    4300000: Coral
   externalObjects: {}
   materials:
     importMaterials: 1

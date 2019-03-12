@@ -120,6 +120,7 @@ public class PlayerController : MonoBehaviour
         //Ball Form
         if (Input.GetButtonDown("XButton") && !ballForm && morphBall)
         {
+            isGrounded = false;
             ballForm = true;
             body.SetActive(false);
             otherCam.SetActive(true);

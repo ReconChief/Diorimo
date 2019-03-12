@@ -1,15 +1,73 @@
 fileFormatVersion: 2
-guid: 8502eb77337aaca439ec51585301af5a
+guid: 750a06ca68bfe3c43a2f138491dbdd7b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pSphere1
-    2186277476908879412: ImportLogs
+    100000: Bar
+    100002: Bar1
+    100004: Bar2
+    100006: Bar3
+    100008: Body
+    100010: Circular_Frame
+    100012: Flame
+    100014: Inner_Flame
+    100016: Snowflake
+    100018: Snowflake_Part4
+    100020: Snowflake_Part5
+    100022: Snowflake_Part6
+    100024: //RootNode
+    400000: Bar
+    400002: Bar1
+    400004: Bar2
+    400006: Bar3
+    400008: Body
+    400010: Circular_Frame
+    400012: Flame
+    400014: Inner_Flame
+    400016: Snowflake
+    400018: Snowflake_Part4
+    400020: Snowflake_Part5
+    400022: Snowflake_Part6
+    400024: //RootNode
+    2100000: aiStandardSurface5
+    2100002: aiStandardSurface2
+    2100004: aiStandardSurface3
+    2100006: aiStandardSurface11
+    2100008: aiStandardSurface10
+    2100010: aiStandardSurface12
+    2300000: Bar
+    2300002: Bar1
+    2300004: Bar2
+    2300006: Bar3
+    2300008: Body
+    2300010: Circular_Frame
+    2300012: Flame
+    2300014: Inner_Flame
+    2300016: Snowflake_Part4
+    2300018: Snowflake_Part5
+    2300020: Snowflake_Part6
+    3300000: Bar
+    3300002: Bar1
+    3300004: Bar2
+    3300006: Bar3
+    3300008: Body
+    3300010: Circular_Frame
+    3300012: Flame
+    3300014: Inner_Flame
+    3300016: Snowflake_Part4
+    3300018: Snowflake_Part5
+    3300020: Snowflake_Part6
+    4300000: Bar
+    4300002: Bar1
+    4300004: Bar2
+    4300006: Circular_Frame
+    4300008: Body
+    4300010: Flame
+    4300012: Snowflake_Part6
+    4300014: Snowflake_Part5
+    4300016: Snowflake_Part4
+    4300018: Bar3
+    4300020: Inner_Flame
   externalObjects: {}
   materials:
     importMaterials: 1

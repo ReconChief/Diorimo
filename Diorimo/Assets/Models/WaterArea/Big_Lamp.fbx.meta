@@ -1,15 +1,34 @@
 fileFormatVersion: 2
-guid: 8502eb77337aaca439ec51585301af5a
+guid: 084d56aa4639d4543b81ccb067b805a8
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Lamp_Shade
+    100004: Light
+    100006: Pipe
+    100008: Stand
     400000: //RootNode
-    2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pSphere1
-    2186277476908879412: ImportLogs
+    400002: Lamp_Shade
+    400004: Light
+    400006: Pipe
+    400008: Stand
+    2100000: Rube_Goldberg_Animation_Full_aiStandardSurface70
+    2100002: Rube_Goldberg_Animation_Full_aiStandardSurface69
+    2100004: Rube_Goldberg_Animation_Full_aiStandardSurface68
+    2100006: Rube_Goldberg_Animation_Full_aiStandardSurface59
+    2300000: Lamp_Shade
+    2300002: Light
+    2300004: Pipe
+    2300006: Stand
+    3300000: Lamp_Shade
+    3300002: Light
+    3300004: Pipe
+    3300006: Stand
+    4300000: Light
+    4300002: Lamp_Shade
+    4300004: Pipe
+    4300006: Stand
   externalObjects: {}
   materials:
     importMaterials: 1

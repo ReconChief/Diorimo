@@ -1,15 +1,27 @@
 fileFormatVersion: 2
-guid: 8502eb77337aaca439ec51585301af5a
+guid: 75945e5d92d5aee4e8520bce6c162484
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: TV_Body
+    100004: TV_Screen
+    100006: TV_Stand
     400000: //RootNode
-    2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pSphere1
-    2186277476908879412: ImportLogs
+    400002: TV_Body
+    400004: TV_Screen
+    400006: TV_Stand
+    2100000: Rube_Goldberg_Animation_Full_aiStandardSurface99
+    2100002: Rube_Goldberg_Animation_Full_aiStandardSurface100
+    2300000: TV_Body
+    2300002: TV_Screen
+    2300004: TV_Stand
+    3300000: TV_Body
+    3300002: TV_Screen
+    3300004: TV_Stand
+    4300000: TV_Screen
+    4300002: TV_Body
+    4300004: TV_Stand
   externalObjects: {}
   materials:
     importMaterials: 1
