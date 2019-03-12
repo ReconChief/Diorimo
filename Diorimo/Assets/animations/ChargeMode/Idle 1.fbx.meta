@@ -1,59 +1,59 @@
 fileFormatVersion: 2
-guid: cadf19fbfba6d884f833f9979aaf4a5e
+guid: 17857502806c8544eb39ba50ea8f229b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Arm_cannon
     100002: head2
     100004: head4
-    100006: imagePlane1
-    100008: imagePlane2
-    100010: joint1
-    100012: L_ankle
-    100014: L_elbow
-    100016: L_hand
-    100018: L_knee
-    100020: L_leg
-    100022: L_shoulder
-    100024: neck
-    100026: persp1
-    100028: R_ankle
-    100030: R_knee
-    100032: R_leg
-    100034: R_shoulder
-    100036: skeleton
-    100038: spine1
-    100040: spine2
-    100042: transform2
-    100044: //RootNode
+    100006: //RootNode
+    100008: imagePlane1
+    100010: imagePlane2
+    100012: joint1
+    100014: L_ankle
+    100016: L_elbow
+    100018: L_hand
+    100020: L_knee
+    100022: L_leg
+    100024: L_shoulder
+    100026: neck
+    100028: persp1
+    100030: R_ankle
+    100032: R_knee
+    100034: R_leg
+    100036: R_shoulder
+    100038: skeleton
+    100040: spine1
+    100042: spine2
+    100044: transform2
     400000: Arm_cannon
     400002: head2
     400004: head4
-    400006: imagePlane1
-    400008: imagePlane2
-    400010: joint1
-    400012: L_ankle
-    400014: L_elbow
-    400016: L_hand
-    400018: L_knee
-    400020: L_leg
-    400022: L_shoulder
-    400024: neck
-    400026: persp1
-    400028: R_ankle
-    400030: R_knee
-    400032: R_leg
-    400034: R_shoulder
-    400036: skeleton
-    400038: spine1
-    400040: spine2
-    400042: transform2
-    400044: //RootNode
+    400006: //RootNode
+    400008: imagePlane1
+    400010: imagePlane2
+    400012: joint1
+    400014: L_ankle
+    400016: L_elbow
+    400018: L_hand
+    400020: L_knee
+    400022: L_leg
+    400024: L_shoulder
+    400026: neck
+    400028: persp1
+    400030: R_ankle
+    400032: R_knee
+    400034: R_leg
+    400036: R_shoulder
+    400038: skeleton
+    400040: spine1
+    400042: spine2
+    400044: transform2
     2000000: persp1
     2100000: lambert1
     2100002: lambert2
     4300000: head4
-    7400000: Walk
+    7400000: Idle
     9500000: //RootNode
     13700000: head4
   externalObjects:
@@ -67,11 +67,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: lambert2
     second: {fileID: 2100000, guid: db508f67dac59d24cb1ef4948c2a97a7, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: head4Shape_lambert2_color
-    second: {fileID: 2800000, guid: 0f0c3a94a5b47cd48b2cf96ad4bbd0d2, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -100,10 +95,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walk
-      takeName: Walk
-      firstFrame: 55
-      lastFrame: 175
+      name: Idle
+      takeName: Idle
+      firstFrame: 18
+      lastFrame: 32
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
