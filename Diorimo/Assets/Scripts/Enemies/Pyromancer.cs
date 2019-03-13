@@ -66,7 +66,7 @@ public class Pyromancer : Enemy
         animator.SetBool("IsAttacking", true);
 
 
-        Vector3 adjust = new Vector3(1.5f, 0,0 );
+        Vector3 adjust = new Vector3(0, 0,0 );
         Vector3 targetDirection = target.transform.position - transform.position-adjust;
         transform.rotation = Quaternion.LookRotation(targetDirection);
         GameObject EBullet = Instantiate(EnemyBullet, new Vector3(BulletPoint.transform.position.x, BulletPoint.transform.position.y, BulletPoint.transform.position.z), Quaternion.identity);

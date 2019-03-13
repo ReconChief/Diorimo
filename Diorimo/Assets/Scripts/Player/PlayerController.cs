@@ -74,6 +74,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetButtonDown("StartButton") && !paused) {
+            paused = true;
+            pauseScreen.SetActive(true);
+            
+
+        }
 
         if (paused)
         {
@@ -244,7 +250,7 @@ public class PlayerController : MonoBehaviour
                 if (higherJump)
                 {
                     pf.Jump();
-                    pf.Jump();
+                    //pf.Jump();
                 }
             }
 
