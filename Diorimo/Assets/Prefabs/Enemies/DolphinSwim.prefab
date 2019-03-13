@@ -263,7 +263,7 @@ MonoBehaviour:
   splat: {fileID: 7275467792594512880, guid: db5d3b6f948d7134e8ff7f13cd8d61d7, type: 3}
   EnemyBullet: {fileID: 100000, guid: 3fc45f187d972a049a3bca0700217057, type: 3}
   BulletPoint: {fileID: 6091135606025460836}
-  target: {fileID: 0}
+  target: {fileID: 6540641155021311550, guid: e0a0d892c0ad3644185553d7f7ece7f6, type: 3}
   isDead: 0
   isAttacking: 0
 --- !u!1 &1424098763

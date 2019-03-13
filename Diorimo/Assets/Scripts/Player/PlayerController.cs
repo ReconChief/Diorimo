@@ -74,13 +74,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("StartButton") && !paused) {
-            paused = true;
-            pauseScreen.SetActive(true);
-            
-
-        }
-
         if (paused)
         {
             Time.timeScale = 0;
@@ -157,7 +150,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //Ball Form
-            if (Input.GetButtonDown("XButton") && !ballForm && morphBall)
+            if (Input.GetButtonDown("XButton") && !ballForm && morphBall && !transformed)
             {
                 isGrounded = false;
                 ballForm = true;
@@ -165,7 +158,7 @@ public class PlayerController : MonoBehaviour
                 otherCam.SetActive(true);
             }
 
-            else if (Input.GetButtonDown("XButton") && ballForm && isGrounded && morphBall)
+            else if (Input.GetButtonDown("XButton") && ballForm && isGrounded && morphBall && !transformed)
             {
                 ballForm = false;
                 gameObject.transform.Translate(0, 1, 0);
@@ -257,15 +250,12 @@ public class PlayerController : MonoBehaviour
             //Turtle Ability
             else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 3)
             {
-
-
                 hardened = true;
             }
 
             else if (Input.GetAxis("RightTrigger") <= 0.8 && isGrounded && !ballForm && transformed && transformation == 3)
             {
                 hardened = false;
-
             }
 
             //Firing Missile
@@ -289,6 +279,7 @@ public class PlayerController : MonoBehaviour
             //Transformation Code: Charger
             if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 1)
             {
+                isGrounded = false;
                 transformed = true;
                 body.SetActive(false);
                 playerModel.SetActive(false);
@@ -300,6 +291,7 @@ public class PlayerController : MonoBehaviour
             //Transformation Code: Pogo
             else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 2)
             {
+                isGrounded = false;
                 transformed = true;
                 body.SetActive(false);
                 playerModel.SetActive(false);
@@ -314,6 +306,7 @@ public class PlayerController : MonoBehaviour
             //Transformation Code: Turtle
             else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 3)
             {
+                isGrounded = false;
                 playerSpeed = 2;
                 transformed = true;
                 body.SetActive(false);

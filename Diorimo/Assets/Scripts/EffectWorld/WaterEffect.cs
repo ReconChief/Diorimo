@@ -35,6 +35,7 @@ public class WaterEffect : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             water.enabled = true;
+            pc.higherJump = true;
         }
     }
 
@@ -43,5 +44,7 @@ public class WaterEffect : MonoBehaviour
         water.enabled = false;
 
         pc.playerSpeed = 4.5f;
+
+        pc.higherJump = false;
     }
 }

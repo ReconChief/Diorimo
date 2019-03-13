@@ -28,10 +28,15 @@ public class WarningTexts : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !pc.tempSuit)
         {
             textObject.SetActive(true);
             warning.enabled = true;
+        }
+
+        else
+        {
+            textObject.SetActive(false);
         }
     }
 

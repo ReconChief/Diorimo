@@ -8,6 +8,8 @@ public class HeatEffect : MonoBehaviour
     private PlayerController pc;
     private HeatEffect heat;
 
+    public AudioSource lavaSong;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -30,11 +32,13 @@ public class HeatEffect : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             heat.enabled = true;
+            lavaSong.Play();
         }
     }
 
     public void OnTriggerExit(Collider other)
     {
         heat.enabled = false;
+        lavaSong.Stop();
     }
 }
