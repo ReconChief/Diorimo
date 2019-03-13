@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
 {
     public float playerSpeed = 4.5f;
     private float cameraSensitivity = 3f;
-    private float xAxisClamp;
     private bool isGrounded;
     private bool fire = true;
     private bool fireMissile = true;
@@ -56,246 +55,286 @@ public class PlayerController : MonoBehaviour
     public bool pressed=false;
     public bool released=false;
 
+    //PlayerUI
+    public GameObject playerUI;
+
+    //PauseScreen
+    public bool paused = false;
+    public bool quit = false;
+    public GameObject pauseScreen;
+    public GameObject otherScreen;
+    public GameObject other2Screen;
+
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         pf = GetComponent<PlayerFunctions>();
         rb = GetComponent<Rigidbody>();
-
-        xAxisClamp = 0.0f;
     }
 
     void Update()
     {
-        //More Animator shit
-        anim.SetBool("PogoActive", transformation == 2&&transformed);
-        //anim.SetBool("IsMoving", walking);
-        
-            
-        float moveX = Input.GetAxis("LeftStickX");
-        float moveZ = Input.GetAxis("LeftStickY");
 
-        //Movement
-        Vector3 moveHorizontal = transform.right * moveX;
-        Vector3 moveVertical = transform.forward * -moveZ;
-
-        Vector3 velocity = (moveHorizontal + moveVertical) * playerSpeed;
-
-        //pogo movement
-
-        if (velocity != Vector3.zero && isGrounded)
-            walking = true;
-        else
-            walking = false;
-
-        //calls function from PlayerFunctions script to Move
-        pf.Move(velocity);
-        
-        //Camera Movement
-        float rotateX = Input.GetAxis("RightStickY");
-        Vector3 rotation = new Vector3(0f, rotateX, 0f) * cameraSensitivity;
-
-        pf.Rotate(rotation);
-
-        //Jump
-        if (Input.GetButtonDown("AButton") && isGrounded)
+        if (paused)
         {
-            if (transformed)
+            Time.timeScale = 0;
+            playerUI.SetActive(false);
+
+            if (!quit)
             {
-                pressed = true;
+                pauseScreen.SetActive(true);
             }
 
+            if (Input.GetButtonDown("StartButton"))
+            {
+                paused = false;
+                quit = false;
+                pauseScreen.SetActive(false);
+                otherScreen.SetActive(false);
+                other2Screen.SetActive(false);
+                playerUI.SetActive(true);
+            }
+        }
+
+        else
+        {
+            Time.timeScale = 1;
+
+            //More Animator shit
+            anim.SetBool("PogoActive", transformation == 2 && transformed);
+            //anim.SetBool("IsMoving", walking);
+
+
+            float moveX = Input.GetAxis("LeftStickX");
+            float moveZ = Input.GetAxis("LeftStickY");
+
+            //Movement
+            Vector3 moveHorizontal = transform.right * moveX;
+            Vector3 moveVertical = transform.forward * -moveZ;
+
+            Vector3 velocity = (moveHorizontal + moveVertical) * playerSpeed;
+
+            //pogo movement
+
+            if (velocity != Vector3.zero && isGrounded)
+                walking = true;
             else
+                walking = false;
+
+            //calls function from PlayerFunctions script to Move
+            pf.Move(velocity);
+
+            //Camera Movement
+            float rotateX = Input.GetAxis("RightStickY");
+            Vector3 rotation = new Vector3(0f, rotateX, 0f) * cameraSensitivity;
+
+            pf.Rotate(rotation);
+
+            //Jump
+            if (Input.GetButtonDown("AButton") && isGrounded)
+            {
+                if (transformed)
+                {
+                    pressed = true;
+                }
+
+                else
+                {
+                    isGrounded = false;
+                    pf.Jump();
+
+                    if (Input.GetButtonDown("AButton") && higherJump)
+                    {
+                        pf.Jump();
+                    }
+                }
+            }
+
+            //Ball Form
+            if (Input.GetButtonDown("XButton") && !ballForm && morphBall)
             {
                 isGrounded = false;
+                ballForm = true;
+                body.SetActive(false);
+                otherCam.SetActive(true);
+            }
+
+            else if (Input.GetButtonDown("XButton") && ballForm && isGrounded && morphBall)
+            {
+                ballForm = false;
+                gameObject.transform.Translate(0, 1, 0);
+                body.SetActive(true);
+                otherCam.SetActive(false);
+            }
+
+            //Flash Light
+            if (Input.GetButtonDown("YButton") && !ballForm && !light && !transformed)
+            {
+                flashLight.SetActive(true);
+                light = true;
+            }
+
+            else if (Input.GetButtonDown("YButton") && !ballForm && light && !transformed)
+            {
+                flashLight.SetActive(false);
+                light = false;
+            }
+
+            // Beam Selections
+            if (Input.GetAxis("UpandDownDPad") == 1 && !ballForm && !transformed)
+            {
+                currentBeam = 0;
+            }
+
+            if (Input.GetAxis("UpandDownDPad") == -1 && iceBeam && !ballForm && !transformed)
+            {
+                currentBeam = 2;
+            }
+
+            if (Input.GetAxis("LeftandRightDPad") == 1 && fireBeam && !ballForm && !transformed)
+            {
+                currentBeam = 1;
+            }
+
+            if (Input.GetAxis("LeftandRightDPad") == -1 && electricBeam && !ballForm && !transformed)
+            {
+                currentBeam = 3;
+            }
+
+            //Firing Modes And Transformation Ability
+
+            //Firing Beams
+            if (Input.GetAxis("RightTrigger") >= 0.8 && fire && !ballForm && !transformed)
+            {
+                fire = false;
+                hardened = false;
+                pf.Fire(currentBeam);
+                Vector3 jerk = new Vector3(0, 0, -1);
+
+                rb.AddForce(jerk, ForceMode.Impulse);
+            }
+
+            else if (Input.GetAxis("RightTrigger") <= 0.3 && !fire && !ballForm && !transformed)
+            {
+                fire = true;
+                hardened = false;
+            }
+
+            //Charger Ability
+            else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 1)
+            {
+                gameObject.transform.Translate(0, 0, 1);
+            }
+
+            //Pogo Ability
+            else if (Input.GetButtonUp("AButton") && isGrounded && !ballForm && transformed && transformation == 2)
+            {
+
+                released = true;
+                pressed = false;
+                isGrounded = false;
+                pf.Jump();
                 pf.Jump();
 
-                if (Input.GetButtonDown("AButton") && higherJump)
+                if (higherJump)
                 {
+                    pf.Jump();
                     pf.Jump();
                 }
             }
-        }
-        
-        //Ball Form
-        if (Input.GetButtonDown("XButton") && !ballForm && morphBall)
-        {
-            isGrounded = false;
-            ballForm = true;
-            body.SetActive(false);
-            otherCam.SetActive(true);
-        }
 
-        else if (Input.GetButtonDown("XButton") && ballForm && isGrounded && morphBall)
-        {
-            ballForm = false;
-            gameObject.transform.Translate(0, 1, 0);
-            body.SetActive(true);
-            otherCam.SetActive(false);
-        }
-
-        //Flash Light
-        if (Input.GetButtonDown("YButton") && !ballForm && !light && !transformed)
-        {
-            flashLight.SetActive(true);
-            light = true;
-        }
-
-        else if (Input.GetButtonDown("YButton") && !ballForm && light && !transformed)
-        {
-            flashLight.SetActive(false);
-            light = false;
-        }
-
-        // Beam Selections
-        if (Input.GetAxis("UpandDownDPad") == 1 && !ballForm && !transformed)
-        {
-            currentBeam = 0;
-        }
-
-        if (Input.GetAxis("UpandDownDPad") == -1 && iceBeam && !ballForm && !transformed)
-        {
-            currentBeam = 2;
-        }
-
-        if (Input.GetAxis("LeftandRightDPad") == 1 && fireBeam && !ballForm && !transformed)
-        {
-            currentBeam = 1;
-        }
-
-        if (Input.GetAxis("LeftandRightDPad") == -1 && electricBeam && !ballForm && !transformed)
-        {
-            currentBeam = 3;
-        }
-
-        //Firing Modes And Transformation Ability
-
-        //Firing Beams
-        if (Input.GetAxis("RightTrigger") >= 0.8 && fire && !ballForm && !transformed)
-        {
-            fire = false;
-            hardened = false;
-            pf.Fire(currentBeam);
-            Vector3 jerk = new Vector3(0, 0, -1);
-            
-            rb.AddForce(jerk, ForceMode.Impulse);
-        }
-
-        else if (Input.GetAxis("RightTrigger") <= 0.3 && !fire && !ballForm && !transformed)
-        {
-            fire = true;
-            hardened = false;
-        }
-
-        //Charger Ability
-        else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 1)
-        {
-            gameObject.transform.Translate(0, 0, 1);
-        }
-
-        //Pogo Ability
-        else if (Input.GetButtonUp("AButton") && isGrounded && !ballForm && transformed && transformation == 2)
-        {
-            
-            released=true;
-            pressed = false;
-            isGrounded = false;
-            pf.Jump();
-            pf.Jump();
-
-            if (higherJump)
+            //Turtle Ability
+            else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 3)
             {
-                pf.Jump();
-                pf.Jump();
+
+
+                hardened = true;
             }
-        }
 
-        //Turtle Ability
-        else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 3)
-        {
-            
-            
-            hardened = true;
-        }
+            else if (Input.GetAxis("RightTrigger") <= 0.8 && isGrounded && !ballForm && transformed && transformation == 3)
+            {
+                hardened = false;
 
-        else if (Input.GetAxis("RightTrigger") <= 0.8 && isGrounded && !ballForm && transformed && transformation == 3)
-        {
-            hardened = false;
-            
-        }
+            }
 
-        //Firing Missile
+            //Firing Missile
 
-        if (Input.GetAxis("LeftTrigger") == 1 && missilePickedUp && fireMissile && !ballForm && missiles > 0 && !transformed)
-        {
-            Vector3 jerk=new Vector3(0,0,-1);
-            missiles--;
-            rb.AddForce(jerk, ForceMode.Impulse);
-            fireMissile = false;
-            pf.FireMissile();
-        }
+            if (Input.GetAxis("LeftTrigger") == 1 && missilePickedUp && fireMissile && !ballForm && missiles > 0 && !transformed)
+            {
+                Vector3 jerk = new Vector3(0, 0, -1);
+                missiles--;
+                rb.AddForce(jerk, ForceMode.Impulse);
+                fireMissile = false;
+                pf.FireMissile();
+            }
 
-        else if (Input.GetAxis("LeftTrigger") == 0 && missilePickedUp && !fireMissile && !ballForm && !transformed)
-        {
-            fireMissile = true;
-        }
+            else if (Input.GetAxis("LeftTrigger") == 0 && missilePickedUp && !fireMissile && !ballForm && !transformed)
+            {
+                fireMissile = true;
+            }
 
-        //Transfomation Modes
+            //Transfomation Modes
 
-        //Transformation Code: Charger
-        if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 1)
-        {
-            transformed = true;
-            body.SetActive(false);
-            playerModel.SetActive(false);
+            //Transformation Code: Charger
+            if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 1)
+            {
+                transformed = true;
+                body.SetActive(false);
+                playerModel.SetActive(false);
 
-            otherCam.SetActive(true);
-            transformationForest.SetActive(true);
-        }
+                otherCam.SetActive(true);
+                transformationForest.SetActive(true);
+            }
 
-        //Transformation Code: Pogo
-        else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 2)
-        {
-            transformed = true;
-            body.SetActive(false);
-            playerModel.SetActive(false);
+            //Transformation Code: Pogo
+            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 2)
+            {
+                transformed = true;
+                body.SetActive(false);
+                playerModel.SetActive(false);
 
-            otherCam.SetActive(true);
-            transformationLava.SetActive(true);
-            transformationLava.GetComponent<Animator>().enabled = true; 
-           
+                otherCam.SetActive(true);
+                transformationLava.SetActive(true);
+                transformationLava.GetComponent<Animator>().enabled = true;
 
-        }
 
-        //Transformation Code: Turtle
-        else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 3)
-        {
-            playerSpeed = 2;
-            transformed = true;
-            body.SetActive(false);
-            playerModel.SetActive(false);
+            }
 
-            otherCam.SetActive(true);
-            transformationWater.SetActive(true);
-            transformationWater.GetComponent<Animator>().enabled = true;
-        }
+            //Transformation Code: Turtle
+            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 3)
+            {
+                playerSpeed = 2;
+                transformed = true;
+                body.SetActive(false);
+                playerModel.SetActive(false);
 
-        //Transform Back
-        else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && transformed)
-        {
-            playerSpeed = 4.5f;
+                otherCam.SetActive(true);
+                transformationWater.SetActive(true);
+                transformationWater.GetComponent<Animator>().enabled = true;
+            }
 
-            transformed = false;
+            //Transform Back
+            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && transformed)
+            {
+                playerSpeed = 4.5f;
 
-            gameObject.transform.Translate(0, 1, 0);
+                transformed = false;
 
-            body.SetActive(true);
-            playerModel.SetActive(true);
+                gameObject.transform.Translate(0, 1, 0);
 
-            otherCam.SetActive(false);
-            transformationForest.SetActive(false);
-            transformationLava.SetActive(false);
-            transformationWater.SetActive(false);
+                body.SetActive(true);
+                playerModel.SetActive(true);
+
+                otherCam.SetActive(false);
+                transformationForest.SetActive(false);
+                transformationLava.SetActive(false);
+                transformationWater.SetActive(false);
+            }
+
+            if (Input.GetButtonDown("StartButton"))
+            {
+                paused = true;
+            }
         }
     }
 

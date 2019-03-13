@@ -18,7 +18,7 @@ public class RotateCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!pc.ballForm && !pc.transformed)
+        if (!pc.ballForm && !pc.transformed && !pc.paused)
         {
             CameraRotation();
         }
