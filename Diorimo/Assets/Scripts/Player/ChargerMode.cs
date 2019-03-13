@@ -24,7 +24,7 @@ public class ChargerMode : MonoBehaviour
             anim.SetBool("IsMoving", true);
         else
             anim.SetBool("IsMoving", false); 
-        if (pc.pressed)
+        if (pc.charging)
         {
             anim.SetBool("Pressed", true);
         }

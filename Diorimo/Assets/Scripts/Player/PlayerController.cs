@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
     public bool walking=false;
     public bool pressed=false;
     public bool released=false;
-
+    public bool charging = false;
     //PlayerUI
     public GameObject playerUI;
 
@@ -223,7 +223,12 @@ public class PlayerController : MonoBehaviour
             //Charger Ability
             else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 1)
             {
-                gameObject.transform.Translate(0, 0, 1);
+                playerSpeed = 8;
+                charging = true;
+
+            }
+            else if (Input.GetAxis("RightTrigger") <= 0.8 && isGrounded && !ballForm && transformed && transformation == 1) {
+                charging = false;
             }
 
             //Pogo Ability
