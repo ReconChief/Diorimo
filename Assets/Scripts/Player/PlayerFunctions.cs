@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerFunctions : MonoBehaviour
@@ -12,6 +13,7 @@ public class PlayerFunctions : MonoBehaviour
     public PlayerController pc;
 
     public GameObject missile;
+    public SpriteRenderer missileSprite;
     public GameObject[] beamObjects;
     public Transform beamSpawn;
 
@@ -29,6 +31,8 @@ public class PlayerFunctions : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
         pc = player.GetComponent<PlayerController>();
+        missileSprite = GetComponent<SpriteRenderer>();
+        
     }
 
     public void Move(Vector3 velocity)
@@ -86,10 +90,24 @@ public class PlayerFunctions : MonoBehaviour
 
     public void FireMissile()
     {
+        if (pc.missiles > 5)
+        {
+            GetComponent<SpriteRenderer>().color = Color.green;
+        }
+        else if( pc.missiles < 5)
+        {
+            GetComponent<SpriteRenderer>().color = Color.red;
+        }
+        
         GameObject missileShot = (GameObject)Instantiate(missile, beamSpawn.position, beamSpawn.rotation);
 
         missileShot.GetComponent<Rigidbody>().velocity = missileShot.transform.forward * 20f;
 
         Destroy(missileShot, 1);
+
+        if (pc.missiles == 0)
+        {
+            GetComponent<SpriteRenderer>().color = Color.grey;
+        }
     }
 }
