@@ -13,6 +13,11 @@ TagManager:
   - RegenMedium
   - RegenLarge
   - RegenMissile
+  - WaterBeam
+  - ElectricBeam
+  - FireBeam
+  - Water
+  - EventSystem
   layers:
   - Default
   - TransparentFX

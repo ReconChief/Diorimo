@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(PlayerFunctions))]
 public class PlayerController : MonoBehaviour
@@ -65,11 +66,17 @@ public class PlayerController : MonoBehaviour
     public GameObject otherScreen;
     public GameObject other2Screen;
 
+    //EventSystem
+    public EventSystem eventSystem;
+    public GameObject FirstButtonPaused;
+
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         pf = GetComponent<PlayerFunctions>();
         rb = GetComponent<Rigidbody>();
+
+        eventSystem = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<EventSystem>();
     }
 
     void Update()
@@ -338,6 +345,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButtonDown("StartButton"))
             {
                 paused = true;
+                eventSystem.SetSelectedGameObject(FirstButtonPaused, null);
             }
         }
     }
