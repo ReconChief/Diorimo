@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 16755095}
   - component: {fileID: 16755094}
   m_Layer: 5
-  m_Name: MainMenuButton
+  m_Name: ReturnButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1003,6 +1003,9 @@ MonoBehaviour:
   mainMenu: {fileID: 1847937511}
   controls: {fileID: 1379952491}
   credits: {fileID: 1949401428}
+  FirstButtonForMenu: {fileID: 1095655879}
+  FirstButtonForControls: {fileID: 527490785}
+  FirstButtonForCredits: {fileID: 16755092}
 --- !u!82 &463400144
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1340,8 +1343,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ReturnToPauseScreen
+      - m_Target: {fileID: 463400143}
+        m_MethodName: ReturnToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2478,7 +2481,7 @@ MonoBehaviour:
 
     Music
 
-    Kireh Reevy'
+    Kireh Reevy and Jason Sorio'
 --- !u!222 &1286160420
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3106,7 +3109,7 @@ MonoBehaviour:
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1095655879}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1734041976

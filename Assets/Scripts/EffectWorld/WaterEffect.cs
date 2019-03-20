@@ -8,6 +8,8 @@ public class WaterEffect : MonoBehaviour
     private PlayerController pc;
     private WaterEffect water;
 
+    public AudioSource waterSong;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -36,15 +38,15 @@ public class WaterEffect : MonoBehaviour
         {
             water.enabled = true;
             pc.higherJump = true;
+            waterSong.Play();
         }
     }
 
     public void OnTriggerExit(Collider other)
     {
         water.enabled = false;
-
         pc.playerSpeed = 4.5f;
-
         pc.higherJump = false;
+        waterSong.Stop();
     }
 }
