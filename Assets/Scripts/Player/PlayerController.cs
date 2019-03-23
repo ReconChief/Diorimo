@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
     public GameObject transformationForest;
     public GameObject transformationLava;
     public GameObject transformationWater;
+    public bool inBuilding;
 
     public GameObject flashLight;
 
@@ -215,9 +216,7 @@ public class PlayerController : MonoBehaviour
                 fire = false;
                 hardened = false;
                 pf.Fire(currentBeam);
-                Vector3 jerk = new Vector3(0, 0, -1);
-
-                rb.AddForce(jerk, ForceMode.Impulse);
+               
             }
 
             else if (Input.GetAxis("RightTrigger") <= 0.3 && !fire && !ballForm && !transformed)
@@ -284,7 +283,7 @@ public class PlayerController : MonoBehaviour
             //Transfomation Modes
 
             //Transformation Code: Charger
-            if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 1)
+            if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 1 && !inBuilding)
             {
                 isGrounded = false;
                 transformed = true;
@@ -296,7 +295,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //Transformation Code: Pogo
-            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 2)
+            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 2&&!inBuilding)
             {
                 isGrounded = false;
                 transformed = true;
@@ -311,7 +310,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //Transformation Code: Turtle
-            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 3)
+            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 3 && !inBuilding)
             {
                 isGrounded = false;
                 playerSpeed = 2;
