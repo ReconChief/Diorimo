@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80774093}
   m_LocalRotation: {x: -0.0033994298, y: 0.7070986, z: -0.0033994298, w: 0.7070986}
-  m_LocalPosition: {x: -0, y: 2.1072454, z: 0.4507793}
+  m_LocalPosition: {x: -0, y: 0, z: 0.4507793}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1569429567}
@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 821373434}
   - component: {fileID: 821373433}
   - component: {fileID: 8499427321870719467}
+  - component: {fileID: 3751191144846662801}
   m_Layer: 0
   m_Name: DolphinSwim
   m_TagString: Enemy
@@ -261,11 +262,25 @@ MonoBehaviour:
   player: {fileID: 0}
   pc: {fileID: 0}
   splat: {fileID: 7275467792594512880, guid: db5d3b6f948d7134e8ff7f13cd8d61d7, type: 3}
-  EnemyBullet: {fileID: 100000, guid: 3fc45f187d972a049a3bca0700217057, type: 3}
+  EnemyBullet: {fileID: 8044720428753966624, guid: 1c55ee4addbfb924bb3a12449ea843db,
+    type: 3}
   BulletPoint: {fileID: 6091135606025460836}
   target: {fileID: 6540641155021311550, guid: e0a0d892c0ad3644185553d7f7ece7f6, type: 3}
   isDead: 0
   isAttacking: 0
+--- !u!65 &3751191144846662801
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821373432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 4.0167046}
+  m_Center: {x: 0, y: 0, z: 0.33118188}
 --- !u!1 &1424098763
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +488,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6091135606025460836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 821373434}

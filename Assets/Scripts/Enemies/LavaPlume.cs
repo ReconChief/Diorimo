@@ -27,7 +27,7 @@ public class LavaPlume : Enemy
             isDead = true;
             Destroy(gameObject, 1);
         }
-        if (Vector3.Distance(transform.position, pc.transform.position) < 20 && !isDead&&timer<=0)
+        if (Vector3.Distance(transform.position, pc.transform.position) < 50 && !isDead&&timer<=0)
         {
             Attack();
 
@@ -40,7 +40,7 @@ public class LavaPlume : Enemy
         animator.SetBool("IsAttacking", true);     
         GameObject EBullet = Instantiate(EnemyBullet, new Vector3(BulletPoint.transform.position.x, BulletPoint.transform.position.y, BulletPoint.transform.position.z), Quaternion.identity);
         //EBullet.GetComponent<Rigidbody>().velocity = transform.up * 10.5f;
-        Destroy(EBullet, 9);
+        Destroy(EBullet, 20);
         timer = 100;
     }
 }

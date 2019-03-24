@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Building : MonoBehaviour
+public class InBuilding : MonoBehaviour
 {
     private GameObject player;
     private PlayerController pc;
@@ -12,28 +12,22 @@ public class Building : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         pc = player.GetComponent<PlayerController>();
     }
+
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            pc.inBuilding = true;
-            if (pc.transformed)
-            {
-                pc.transformed = false;
-            }
+            pc.transformation = 0;
         }
     }
+
     public void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-
-            pc.inBuilding = false;
-        }
+        pc.transformation = 1;
     }
 }

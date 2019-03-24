@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public float playerSpeed = 4.5f;
     private float cameraSensitivity = 3f;
-    private bool isGrounded;
+    public bool isGrounded;
     private bool fire = true;
     private bool fireMissile = true;
     public bool ballForm = false;
@@ -44,12 +44,11 @@ public class PlayerController : MonoBehaviour
     public GameObject transformationForest;
     public GameObject transformationLava;
     public GameObject transformationWater;
-    public bool inBuilding;
 
     public GameObject flashLight;
 
     private PlayerFunctions pf;
-    private Rigidbody rb;
+    public Rigidbody rb;
 
     //Animation shit
     private Animator anim;
@@ -216,7 +215,9 @@ public class PlayerController : MonoBehaviour
                 fire = false;
                 hardened = false;
                 pf.Fire(currentBeam);
-               
+                Vector3 jerk = new Vector3(0, 0, -1);
+
+                rb.AddForce(jerk, ForceMode.Impulse);
             }
 
             else if (Input.GetAxis("RightTrigger") <= 0.3 && !fire && !ballForm && !transformed)
@@ -283,7 +284,7 @@ public class PlayerController : MonoBehaviour
             //Transfomation Modes
 
             //Transformation Code: Charger
-            if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 1 && !inBuilding)
+            if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 1)
             {
                 isGrounded = false;
                 transformed = true;
@@ -295,7 +296,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //Transformation Code: Pogo
-            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 2&&!inBuilding)
+            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 2)
             {
                 isGrounded = false;
                 transformed = true;
@@ -310,7 +311,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //Transformation Code: Turtle
-            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 3 && !inBuilding)
+            else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 3)
             {
                 isGrounded = false;
                 playerSpeed = 2;

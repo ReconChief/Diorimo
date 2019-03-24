@@ -36,6 +36,7 @@ public class WaterEffect : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            //pc.rb.mass = 0.01f;
             water.enabled = true;
             pc.higherJump = true;
             waterSong.Play();

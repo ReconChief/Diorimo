@@ -39,5 +39,13 @@ public class Pogo : MonoBehaviour
         else {
             anim.SetBool("release", false);
         }
+        if (!pc.isGrounded)
+        {
+            anim.SetBool("Grounded", false);
+        }
+        else
+        {
+            anim.SetBool("Grounded", true);
+        }
     }
 }
