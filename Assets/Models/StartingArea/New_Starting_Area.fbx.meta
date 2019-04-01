@@ -1,0 +1,1109 @@
+fileFormatVersion: 2
+guid: 2eb83164636c05844b6bea486ca5dd59
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Antenna
+    100002: Antenna 1
+    100004: Antenna1
+    100006: Antenna1 1
+    100008: Antenna2
+    100010: Antenna2 1
+    100012: Antennas
+    100014: Antennas 1
+    100016: Button
+    100018: Button1
+    100020: Button10
+    100022: Button11
+    100024: Button12
+    100026: Button13
+    100028: Button14
+    100030: Button15
+    100032: Button16
+    100034: Button17
+    100036: Button18
+    100038: Button19
+    100040: Button2
+    100042: Button20
+    100044: Button21
+    100046: Button22
+    100048: Button23
+    100050: Button24
+    100052: Button25
+    100054: Button26
+    100056: Button27
+    100058: Button28
+    100060: Button29
+    100062: Button3
+    100064: Button30
+    100066: Button31
+    100068: Button32
+    100070: Button33
+    100072: Button34
+    100074: Button35
+    100076: Button4
+    100078: Button5
+    100080: Button6
+    100082: Button7
+    100084: Button8
+    100086: Button9
+    100088: Buttons
+    100090: Ceiling
+    100092: Center_of_Circle_Thing
+    100094: Circle_Thing
+    100096: Column
+    100098: Column1
+    100100: Column2
+    100102: Column3
+    100104: Columns
+    100106: Energy_Tank
+    100108: Energy_Tank 1
+    100110: Energy_Tank_Stand
+    100112: Energy_Tank_Stand1
+    100114: Floor
+    100116: Gate
+    100118: Glass
+    100120: Hallway_Floor1
+    100122: Hallway_Wall3
+    100124: Hallway_Wall4
+    100126: Hallway_Wall5
+    100128: Laser
+    100130: Laser_Beam
+    100132: Laser_Beam_Tip
+    100134: Laser_Connector
+    100136: Lever
+    100138: Lever_Frame
+    100140: Lever_Handle
+    100142: Machine
+    100144: Machine_Tank
+    100146: Machine_Thingy
+    100148: Main_Room
+    100150: //RootNode
+    100152: Numbers_of_Areas
+    100154: Pipe
+    100156: Pipe1
+    100158: Pipe10
+    100160: Pipe11
+    100162: Pipe2
+    100164: Pipe3
+    100166: Pipe6
+    100168: Pipe7
+    100170: Pipe8
+    100172: Pipe9
+    100174: Pipes
+    100176: Ship
+    100178: Ship 1
+    100180: Ship 2
+    100182: Ship_Half
+    100184: Ship_Half1
+    100186: Ship_Windows
+    100188: Ship_Windows 1
+    100190: Small_Tube
+    100192: Small_Tube 1
+    100194: Small_Tube 2
+    100196: Small_Tube1
+    100198: Small_Tube1 1
+    100200: Small_Tube1 2
+    100202: Small_Tube2
+    100204: Small_Tube2 1
+    100206: Small_Tube2 2
+    100208: Small_Tube3
+    100210: Small_Tube3 1
+    100212: Small_Tube3 2
+    100214: Small_Tube4
+    100216: Small_Tube4 1
+    100218: Small_Tube4 2
+    100220: Small_Tube5
+    100222: Small_Tube5 1
+    100224: Small_Tube5 2
+    100226: Small_Tube6
+    100228: Small_Tube6 1
+    100230: Small_Tube6 2
+    100232: Small_Tube7
+    100234: Small_Tube7 1
+    100236: Small_Tube7 2
+    100238: Small_Tube8
+    100240: Small_Tube8 1
+    100242: Small_Tube8 2
+    100244: Stand
+    100246: Stand 1
+    100248: Stand1
+    100250: Stand1 1
+    100252: Starting_Area
+    100254: Table2
+    100256: Table2 1
+    100258: Table2 2
+    100260: Table3
+    100262: Table4
+    100264: TV
+    100266: TV 1
+    100268: TV 2
+    100270: TV1
+    100272: TV1 1
+    100274: TV1 2
+    100276: TV2
+    100278: TV2 1
+    100280: TV2 2
+    100282: TV3
+    100284: TV3 1
+    100286: TV3 2
+    100288: TV4
+    100290: TV4 1
+    100292: TV4 2
+    100294: TV5
+    100296: TV5 1
+    100298: TV5 2
+    100300: TV6
+    100302: TV6 1
+    100304: TV6 2
+    100306: TV7
+    100308: TV7 1
+    100310: TV7 2
+    100312: TV8
+    100314: TV8 1
+    100316: TV8 2
+    100318: TV_Body
+    100320: TV_Body 1
+    100322: TV_Body 10
+    100324: TV_Body 11
+    100326: TV_Body 12
+    100328: TV_Body 13
+    100330: TV_Body 14
+    100332: TV_Body 15
+    100334: TV_Body 16
+    100336: TV_Body 17
+    100338: TV_Body 18
+    100340: TV_Body 19
+    100342: TV_Body 2
+    100344: TV_Body 20
+    100346: TV_Body 21
+    100348: TV_Body 22
+    100350: TV_Body 23
+    100352: TV_Body 24
+    100354: TV_Body 25
+    100356: TV_Body 26
+    100358: TV_Body 3
+    100360: TV_Body 4
+    100362: TV_Body 5
+    100364: TV_Body 6
+    100366: TV_Body 7
+    100368: TV_Body 8
+    100370: TV_Body 9
+    100372: TV_s
+    100374: TV_s1
+    100376: TV_s2
+    100378: TV_Screen
+    100380: TV_Screen 1
+    100382: TV_Screen 10
+    100384: TV_Screen 11
+    100386: TV_Screen 12
+    100388: TV_Screen 13
+    100390: TV_Screen 14
+    100392: TV_Screen 15
+    100394: TV_Screen 16
+    100396: TV_Screen 17
+    100398: TV_Screen 18
+    100400: TV_Screen 19
+    100402: TV_Screen 2
+    100404: TV_Screen 20
+    100406: TV_Screen 21
+    100408: TV_Screen 22
+    100410: TV_Screen 23
+    100412: TV_Screen 24
+    100414: TV_Screen 25
+    100416: TV_Screen 26
+    100418: TV_Screen 3
+    100420: TV_Screen 4
+    100422: TV_Screen 5
+    100424: TV_Screen 6
+    100426: TV_Screen 7
+    100428: TV_Screen 8
+    100430: TV_Screen 9
+    100432: Wall
+    100434: Wall 1
+    100436: Wall 2
+    100438: Wall6
+    100440: Wing
+    100442: Wing 1
+    100444: Wing1
+    100446: Wing1 1
+    400000: Antenna
+    400002: Antenna 1
+    400004: Antenna1
+    400006: Antenna1 1
+    400008: Antenna2
+    400010: Antenna2 1
+    400012: Antennas
+    400014: Antennas 1
+    400016: Button
+    400018: Button1
+    400020: Button10
+    400022: Button11
+    400024: Button12
+    400026: Button13
+    400028: Button14
+    400030: Button15
+    400032: Button16
+    400034: Button17
+    400036: Button18
+    400038: Button19
+    400040: Button2
+    400042: Button20
+    400044: Button21
+    400046: Button22
+    400048: Button23
+    400050: Button24
+    400052: Button25
+    400054: Button26
+    400056: Button27
+    400058: Button28
+    400060: Button29
+    400062: Button3
+    400064: Button30
+    400066: Button31
+    400068: Button32
+    400070: Button33
+    400072: Button34
+    400074: Button35
+    400076: Button4
+    400078: Button5
+    400080: Button6
+    400082: Button7
+    400084: Button8
+    400086: Button9
+    400088: Buttons
+    400090: Ceiling
+    400092: Center_of_Circle_Thing
+    400094: Circle_Thing
+    400096: Column
+    400098: Column1
+    400100: Column2
+    400102: Column3
+    400104: Columns
+    400106: Energy_Tank
+    400108: Energy_Tank 1
+    400110: Energy_Tank_Stand
+    400112: Energy_Tank_Stand1
+    400114: Floor
+    400116: Gate
+    400118: Glass
+    400120: Hallway_Floor1
+    400122: Hallway_Wall3
+    400124: Hallway_Wall4
+    400126: Hallway_Wall5
+    400128: Laser
+    400130: Laser_Beam
+    400132: Laser_Beam_Tip
+    400134: Laser_Connector
+    400136: Lever
+    400138: Lever_Frame
+    400140: Lever_Handle
+    400142: Machine
+    400144: Machine_Tank
+    400146: Machine_Thingy
+    400148: Main_Room
+    400150: //RootNode
+    400152: Numbers_of_Areas
+    400154: Pipe
+    400156: Pipe1
+    400158: Pipe10
+    400160: Pipe11
+    400162: Pipe2
+    400164: Pipe3
+    400166: Pipe6
+    400168: Pipe7
+    400170: Pipe8
+    400172: Pipe9
+    400174: Pipes
+    400176: Ship
+    400178: Ship 1
+    400180: Ship 2
+    400182: Ship_Half
+    400184: Ship_Half1
+    400186: Ship_Windows
+    400188: Ship_Windows 1
+    400190: Small_Tube
+    400192: Small_Tube 1
+    400194: Small_Tube 2
+    400196: Small_Tube1
+    400198: Small_Tube1 1
+    400200: Small_Tube1 2
+    400202: Small_Tube2
+    400204: Small_Tube2 1
+    400206: Small_Tube2 2
+    400208: Small_Tube3
+    400210: Small_Tube3 1
+    400212: Small_Tube3 2
+    400214: Small_Tube4
+    400216: Small_Tube4 1
+    400218: Small_Tube4 2
+    400220: Small_Tube5
+    400222: Small_Tube5 1
+    400224: Small_Tube5 2
+    400226: Small_Tube6
+    400228: Small_Tube6 1
+    400230: Small_Tube6 2
+    400232: Small_Tube7
+    400234: Small_Tube7 1
+    400236: Small_Tube7 2
+    400238: Small_Tube8
+    400240: Small_Tube8 1
+    400242: Small_Tube8 2
+    400244: Stand
+    400246: Stand 1
+    400248: Stand1
+    400250: Stand1 1
+    400252: Starting_Area
+    400254: Table2
+    400256: Table2 1
+    400258: Table2 2
+    400260: Table3
+    400262: Table4
+    400264: TV
+    400266: TV 1
+    400268: TV 2
+    400270: TV1
+    400272: TV1 1
+    400274: TV1 2
+    400276: TV2
+    400278: TV2 1
+    400280: TV2 2
+    400282: TV3
+    400284: TV3 1
+    400286: TV3 2
+    400288: TV4
+    400290: TV4 1
+    400292: TV4 2
+    400294: TV5
+    400296: TV5 1
+    400298: TV5 2
+    400300: TV6
+    400302: TV6 1
+    400304: TV6 2
+    400306: TV7
+    400308: TV7 1
+    400310: TV7 2
+    400312: TV8
+    400314: TV8 1
+    400316: TV8 2
+    400318: TV_Body
+    400320: TV_Body 1
+    400322: TV_Body 10
+    400324: TV_Body 11
+    400326: TV_Body 12
+    400328: TV_Body 13
+    400330: TV_Body 14
+    400332: TV_Body 15
+    400334: TV_Body 16
+    400336: TV_Body 17
+    400338: TV_Body 18
+    400340: TV_Body 19
+    400342: TV_Body 2
+    400344: TV_Body 20
+    400346: TV_Body 21
+    400348: TV_Body 22
+    400350: TV_Body 23
+    400352: TV_Body 24
+    400354: TV_Body 25
+    400356: TV_Body 26
+    400358: TV_Body 3
+    400360: TV_Body 4
+    400362: TV_Body 5
+    400364: TV_Body 6
+    400366: TV_Body 7
+    400368: TV_Body 8
+    400370: TV_Body 9
+    400372: TV_s
+    400374: TV_s1
+    400376: TV_s2
+    400378: TV_Screen
+    400380: TV_Screen 1
+    400382: TV_Screen 10
+    400384: TV_Screen 11
+    400386: TV_Screen 12
+    400388: TV_Screen 13
+    400390: TV_Screen 14
+    400392: TV_Screen 15
+    400394: TV_Screen 16
+    400396: TV_Screen 17
+    400398: TV_Screen 18
+    400400: TV_Screen 19
+    400402: TV_Screen 2
+    400404: TV_Screen 20
+    400406: TV_Screen 21
+    400408: TV_Screen 22
+    400410: TV_Screen 23
+    400412: TV_Screen 24
+    400414: TV_Screen 25
+    400416: TV_Screen 26
+    400418: TV_Screen 3
+    400420: TV_Screen 4
+    400422: TV_Screen 5
+    400424: TV_Screen 6
+    400426: TV_Screen 7
+    400428: TV_Screen 8
+    400430: TV_Screen 9
+    400432: Wall
+    400434: Wall 1
+    400436: Wall 2
+    400438: Wall6
+    400440: Wing
+    400442: Wing 1
+    400444: Wing1
+    400446: Wing1 1
+    2100000: aiStandardSurface10
+    2100002: aiStandardSurface83
+    2100004: aiStandardSurface74
+    2100006: aiStandardSurface75
+    2100008: aiStandardSurface76
+    2100010: aiStandardSurface77
+    2100012: lambert1
+    2100014: aiStandardSurface96
+    2100016: aiStandardSurface84
+    2100018: aiStandardSurface91
+    2100020: aiStandardSurface92
+    2100022: aiStandardSurface85
+    2100024: aiStandardSurface79
+    2100026: aiStandardSurface78
+    2100028: Rube_Goldberg_Animation_Full_aiStandardSurface100
+    2100030: aiStandardSurface93
+    2100032: aiStandardSurface94
+    2100034: typeBlinn1
+    2100036: aiStandardSurface86
+    2100038: aiStandardSurface99
+    2100040: aiStandardSurface100
+    2100042: aiStandardSurface98
+    2100044: aiStandardSurface101
+    2100046: aiStandardSurface97
+    2100048: aiStandardSurface95
+    2100050: aiStandardSurface90
+    2100052: aiStandardSurface102
+    2300000: Antenna
+    2300002: Antenna 1
+    2300004: Antenna1
+    2300006: Antenna1 1
+    2300008: Antenna2
+    2300010: Antenna2 1
+    2300012: Antennas
+    2300014: Antennas 1
+    2300016: Button
+    2300018: Button1
+    2300020: Button10
+    2300022: Button11
+    2300024: Button12
+    2300026: Button13
+    2300028: Button14
+    2300030: Button15
+    2300032: Button16
+    2300034: Button17
+    2300036: Button18
+    2300038: Button19
+    2300040: Button2
+    2300042: Button20
+    2300044: Button21
+    2300046: Button22
+    2300048: Button23
+    2300050: Button24
+    2300052: Button25
+    2300054: Button26
+    2300056: Button27
+    2300058: Button28
+    2300060: Button29
+    2300062: Button3
+    2300064: Button30
+    2300066: Button31
+    2300068: Button32
+    2300070: Button33
+    2300072: Button34
+    2300074: Button35
+    2300076: Button4
+    2300078: Button5
+    2300080: Button6
+    2300082: Button7
+    2300084: Button8
+    2300086: Button9
+    2300088: Ceiling
+    2300090: Center_of_Circle_Thing
+    2300092: Circle_Thing
+    2300094: Column
+    2300096: Column1
+    2300098: Column2
+    2300100: Column3
+    2300102: Energy_Tank
+    2300104: Energy_Tank 1
+    2300106: Floor
+    2300108: Gate
+    2300110: Glass
+    2300112: Hallway_Floor1
+    2300114: Hallway_Wall3
+    2300116: Hallway_Wall4
+    2300118: Hallway_Wall5
+    2300120: Laser_Beam
+    2300122: Laser_Beam_Tip
+    2300124: Laser_Connector
+    2300126: Lever
+    2300128: Lever_Frame
+    2300130: Lever_Handle
+    2300132: Machine_Tank
+    2300134: Machine_Thingy
+    2300136: Numbers_of_Areas
+    2300138: Pipe
+    2300140: Pipe1
+    2300142: Pipe10
+    2300144: Pipe11
+    2300146: Pipe2
+    2300148: Pipe3
+    2300150: Pipe6
+    2300152: Pipe7
+    2300154: Pipe8
+    2300156: Pipe9
+    2300158: Ship 1
+    2300160: Ship 2
+    2300162: Ship_Windows
+    2300164: Ship_Windows 1
+    2300166: Small_Tube
+    2300168: Small_Tube 1
+    2300170: Small_Tube 2
+    2300172: Small_Tube1
+    2300174: Small_Tube1 1
+    2300176: Small_Tube1 2
+    2300178: Small_Tube2
+    2300180: Small_Tube2 1
+    2300182: Small_Tube2 2
+    2300184: Small_Tube3
+    2300186: Small_Tube3 1
+    2300188: Small_Tube3 2
+    2300190: Small_Tube4
+    2300192: Small_Tube4 1
+    2300194: Small_Tube4 2
+    2300196: Small_Tube5
+    2300198: Small_Tube5 1
+    2300200: Small_Tube5 2
+    2300202: Small_Tube6
+    2300204: Small_Tube6 1
+    2300206: Small_Tube6 2
+    2300208: Small_Tube7
+    2300210: Small_Tube7 1
+    2300212: Small_Tube7 2
+    2300214: Small_Tube8
+    2300216: Small_Tube8 1
+    2300218: Small_Tube8 2
+    2300220: Stand
+    2300222: Stand 1
+    2300224: Stand1
+    2300226: Stand1 1
+    2300228: Table2
+    2300230: Table2 1
+    2300232: Table2 2
+    2300234: Table3
+    2300236: Table4
+    2300238: TV_Body
+    2300240: TV_Body 1
+    2300242: TV_Body 10
+    2300244: TV_Body 11
+    2300246: TV_Body 12
+    2300248: TV_Body 13
+    2300250: TV_Body 14
+    2300252: TV_Body 15
+    2300254: TV_Body 16
+    2300256: TV_Body 17
+    2300258: TV_Body 18
+    2300260: TV_Body 19
+    2300262: TV_Body 2
+    2300264: TV_Body 20
+    2300266: TV_Body 21
+    2300268: TV_Body 22
+    2300270: TV_Body 23
+    2300272: TV_Body 24
+    2300274: TV_Body 25
+    2300276: TV_Body 26
+    2300278: TV_Body 3
+    2300280: TV_Body 4
+    2300282: TV_Body 5
+    2300284: TV_Body 6
+    2300286: TV_Body 7
+    2300288: TV_Body 8
+    2300290: TV_Body 9
+    2300292: TV_Screen
+    2300294: TV_Screen 1
+    2300296: TV_Screen 10
+    2300298: TV_Screen 11
+    2300300: TV_Screen 12
+    2300302: TV_Screen 13
+    2300304: TV_Screen 14
+    2300306: TV_Screen 15
+    2300308: TV_Screen 16
+    2300310: TV_Screen 17
+    2300312: TV_Screen 18
+    2300314: TV_Screen 19
+    2300316: TV_Screen 2
+    2300318: TV_Screen 20
+    2300320: TV_Screen 21
+    2300322: TV_Screen 22
+    2300324: TV_Screen 23
+    2300326: TV_Screen 24
+    2300328: TV_Screen 25
+    2300330: TV_Screen 26
+    2300332: TV_Screen 3
+    2300334: TV_Screen 4
+    2300336: TV_Screen 5
+    2300338: TV_Screen 6
+    2300340: TV_Screen 7
+    2300342: TV_Screen 8
+    2300344: TV_Screen 9
+    2300346: Wall
+    2300348: Wall 1
+    2300350: Wall 2
+    2300352: Wall6
+    2300354: Wing
+    2300356: Wing 1
+    2300358: Wing1
+    2300360: Wing1 1
+    3300000: Antenna
+    3300002: Antenna 1
+    3300004: Antenna1
+    3300006: Antenna1 1
+    3300008: Antenna2
+    3300010: Antenna2 1
+    3300012: Antennas
+    3300014: Antennas 1
+    3300016: Button
+    3300018: Button1
+    3300020: Button10
+    3300022: Button11
+    3300024: Button12
+    3300026: Button13
+    3300028: Button14
+    3300030: Button15
+    3300032: Button16
+    3300034: Button17
+    3300036: Button18
+    3300038: Button19
+    3300040: Button2
+    3300042: Button20
+    3300044: Button21
+    3300046: Button22
+    3300048: Button23
+    3300050: Button24
+    3300052: Button25
+    3300054: Button26
+    3300056: Button27
+    3300058: Button28
+    3300060: Button29
+    3300062: Button3
+    3300064: Button30
+    3300066: Button31
+    3300068: Button32
+    3300070: Button33
+    3300072: Button34
+    3300074: Button35
+    3300076: Button4
+    3300078: Button5
+    3300080: Button6
+    3300082: Button7
+    3300084: Button8
+    3300086: Button9
+    3300088: Ceiling
+    3300090: Center_of_Circle_Thing
+    3300092: Circle_Thing
+    3300094: Column
+    3300096: Column1
+    3300098: Column2
+    3300100: Column3
+    3300102: Energy_Tank
+    3300104: Energy_Tank 1
+    3300106: Floor
+    3300108: Gate
+    3300110: Glass
+    3300112: Hallway_Floor1
+    3300114: Hallway_Wall3
+    3300116: Hallway_Wall4
+    3300118: Hallway_Wall5
+    3300120: Laser_Beam
+    3300122: Laser_Beam_Tip
+    3300124: Laser_Connector
+    3300126: Lever
+    3300128: Lever_Frame
+    3300130: Lever_Handle
+    3300132: Machine_Tank
+    3300134: Machine_Thingy
+    3300136: Numbers_of_Areas
+    3300138: Pipe
+    3300140: Pipe1
+    3300142: Pipe10
+    3300144: Pipe11
+    3300146: Pipe2
+    3300148: Pipe3
+    3300150: Pipe6
+    3300152: Pipe7
+    3300154: Pipe8
+    3300156: Pipe9
+    3300158: Ship 1
+    3300160: Ship 2
+    3300162: Ship_Windows
+    3300164: Ship_Windows 1
+    3300166: Small_Tube
+    3300168: Small_Tube 1
+    3300170: Small_Tube 2
+    3300172: Small_Tube1
+    3300174: Small_Tube1 1
+    3300176: Small_Tube1 2
+    3300178: Small_Tube2
+    3300180: Small_Tube2 1
+    3300182: Small_Tube2 2
+    3300184: Small_Tube3
+    3300186: Small_Tube3 1
+    3300188: Small_Tube3 2
+    3300190: Small_Tube4
+    3300192: Small_Tube4 1
+    3300194: Small_Tube4 2
+    3300196: Small_Tube5
+    3300198: Small_Tube5 1
+    3300200: Small_Tube5 2
+    3300202: Small_Tube6
+    3300204: Small_Tube6 1
+    3300206: Small_Tube6 2
+    3300208: Small_Tube7
+    3300210: Small_Tube7 1
+    3300212: Small_Tube7 2
+    3300214: Small_Tube8
+    3300216: Small_Tube8 1
+    3300218: Small_Tube8 2
+    3300220: Stand
+    3300222: Stand 1
+    3300224: Stand1
+    3300226: Stand1 1
+    3300228: Table2
+    3300230: Table2 1
+    3300232: Table2 2
+    3300234: Table3
+    3300236: Table4
+    3300238: TV_Body
+    3300240: TV_Body 1
+    3300242: TV_Body 10
+    3300244: TV_Body 11
+    3300246: TV_Body 12
+    3300248: TV_Body 13
+    3300250: TV_Body 14
+    3300252: TV_Body 15
+    3300254: TV_Body 16
+    3300256: TV_Body 17
+    3300258: TV_Body 18
+    3300260: TV_Body 19
+    3300262: TV_Body 2
+    3300264: TV_Body 20
+    3300266: TV_Body 21
+    3300268: TV_Body 22
+    3300270: TV_Body 23
+    3300272: TV_Body 24
+    3300274: TV_Body 25
+    3300276: TV_Body 26
+    3300278: TV_Body 3
+    3300280: TV_Body 4
+    3300282: TV_Body 5
+    3300284: TV_Body 6
+    3300286: TV_Body 7
+    3300288: TV_Body 8
+    3300290: TV_Body 9
+    3300292: TV_Screen
+    3300294: TV_Screen 1
+    3300296: TV_Screen 10
+    3300298: TV_Screen 11
+    3300300: TV_Screen 12
+    3300302: TV_Screen 13
+    3300304: TV_Screen 14
+    3300306: TV_Screen 15
+    3300308: TV_Screen 16
+    3300310: TV_Screen 17
+    3300312: TV_Screen 18
+    3300314: TV_Screen 19
+    3300316: TV_Screen 2
+    3300318: TV_Screen 20
+    3300320: TV_Screen 21
+    3300322: TV_Screen 22
+    3300324: TV_Screen 23
+    3300326: TV_Screen 24
+    3300328: TV_Screen 25
+    3300330: TV_Screen 26
+    3300332: TV_Screen 3
+    3300334: TV_Screen 4
+    3300336: TV_Screen 5
+    3300338: TV_Screen 6
+    3300340: TV_Screen 7
+    3300342: TV_Screen 8
+    3300344: TV_Screen 9
+    3300346: Wall
+    3300348: Wall 1
+    3300350: Wall 2
+    3300352: Wall6
+    3300354: Wing
+    3300356: Wing 1
+    3300358: Wing1
+    3300360: Wing1 1
+    4300000: Wall6
+    4300002: Floor
+    4300004: Antennas
+    4300006: Wing1
+    4300008: Ship
+    4300010: Wing
+    4300012: Antenna
+    4300014: Antenna1
+    4300016: Antenna2
+    4300018: Ship_Windows
+    4300020: Antennas
+    4300022: Wing1
+    4300024: Ship
+    4300026: Wing
+    4300028: Antenna
+    4300030: Antenna1
+    4300032: Antenna2
+    4300034: Ship_Windows
+    4300036: Glass
+    4300038: Gate
+    4300040: Ceiling
+    4300042: Pipe
+    4300044: Pipe1
+    4300046: Pipe2
+    4300048: Pipe3
+    4300050: Pipe6
+    4300052: Pipe7
+    4300054: Pipe8
+    4300056: Pipe9
+    4300058: Pipe10
+    4300060: Pipe11
+    4300062: Stand1
+    4300064: Stand
+    4300066: Energy_Tank
+    4300068: Stand1
+    4300070: Stand
+    4300072: Energy_Tank
+    4300074: Column3
+    4300076: Column2
+    4300078: Column1
+    4300080: Column
+    4300082: Small_Tube
+    4300084: TV_Screen
+    4300086: TV_Body
+    4300088: TV_Screen
+    4300090: TV_Body
+    4300092: TV_Screen
+    4300094: TV_Body
+    4300096: TV_Screen
+    4300098: TV_Body
+    4300100: TV_Screen
+    4300102: TV_Body
+    4300104: TV_Screen
+    4300106: TV_Body
+    4300108: TV_Screen
+    4300110: TV_Body
+    4300112: TV_Screen
+    4300114: TV_Body
+    4300116: TV_Screen
+    4300118: TV_Body
+    4300120: Small_Tube1
+    4300122: Small_Tube2
+    4300124: Small_Tube3
+    4300126: Wall
+    4300128: Small_Tube4
+    4300130: Small_Tube5
+    4300132: Small_Tube6
+    4300134: Small_Tube7
+    4300136: Small_Tube8
+    4300138: Table2
+    4300140: Small_Tube
+    4300142: TV_Screen
+    4300144: TV_Body
+    4300146: TV_Screen
+    4300148: TV_Body
+    4300150: TV_Screen
+    4300152: TV_Body
+    4300154: TV_Screen
+    4300156: TV_Body
+    4300158: TV_Screen
+    4300160: TV_Body
+    4300162: TV_Screen
+    4300164: TV_Body
+    4300166: TV_Screen
+    4300168: TV_Body
+    4300170: TV_Screen
+    4300172: TV_Body
+    4300174: TV_Screen
+    4300176: TV_Body
+    4300178: Small_Tube1
+    4300180: Small_Tube2
+    4300182: Small_Tube3
+    4300184: Wall
+    4300186: Small_Tube4
+    4300188: Small_Tube5
+    4300190: Small_Tube6
+    4300192: Small_Tube7
+    4300194: Small_Tube8
+    4300196: Table2
+    4300198: Small_Tube
+    4300200: TV_Screen
+    4300202: TV_Body
+    4300204: TV_Screen
+    4300206: TV_Body
+    4300208: TV_Screen
+    4300210: TV_Body
+    4300212: TV_Screen
+    4300214: TV_Body
+    4300216: TV_Screen
+    4300218: TV_Body
+    4300220: TV_Screen
+    4300222: TV_Body
+    4300224: TV_Screen
+    4300226: TV_Body
+    4300228: TV_Screen
+    4300230: TV_Body
+    4300232: TV_Screen
+    4300234: TV_Body
+    4300236: Small_Tube1
+    4300238: Small_Tube2
+    4300240: Small_Tube3
+    4300242: Wall
+    4300244: Small_Tube4
+    4300246: Small_Tube5
+    4300248: Small_Tube6
+    4300250: Small_Tube7
+    4300252: Small_Tube8
+    4300254: Table2
+    4300256: Table3
+    4300258: Numbers_of_Areas
+    4300260: Machine_Thingy
+    4300262: Center_of_Circle_Thing
+    4300264: Lever_Frame
+    4300266: Circle_Thing
+    4300268: Lever
+    4300270: Machine_Tank
+    4300272: Button
+    4300274: Button1
+    4300276: Button2
+    4300278: Button3
+    4300280: Button4
+    4300282: Button5
+    4300284: Button6
+    4300286: Button7
+    4300288: Button8
+    4300290: Button9
+    4300292: Button10
+    4300294: Button11
+    4300296: Button12
+    4300298: Button13
+    4300300: Button14
+    4300302: Button15
+    4300304: Button16
+    4300306: Button17
+    4300308: Button18
+    4300310: Button19
+    4300312: Button20
+    4300314: Button21
+    4300316: Button22
+    4300318: Button23
+    4300320: Button24
+    4300322: Button25
+    4300324: Button26
+    4300326: Button27
+    4300328: Button28
+    4300330: Button29
+    4300332: Button30
+    4300334: Button31
+    4300336: Button32
+    4300338: Button33
+    4300340: Button34
+    4300342: Button35
+    4300344: Lever_Handle
+    4300346: Laser_Beam_Tip
+    4300348: Laser_Beam
+    4300350: Laser_Connector
+    4300352: Table4
+    4300354: Hallway_Floor1
+    4300356: Hallway_Wall5
+    4300358: Hallway_Wall4
+    4300360: Hallway_Wall3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,6 +11,11 @@ ModelImporter:
     4300000: Seaweed_Group
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: b3326aa4bcb74a54b8fcf01596487d2d, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: seaweed-texture-6
