@@ -1021,7 +1021,182 @@ ModelImporter:
     4300356: Hallway_Wall5
     4300358: Hallway_Wall4
     4300360: Hallway_Wall3
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rube_Goldberg_Animation_Full_aiStandardSurface100
+    second: {fileID: 2100000, guid: 00f4984a5b0557e4bbe20299358c0323, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface10
+    second: {fileID: 2100000, guid: 0b8de3f1d4ba59743aa695619c096ef5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface100
+    second: {fileID: 2100000, guid: c6b57edb5841ac149aa02c191a35333b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface101
+    second: {fileID: 2100000, guid: fe88dea4f713c4e47bf66a1d7b8faab4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface102
+    second: {fileID: 2100000, guid: 71fcaca5c7d41914ca06722d3314e520, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface74
+    second: {fileID: 2100000, guid: 0e1aa174a5a0865429cd57f33fa038c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface75
+    second: {fileID: 2100000, guid: 0011cede0c55cdb45abad6be600619b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface76
+    second: {fileID: 2100000, guid: 754532176b39c8d4b8a33f2d75b78ceb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface77
+    second: {fileID: 2100000, guid: be964c6f5976818478644733ea97dd18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface78
+    second: {fileID: 2100000, guid: b567b1c562ee4334087704b656ed5a48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface79
+    second: {fileID: 2100000, guid: 1247b02522117c0469a55228dd1efd83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface83
+    second: {fileID: 2100000, guid: 1b7e8f0b13ada6a4994dd97babfb949f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface84
+    second: {fileID: 2100000, guid: 683417e69ce09ce489287ccb138f812b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface85
+    second: {fileID: 2100000, guid: d2725e484df8bc648ad706c9198d171b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface86
+    second: {fileID: 2100000, guid: 8169978478fb60449813cbb345e2f752, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface90
+    second: {fileID: 2100000, guid: 25d8c2b94790e5140a9130236c46dc31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface91
+    second: {fileID: 2100000, guid: 41ec9b0473c06e54cad04584c85e659c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface92
+    second: {fileID: 2100000, guid: cfd6f6473167e4f489f5cc8caca0606b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface93
+    second: {fileID: 2100000, guid: 1b47ad44979691b4abb465f59a53665d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface94
+    second: {fileID: 2100000, guid: 57573ec18fd35a744ae0028a4a4ca9be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface95
+    second: {fileID: 2100000, guid: 9121e7dd25c689449a47822c73e1ad1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface96
+    second: {fileID: 2100000, guid: 39e25ea895236264e895671cd82e97fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface97
+    second: {fileID: 2100000, guid: 0bbc6f5fd5848c343b6f70c8c2d751d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface98
+    second: {fileID: 2100000, guid: 15856e3b2a9cfe44f9313513e7199075, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface99
+    second: {fileID: 2100000, guid: d7797556e868a9c4dae44b68316467c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 2b3829caf321bc444bbe38fba178808a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: typeBlinn1
+    second: {fileID: 2100000, guid: 57257396e85c38d44883be7843c04071, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 13-stone-seamless-concrete-textures
+    second: {fileID: 2800000, guid: 098ad18e40cdff446b2827efbb3ca061, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 20150904-025_-_Stripes_-_Horizontal_-_1_inch_-_Purple_5E259B_and_Black_shop_preview
+    second: {fileID: 2800000, guid: 77969565d083188418fdc551027221b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 20_brushed_metal_background_textures_psd_ai_eps_png_svg_tif_cdr_jpg_hdr_1908991_o
+    second: {fileID: 2800000, guid: 72539f078a2773341819fedad739bd15, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 6285936917_03ba2af134_b
+    second: {fileID: 2800000, guid: f20fdad2a115e304692934abfd6220fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hexagon-marble-tile-500x500
+    second: {fileID: 2800000, guid: da17fc07076ee2741b5463abc34306b4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: marble-tiles-01-white-ariston-02-2-b
+    second: {fileID: 2800000, guid: 0cea7dcb6a3a87c4f960ffc17d9d616e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tileable-metal-textures-8
+    second: {fileID: 2800000, guid: 16db0e691ee1ab846a94bb687eef876b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wooden-plank-textured-background-material_53876-33591
+    second: {fileID: 2800000, guid: e63e8a2dea94eae4fbfd58e94ff8cfcd, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -1052,7 +1227,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 55
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
