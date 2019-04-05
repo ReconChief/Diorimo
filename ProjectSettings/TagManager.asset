@@ -18,6 +18,7 @@ TagManager:
   - FireBeam
   - Water
   - EventSystem
+  - Tree
   layers:
   - Default
   - TransparentFX
