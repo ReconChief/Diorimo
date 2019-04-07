@@ -78,10 +78,10 @@ public class PlayerFunctions : MonoBehaviour
     public void Fire(int currentBeam)
     {
         GameObject bullet = (GameObject)Instantiate(beamObjects[currentBeam], beamSpawn.position, beamSpawn.rotation);
+            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 20f;
 
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 20f;
-
-        Destroy(bullet, 1);
+            Destroy(bullet, 1);
+        
     }
 
     public void FireMissile()

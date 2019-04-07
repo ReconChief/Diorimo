@@ -41,8 +41,8 @@ public class InBuilding : MonoBehaviour
         }
     }
 
-    /*public void OnTriggerExit(Collider other)
+    public void OnTriggerExit(Collider other)
     {
         pc.transformation = 1;
-    }*/
+    }
 }
