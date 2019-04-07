@@ -13,7 +13,7 @@ public class TreeLogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        trans = transform;
+        //trans = transform;
     }
 
     // Update is called once per frame
@@ -33,9 +33,10 @@ public class TreeLogic : MonoBehaviour
         {
             
             burning = true;
-            burned = true;
+           
             if (!burned) {
-                Instantiate(fire, trans);
+                Instantiate(fire, transform);
+                burned = true;
 
             }
             
