@@ -1021,6 +1021,187 @@ ModelImporter:
     4300356: Hallway_Wall5
     4300358: Hallway_Wall4
     4300360: Hallway_Wall3
+    6400000: Antenna
+    6400002: Antenna 1
+    6400004: Antenna1
+    6400006: Antenna1 1
+    6400008: Antenna2
+    6400010: Antenna2 1
+    6400012: Antennas
+    6400014: Antennas 1
+    6400016: Button
+    6400018: Button1
+    6400020: Button10
+    6400022: Button11
+    6400024: Button12
+    6400026: Button13
+    6400028: Button14
+    6400030: Button15
+    6400032: Button16
+    6400034: Button17
+    6400036: Button18
+    6400038: Button19
+    6400040: Button2
+    6400042: Button20
+    6400044: Button21
+    6400046: Button22
+    6400048: Button23
+    6400050: Button24
+    6400052: Button25
+    6400054: Button26
+    6400056: Button27
+    6400058: Button28
+    6400060: Button29
+    6400062: Button3
+    6400064: Button30
+    6400066: Button31
+    6400068: Button32
+    6400070: Button33
+    6400072: Button34
+    6400074: Button35
+    6400076: Button4
+    6400078: Button5
+    6400080: Button6
+    6400082: Button7
+    6400084: Button8
+    6400086: Button9
+    6400088: Ceiling
+    6400090: Center_of_Circle_Thing
+    6400092: Circle_Thing
+    6400094: Column
+    6400096: Column1
+    6400098: Column2
+    6400100: Column3
+    6400102: Energy_Tank
+    6400104: Energy_Tank 1
+    6400106: Floor
+    6400108: Gate
+    6400110: Glass
+    6400112: Hallway_Floor1
+    6400114: Hallway_Wall3
+    6400116: Hallway_Wall4
+    6400118: Hallway_Wall5
+    6400120: Laser_Beam
+    6400122: Laser_Beam_Tip
+    6400124: Laser_Connector
+    6400126: Lever
+    6400128: Lever_Frame
+    6400130: Lever_Handle
+    6400132: Machine_Tank
+    6400134: Machine_Thingy
+    6400136: Numbers_of_Areas
+    6400138: Pipe
+    6400140: Pipe1
+    6400142: Pipe10
+    6400144: Pipe11
+    6400146: Pipe2
+    6400148: Pipe3
+    6400150: Pipe6
+    6400152: Pipe7
+    6400154: Pipe8
+    6400156: Pipe9
+    6400158: Ship 1
+    6400160: Ship 2
+    6400162: Ship_Windows
+    6400164: Ship_Windows 1
+    6400166: Small_Tube
+    6400168: Small_Tube 1
+    6400170: Small_Tube 2
+    6400172: Small_Tube1
+    6400174: Small_Tube1 1
+    6400176: Small_Tube1 2
+    6400178: Small_Tube2
+    6400180: Small_Tube2 1
+    6400182: Small_Tube2 2
+    6400184: Small_Tube3
+    6400186: Small_Tube3 1
+    6400188: Small_Tube3 2
+    6400190: Small_Tube4
+    6400192: Small_Tube4 1
+    6400194: Small_Tube4 2
+    6400196: Small_Tube5
+    6400198: Small_Tube5 1
+    6400200: Small_Tube5 2
+    6400202: Small_Tube6
+    6400204: Small_Tube6 1
+    6400206: Small_Tube6 2
+    6400208: Small_Tube7
+    6400210: Small_Tube7 1
+    6400212: Small_Tube7 2
+    6400214: Small_Tube8
+    6400216: Small_Tube8 1
+    6400218: Small_Tube8 2
+    6400220: Stand
+    6400222: Stand 1
+    6400224: Stand1
+    6400226: Stand1 1
+    6400228: Table2
+    6400230: Table2 1
+    6400232: Table2 2
+    6400234: Table3
+    6400236: Table4
+    6400238: TV_Body
+    6400240: TV_Body 1
+    6400242: TV_Body 10
+    6400244: TV_Body 11
+    6400246: TV_Body 12
+    6400248: TV_Body 13
+    6400250: TV_Body 14
+    6400252: TV_Body 15
+    6400254: TV_Body 16
+    6400256: TV_Body 17
+    6400258: TV_Body 18
+    6400260: TV_Body 19
+    6400262: TV_Body 2
+    6400264: TV_Body 20
+    6400266: TV_Body 21
+    6400268: TV_Body 22
+    6400270: TV_Body 23
+    6400272: TV_Body 24
+    6400274: TV_Body 25
+    6400276: TV_Body 26
+    6400278: TV_Body 3
+    6400280: TV_Body 4
+    6400282: TV_Body 5
+    6400284: TV_Body 6
+    6400286: TV_Body 7
+    6400288: TV_Body 8
+    6400290: TV_Body 9
+    6400292: TV_Screen
+    6400294: TV_Screen 1
+    6400296: TV_Screen 10
+    6400298: TV_Screen 11
+    6400300: TV_Screen 12
+    6400302: TV_Screen 13
+    6400304: TV_Screen 14
+    6400306: TV_Screen 15
+    6400308: TV_Screen 16
+    6400310: TV_Screen 17
+    6400312: TV_Screen 18
+    6400314: TV_Screen 19
+    6400316: TV_Screen 2
+    6400318: TV_Screen 20
+    6400320: TV_Screen 21
+    6400322: TV_Screen 22
+    6400324: TV_Screen 23
+    6400326: TV_Screen 24
+    6400328: TV_Screen 25
+    6400330: TV_Screen 26
+    6400332: TV_Screen 3
+    6400334: TV_Screen 4
+    6400336: TV_Screen 5
+    6400338: TV_Screen 6
+    6400340: TV_Screen 7
+    6400342: TV_Screen 8
+    6400344: TV_Screen 9
+    6400346: Wall
+    6400348: Wall 1
+    6400350: Wall 2
+    6400352: Wall6
+    6400354: Wing
+    6400356: Wing 1
+    6400358: Wing1
+    6400360: Wing1 1
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -1229,7 +1410,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 55
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

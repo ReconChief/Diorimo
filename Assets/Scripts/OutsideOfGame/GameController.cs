@@ -44,8 +44,6 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
         if (pc.hp <= 0)
         {
             if (timer >= 0) {
@@ -59,32 +57,17 @@ public class GameController : MonoBehaviour
                 RespawnPlayer();
             }
             
-
-
             }
             Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
         Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
-
-       /*if (pc.hp <= 0)
-        {
-            DoSlowmotion();
-            pc.hp = pc.maxCapHp;
-            pc.missiles = pc.maxMissiles;
-            RespawnPlayer();
-        }*/
     }
 
     public void RespawnPlayer()
     {
-Time.timeScale = 1;
+        Time.timeScale = 1;
         player.gameObject.transform.position = respawnPoint.transform.position;
         timer = 300;
     }
-    /*public void DoSlowmotion()
-    {
-        Time.timeScale = slowdownFactor;
-        Time.fixedDeltaTime = Time.timeScale * .02f;
-    }*/
 
     public void ReturnToGame()
     {

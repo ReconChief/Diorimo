@@ -7,15 +7,20 @@ public class WallBreak : MonoBehaviour
     public GameObject boom;
     public GameObject pieces;
     private Transform trans;
+
     private int timer = 110;
     private bool hit=false;
+
     void Update()
     {
         trans = transform;
-        if (hit) {
+        if (hit)
+        {
             timer--;
         }
-        if (timer <= 0) {
+
+        if (timer <= 0)
+        {
             //this.gameObject.SetActive(false);
         }
     }
@@ -28,7 +33,6 @@ public class WallBreak : MonoBehaviour
             Instantiate(boom, trans);
             Instantiate(pieces, trans);
             transform.localScale = transform.localScale*0.0025f;
-            //this.gameObject.SetActive(false);
         }
     }
 }
