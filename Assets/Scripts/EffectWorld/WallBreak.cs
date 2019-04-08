@@ -33,6 +33,7 @@ public class WallBreak : MonoBehaviour
             Instantiate(boom, trans);
             Instantiate(pieces, trans);
             transform.localScale = transform.localScale*0.0025f;
+            //Destroy(this.gameObject);
         }
     }
 }
