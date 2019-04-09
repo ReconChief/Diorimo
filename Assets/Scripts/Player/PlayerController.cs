@@ -17,10 +17,10 @@ public class PlayerController : MonoBehaviour
     public bool transformed= false;
     public bool hardened = false;
 
-    public int hp = 99;
-    public int missiles = 5;
-    public int maxCapHp = 99;
-    public int maxMissiles = 5;
+    public float hp = 99;
+    public float missiles = 5;
+    public float maxCapHp = 99;
+    public float maxMissiles = 5;
 
     #region
     //Upgrades

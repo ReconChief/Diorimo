@@ -7,8 +7,9 @@ public class PlayerUI : MonoBehaviour
 {
     public GameObject missileDisplay;
 
-    public Slider healthSlider;
-    public Slider missileSlider;
+    public Image healthBarLeft;
+    public Image healthBarRight;
+    public Image missileBar;
 
     public Text healthBarCounterDisplay;
     public Text missileCounterDisplay;
@@ -25,8 +26,8 @@ public class PlayerUI : MonoBehaviour
     
     void Update()
     {
-        healthSlider.maxValue = pc.maxCapHp;
-        healthSlider.value = pc.hp;
+        healthBarLeft.fillAmount = pc.hp / pc.maxCapHp;
+        healthBarRight.fillAmount = pc.hp / pc.maxCapHp;
 
         healthBarCounterDisplay.text = "HP: " + pc.hp.ToString() + "/" + pc.maxCapHp.ToString();
 
@@ -34,8 +35,8 @@ public class PlayerUI : MonoBehaviour
         {
             missileDisplay.SetActive(true);
             missileCounterDisplay.text = "Missiles: " + pc.missiles.ToString() + "/" + pc.maxMissiles.ToString();
-            missileSlider.maxValue = pc.maxMissiles;
-            missileSlider.value = pc.missiles;
+
+            missileBar.fillAmount = pc.missiles / pc.maxMissiles;
         }
 
         else
