@@ -42,8 +42,10 @@ public class Bugg : Enemy
         if (!isDead)
         {
 
-            if (Vector3.Distance(transform.position, pc.transform.position) > 10)
+            if (Vector3.Distance(transform.position, pc.transform.position) > 10) {
+                gameObject.GetComponent<SphereCollider>().enabled = false;
                 Patrol();
+            }
             else
                 Attack();
         }
@@ -71,6 +73,7 @@ public class Bugg : Enemy
     }
     void Attack()
     {
+        gameObject.GetComponent<SphereCollider>().enabled = true;
         /*transform.position = Vector3.MoveTowards(transform.position, pc.transform.position, 2.5f * Time.deltaTime);
         Vector3 targetDirection = pc.transform.position - transform.position;
         transform.rotation = Quaternion.LookRotation(targetDirection);*/

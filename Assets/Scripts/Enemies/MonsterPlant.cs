@@ -45,7 +45,8 @@ public class MonsterPlant : Enemy
     }
     void Attack() {
         anim.SetBool("IsAttacking",true);
-        Vector3 adjust = new Vector3(0, 1.5f, 0);
+        Vector3 adjust = new Vector3(0, 0f, 0);
+        //dolphins need 1.5
         Vector3 targetDirection = pc.transform.position- transform.position-adjust;
         transform.rotation = Quaternion.LookRotation(targetDirection);
         GameObject EBullet=Instantiate(EnemyBullet, new Vector3(BulletPoint.transform.position.x, BulletPoint.transform.position.y, BulletPoint.transform.position.z),Quaternion.identity);

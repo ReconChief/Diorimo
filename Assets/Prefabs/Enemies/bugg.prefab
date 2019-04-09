@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3616535182214320924}
   - component: {fileID: 8998947003707611244}
   - component: {fileID: 407851956}
+  - component: {fileID: 6261866788426258189}
   m_Layer: 0
   m_Name: bugg
   m_TagString: Enemy
@@ -132,6 +133,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!135 &6261866788426258189
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4920464837750527385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.25996137
+  m_Center: {x: 0, y: 0.3872218, z: 0.62726045}
 --- !u!1001 &4920464838587371866
 PrefabInstance:
   m_ObjectHideFlags: 0
