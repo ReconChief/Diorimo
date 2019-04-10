@@ -49,13 +49,12 @@ public class Dolphin : Enemy
 
     }
     void Patrol()
-    {        transform.position = Vector3.MoveTowards(transform.position, targets[point], 1.5f * Time.deltaTime);
-        if (point == targets.Length)
-            point = 0;
-
+    {   transform.position = Vector3.MoveTowards(transform.position, targets[point], 1.5f * Time.deltaTime);
+       
         if (transform.position == targets[point])
             point++;
-        
+        if (point == targets.Length)
+            point = 0;
         Vector3 targetDirection = targets[point] - transform.position;
         transform.rotation = Quaternion.LookRotation(targetDirection);
     }
