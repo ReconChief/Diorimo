@@ -46,25 +46,14 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      /*
+      
         if (pc.hp <= 0)
         {
-            if (timer >= 0) {
-                Time.timeScale = 0.05f;
-                timer--;
-            }
-
-            if (timer <= 0) {
                 pc.hp = pc.maxCapHp;
                 pc.missiles = pc.maxMissiles;
                 RespawnPlayer();
-            }
-            
-            }
-        Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
-        Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
 
-      */
+        }
     }
 
     public void RespawnPlayer()
