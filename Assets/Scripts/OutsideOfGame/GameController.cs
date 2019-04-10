@@ -24,15 +24,17 @@ public class GameController : MonoBehaviour
     public GameObject FirstButtonForControls;
     public GameObject FirstButtonForAreYouSure;
 
+    /*
     //time shit
     private float slowdownFactor = 0.05f;
     private float slowdownLength = 2f;
     private int timer;
-    
+    */
+
     // Start is called before the first frame update
     void Start()
     {
-        timer = 300;
+        //timer = 300;
         respawnPoint = GameObject.FindGameObjectWithTag("Respawn");
 
         eventSystem = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<EventSystem>();
@@ -44,6 +46,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      /*
         if (pc.hp <= 0)
         {
             if (timer >= 0) {
@@ -58,15 +61,17 @@ public class GameController : MonoBehaviour
             }
             
             }
-            Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
+        Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
         Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+
+      */
     }
 
     public void RespawnPlayer()
     {
         Time.timeScale = 1;
         player.gameObject.transform.position = respawnPoint.transform.position;
-        timer = 300;
+        //timer = 300;
     }
 
     public void ReturnToGame()

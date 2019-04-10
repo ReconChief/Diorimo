@@ -210,6 +210,12 @@ MonoBehaviour:
   player: {fileID: 0}
   pc: {fileID: 0}
   splat: {fileID: 7275467792594512880, guid: db5d3b6f948d7134e8ff7f13cd8d61d7, type: 3}
+  enemyAttack: {fileID: 8377495655257888039, guid: 5c9ddf8e3952b3b41aaf83c20e4d2c16,
+    type: 3}
+  enemyHurt: {fileID: 651812553461141888, guid: 967d2fc0849548f46a02b4152134edb9,
+    type: 3}
+  enemyDeath: {fileID: 5467087930643791849, guid: db26a0a16f86b5946971ca3be95d2c7f,
+    type: 3}
   EnemyBullet: {fileID: 3811523835395507365, guid: b922de4c62bc56b45b6ba7bc99928ae9,
     type: 3}
   BulletPoint: {fileID: 26283199}

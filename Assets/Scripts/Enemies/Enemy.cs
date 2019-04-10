@@ -15,6 +15,11 @@ public class Enemy : MonoBehaviour
     public PlayerController pc;
     public GameObject splat;
 
+    //Sound Effects
+    public AudioSource enemyAttack;
+    public AudioSource enemyHurt;
+    public AudioSource enemyDeath;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -25,10 +30,12 @@ public class Enemy : MonoBehaviour
     {
         if (enemyHP <= 0)
         {
+            enemyDeath.Play();
+
             //Regenerate if HP and Missiles are lower than max
             if (pc.hp < pc.maxCapHp && pc.missiles < pc.maxMissiles)
             {
-                randomizer = Random.Range(0, 14);
+                randomizer = Random.Range(0, 10);
 
                 if (randomizer == 0 || randomizer == 1 || randomizer == 2)
                 {
@@ -42,13 +49,13 @@ public class Enemy : MonoBehaviour
                     GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[1], this.transform.position + fixPosition, this.transform.rotation);
                 }
 
-                else if (randomizer == 11)
+                else if (randomizer == 8)
                 {
                     //Large Health Pack
                     GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[2], this.transform.position + fixPosition, this.transform.rotation);
                 }
 
-                else if (randomizer == 14)
+                else if (randomizer == 9)
                 {
                     //Missile Pack
                     GameObject missilePack = (GameObject)Instantiate(regenerateMissileItem, this.transform.position + fixPosition, this.transform.rotation);
@@ -58,7 +65,7 @@ public class Enemy : MonoBehaviour
             //Regenerate if HP is lower than max
             if (pc.hp < pc.maxCapHp)
             {
-                randomizer = Random.Range(0, 14);
+                randomizer = Random.Range(0, 10);
 
                 if (randomizer == 0 || randomizer == 1 || randomizer == 2)
                 {
@@ -72,7 +79,7 @@ public class Enemy : MonoBehaviour
                     GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[1], this.transform.position + fixPosition, this.transform.rotation);
                 }
 
-                else if (randomizer == 11)
+                else if (randomizer == 8)
                 {
                     //Large Health Pack
                     GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[2], this.transform.position + fixPosition, this.transform.rotation);
@@ -99,6 +106,8 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            enemyAttack.Play();
+
             if ( pc.transformed && pc.transformation == 1)
             {
                 pc.hp -= 5;
@@ -141,6 +150,7 @@ public class Enemy : MonoBehaviour
             Instantiate(splat, transform);
             enemyHP-= 3;
             Destroy(other.gameObject);
+            enemyHurt.Play();
         }
     }    
 }

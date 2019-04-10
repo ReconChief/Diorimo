@@ -39,11 +39,22 @@ public class PlayerController : MonoBehaviour
     public GameObject body;
     public GameObject otherCam;
 
+    #region
     //Transfomation GameObjects
     public GameObject playerModel;
     public GameObject transformationForest;
     public GameObject transformationLava;
     public GameObject transformationWater;
+    #endregion
+
+    #region
+    //Sound Effects
+    public AudioSource regularBeamSFX;
+    public AudioSource electricBeamSFX;
+    public AudioSource fireBeamSFX;
+    public AudioSource waterBeamSFX;
+    public AudioSource missileAttackSFX;
+    #endregion
 
     public GameObject flashLight;
 
@@ -214,6 +225,27 @@ public class PlayerController : MonoBehaviour
             {
                 fire = false;
                 hardened = false;
+
+                if (currentBeam == 0)
+                {
+
+                }
+
+                if (currentBeam == 1)
+                {
+                    fireBeamSFX.Play();
+                }
+
+                if (currentBeam == 2)
+                {
+                    waterBeamSFX.Play();
+                }
+
+                if (currentBeam == 3)
+                {
+                    electricBeamSFX.Play();
+                }
+
                 pf.Fire(currentBeam);
                 
             }
@@ -272,6 +304,7 @@ public class PlayerController : MonoBehaviour
                 rb.AddForce(jerk, ForceMode.Impulse);
                 fireMissile = false;
                 pf.FireMissile();
+                missileAttackSFX.Play();
             }
 
             else if (Input.GetAxis("LeftTrigger") == 0 && missilePickedUp && !fireMissile && !ballForm && !transformed)
