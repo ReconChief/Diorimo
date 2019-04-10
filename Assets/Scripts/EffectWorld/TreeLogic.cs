@@ -19,13 +19,17 @@ public class TreeLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (burning&&timer>-5) {
+        if (burning&&timer>-50) {
             timer--;
         }
         if (timer == 0&&burned) {
            
             gameObject.GetComponent<MeshRenderer>().material= charred;
+
                 }
+        if (timer == -50 && burned) {
+            gameObject.SetActive(false);
+        }
     }
     public void OnTriggerEnter(Collider other)
     {

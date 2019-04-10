@@ -194,8 +194,8 @@ GameObject:
   m_Component:
   - component: {fileID: 821373434}
   - component: {fileID: 821373433}
-  - component: {fileID: 8499427321870719467}
   - component: {fileID: 3751191144846662801}
+  - component: {fileID: 5708424961704861714}
   m_Layer: 0
   m_Name: DolphinSwim
   m_TagString: Enemy
@@ -239,35 +239,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8499427321870719467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821373432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7995c14c9b49ec4e988acb9e8d9758b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHP: 5
-  regenerateHPItems:
-  - {fileID: 3616177753720908406, guid: 0fc5fba3472fce34dbc309ae293fe857, type: 3}
-  - {fileID: 3616177753720908406, guid: 0fc5fba3472fce34dbc309ae293fe857, type: 3}
-  - {fileID: 511138989474768403, guid: 12ec34b3d107cc146bc883585f2c9e71, type: 3}
-  regenerateMissileItem: {fileID: 3616177753720908406, guid: 0fc5fba3472fce34dbc309ae293fe857,
-    type: 3}
-  fixPosition: {x: 0, y: 0.4, z: 0}
-  player: {fileID: 0}
-  pc: {fileID: 0}
-  splat: {fileID: 7275467792594512880, guid: db5d3b6f948d7134e8ff7f13cd8d61d7, type: 3}
-  EnemyBullet: {fileID: 8044720428753966624, guid: 1c55ee4addbfb924bb3a12449ea843db,
-    type: 3}
-  BulletPoint: {fileID: 6091135606025460836}
-  target: {fileID: 6540641155021311550, guid: e0a0d892c0ad3644185553d7f7ece7f6, type: 3}
-  isDead: 0
-  isAttacking: 0
 --- !u!65 &3751191144846662801
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -281,6 +252,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.5985794, z: 4.0167046}
   m_Center: {x: 0, y: 2.2631264, z: 0.331182}
+--- !u!114 &5708424961704861714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821373432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3710fff52a37f7409d1cb853d0840aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHP: 5
+  regenerateHPItems:
+  - {fileID: 2439233715755988507, guid: 728d7995c5198da44925c4353059752d, type: 3}
+  - {fileID: 1619147830534342818, guid: a328a6e3d27a63944b4cdfb9f0627f72, type: 3}
+  - {fileID: 511138989474768403, guid: 12ec34b3d107cc146bc883585f2c9e71, type: 3}
+  regenerateMissileItem: {fileID: 3616177753720908406, guid: 0fc5fba3472fce34dbc309ae293fe857,
+    type: 3}
+  fixPosition: {x: 0, y: 0.4, z: 0}
+  player: {fileID: 9069755506584257151, guid: 8cf413dc8acfd9f4a874e62946a4b92c, type: 3}
+  pc: {fileID: 0}
+  splat: {fileID: 7275467792594512880, guid: db5d3b6f948d7134e8ff7f13cd8d61d7, type: 3}
+  EnemyBullet: {fileID: 6540641155021311550, guid: e0a0d892c0ad3644185553d7f7ece7f6,
+    type: 3}
+  BulletPoint: {fileID: 6091135606025460836}
+  targets:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  isDead: 0
 --- !u!1 &1424098763
 GameObject:
   m_ObjectHideFlags: 0

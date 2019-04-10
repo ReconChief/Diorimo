@@ -11,7 +11,7 @@ public class FireDoor : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("FireBeam"))
+        if (other.gameObject.CompareTag("ElectricBeam"))
         {
             this.gameObject.SetActive(false);
         }
