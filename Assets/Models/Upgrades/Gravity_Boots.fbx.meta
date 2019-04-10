@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: 3c1f66901b4c1924e98aa9827ac93c60
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Gravity_Boot
+    100002: Gravity_Boot 1
+    100004: Gravity_Boot 2
+    100006: Gravity_Boot1
+    100008: //RootNode
+    100010: Nail
+    100012: Nail 1
+    100014: Nail1
+    100016: Nail1 1
+    100018: Nail10
+    100020: Nail10 1
+    100022: Nail11
+    100024: Nail11 1
+    100026: Nail2
+    100028: Nail2 1
+    100030: Nail3
+    100032: Nail3 1
+    100034: Nail4
+    100036: Nail4 1
+    100038: Nail5
+    100040: Nail5 1
+    100042: Nail6
+    100044: Nail6 1
+    100046: Nail7
+    100048: Nail7 1
+    100050: Nail8
+    100052: Nail8 1
+    100054: Nail9
+    100056: Nail9 1
+    100058: Tube
+    100060: Tube 1
+    400000: Gravity_Boot
+    400002: Gravity_Boot 1
+    400004: Gravity_Boot 2
+    400006: Gravity_Boot1
+    400008: //RootNode
+    400010: Nail
+    400012: Nail 1
+    400014: Nail1
+    400016: Nail1 1
+    400018: Nail10
+    400020: Nail10 1
+    400022: Nail11
+    400024: Nail11 1
+    400026: Nail2
+    400028: Nail2 1
+    400030: Nail3
+    400032: Nail3 1
+    400034: Nail4
+    400036: Nail4 1
+    400038: Nail5
+    400040: Nail5 1
+    400042: Nail6
+    400044: Nail6 1
+    400046: Nail7
+    400048: Nail7 1
+    400050: Nail8
+    400052: Nail8 1
+    400054: Nail9
+    400056: Nail9 1
+    400058: Tube
+    400060: Tube 1
+    2100000: aiStandardSurface13
+    2100002: aiStandardSurface9
+    2100004: aiStandardSurface8
+    2300000: Gravity_Boot 1
+    2300002: Gravity_Boot 2
+    2300004: Nail
+    2300006: Nail 1
+    2300008: Nail1
+    2300010: Nail1 1
+    2300012: Nail10
+    2300014: Nail10 1
+    2300016: Nail11
+    2300018: Nail11 1
+    2300020: Nail2
+    2300022: Nail2 1
+    2300024: Nail3
+    2300026: Nail3 1
+    2300028: Nail4
+    2300030: Nail4 1
+    2300032: Nail5
+    2300034: Nail5 1
+    2300036: Nail6
+    2300038: Nail6 1
+    2300040: Nail7
+    2300042: Nail7 1
+    2300044: Nail8
+    2300046: Nail8 1
+    2300048: Nail9
+    2300050: Nail9 1
+    2300052: Tube
+    2300054: Tube 1
+    3300000: Gravity_Boot 1
+    3300002: Gravity_Boot 2
+    3300004: Nail
+    3300006: Nail 1
+    3300008: Nail1
+    3300010: Nail1 1
+    3300012: Nail10
+    3300014: Nail10 1
+    3300016: Nail11
+    3300018: Nail11 1
+    3300020: Nail2
+    3300022: Nail2 1
+    3300024: Nail3
+    3300026: Nail3 1
+    3300028: Nail4
+    3300030: Nail4 1
+    3300032: Nail5
+    3300034: Nail5 1
+    3300036: Nail6
+    3300038: Nail6 1
+    3300040: Nail7
+    3300042: Nail7 1
+    3300044: Nail8
+    3300046: Nail8 1
+    3300048: Nail9
+    3300050: Nail9 1
+    3300052: Tube
+    3300054: Tube 1
+    4300000: Gravity_Boot
+    4300002: Tube
+    4300004: Nail
+    4300006: Nail1
+    4300008: Nail2
+    4300010: Nail3
+    4300012: Nail4
+    4300014: Nail5
+    4300016: Nail6
+    4300018: Nail7
+    4300020: Nail8
+    4300022: Nail9
+    4300024: Nail10
+    4300026: Nail11
+    4300028: Gravity_Boot
+    4300030: Tube
+    4300032: Nail
+    4300034: Nail1
+    4300036: Nail2
+    4300038: Nail3
+    4300040: Nail4
+    4300042: Nail5
+    4300044: Nail6
+    4300046: Nail7
+    4300048: Nail8
+    4300050: Nail9
+    4300052: Nail10
+    4300054: Nail11
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 15
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
