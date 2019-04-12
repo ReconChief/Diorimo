@@ -281,7 +281,7 @@ MonoBehaviour:
     type: 3}
   enemyDeath: {fileID: 5467087930643791849, guid: db26a0a16f86b5946971ca3be95d2c7f,
     type: 3}
-  EnemyBullet: {fileID: 6540641155021311550, guid: e0a0d892c0ad3644185553d7f7ece7f6,
+  EnemyBullet: {fileID: 8044720428753966624, guid: 1c55ee4addbfb924bb3a12449ea843db,
     type: 3}
   BulletPoint: {fileID: 6091135606025460836}
   targets:
