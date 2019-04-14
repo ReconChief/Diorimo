@@ -52,7 +52,6 @@ public class GameController : MonoBehaviour
                 pc.hp = pc.maxCapHp;
                 pc.missiles = pc.maxMissiles;
                 RespawnPlayer();
-
         }
     }
 

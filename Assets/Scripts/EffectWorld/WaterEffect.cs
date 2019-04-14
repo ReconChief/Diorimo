@@ -9,7 +9,7 @@ public class WaterEffect : MonoBehaviour
     private WaterEffect water;
 
     public AudioSource waterSong;
-
+   
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
