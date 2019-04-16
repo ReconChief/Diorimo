@@ -45,9 +45,12 @@ public class WaterEffect : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        water.enabled = false;
-        pc.playerSpeed = 4.5f;
-        pc.higherJump = false;
-        waterSong.Stop();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            water.enabled = false;
+            pc.playerSpeed = 4.5f;
+            pc.higherJump = false;
+            waterSong.Stop();
+        }
     }
 }

@@ -21,6 +21,9 @@ public class ControlLava : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        LavaArea.SetActive(false);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            LavaArea.SetActive(false);
+        }
     }
 }

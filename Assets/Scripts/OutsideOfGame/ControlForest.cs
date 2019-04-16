@@ -21,6 +21,9 @@ public class ControlForest : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        ForestArea.SetActive(false);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            ForestArea.SetActive(false);
+        }
     }
 }

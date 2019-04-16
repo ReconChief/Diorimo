@@ -38,7 +38,10 @@ public class HeatEffect : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        heat.enabled = false;
-        lavaSong.Stop();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            heat.enabled = false;
+            lavaSong.Stop();
+        }
     }
 }

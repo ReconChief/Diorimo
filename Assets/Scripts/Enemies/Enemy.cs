@@ -65,7 +65,7 @@ public class Enemy : MonoBehaviour
             //Regenerate if HP is lower than max
             if (pc.hp < pc.maxCapHp)
             {
-                randomizer = Random.Range(0, 10);
+                randomizer = Random.Range(0, 7);
 
                 if (randomizer == 0 || randomizer == 1 || randomizer == 2)
                 {
@@ -73,13 +73,13 @@ public class Enemy : MonoBehaviour
                     GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[0], this.transform.position + fixPosition, this.transform.rotation);
                 }
 
-                else if (randomizer == 6 || randomizer == 7)
+                else if (randomizer == 3 || randomizer == 4)
                 {
                     //Medium Health Pack
                     GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[1], this.transform.position + fixPosition, this.transform.rotation);
                 }
 
-                else if (randomizer == 8)
+                else if (randomizer == 5)
                 {
                     //Large Health Pack
                     GameObject healthPack = (GameObject)Instantiate(regenerateHPItems[2], this.transform.position + fixPosition, this.transform.rotation);
@@ -143,6 +143,7 @@ public class Enemy : MonoBehaviour
             Instantiate(splat, transform);
             --enemyHP;
             Destroy(other.gameObject);
+            enemyHurt.Play();
         }
 
         if (other.gameObject.CompareTag("Missile"))

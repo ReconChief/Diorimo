@@ -21,6 +21,9 @@ public class ControlWater : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        WaterArea.SetActive(false);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            WaterArea.SetActive(false);
+        }
     }
 }

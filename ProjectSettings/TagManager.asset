@@ -19,6 +19,7 @@ TagManager:
   - Water
   - EventSystem
   - Tree
+  - Wall
   layers:
   - Default
   - TransparentFX
