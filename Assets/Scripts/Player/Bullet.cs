@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Water"))
         {
-            if (!collision.gameObject.CompareTag("Enemy"))
+            if (collision.gameObject.CompareTag("Enemy"))
             {
                 Instantiate(splat, transform);
                 Destroy(this.gameObject);
@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour
             if (collision.gameObject.CompareTag("EnemyBullet"))
             {
                 Destroy(collision.gameObject);
+                Destroy(this.gameObject);
             }
 
             if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Ground"))
