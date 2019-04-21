@@ -81,6 +81,12 @@ public class PlayerController : MonoBehaviour
     public EventSystem eventSystem;
     public GameObject FirstButtonPaused;
 
+    //UI shit-charles
+    public GameObject reticle;
+
+    //Listen man, sometimes niggas need to know if they dead or nah
+    public bool isDead=false;
+
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
@@ -115,7 +121,8 @@ public class PlayerController : MonoBehaviour
 
         else
         {
-            Time.timeScale = 1;
+            if (!isDead) { 
+            Time.timeScale = 1;}
 
             //More Animator shit
             anim.SetBool("PogoActive", transformation == 2 && transformed);
@@ -321,7 +328,7 @@ public class PlayerController : MonoBehaviour
                 transformed = true;
                 body.SetActive(false);
                 playerModel.SetActive(false);
-
+                reticle.SetActive(false);
                 otherCam.SetActive(true);
                 transformationForest.SetActive(true);
             }
@@ -333,7 +340,7 @@ public class PlayerController : MonoBehaviour
                 transformed = true;
                 body.SetActive(false);
                 playerModel.SetActive(false);
-
+                reticle.SetActive(false);
                 otherCam.SetActive(true);
                 transformationLava.SetActive(true);
                 transformationLava.GetComponent<Animator>().enabled = true;
@@ -349,7 +356,7 @@ public class PlayerController : MonoBehaviour
                 transformed = true;
                 body.SetActive(false);
                 playerModel.SetActive(false);
-
+                reticle.SetActive(false);
                 otherCam.SetActive(true);
                 transformationWater.SetActive(true);
                 transformationWater.GetComponent<Animator>().enabled = true;
@@ -366,7 +373,7 @@ public class PlayerController : MonoBehaviour
 
                 body.SetActive(true);
                 playerModel.SetActive(true);
-
+                reticle.SetActive(true);
                 otherCam.SetActive(false);
                 transformationForest.SetActive(false);
                 transformationLava.SetActive(false);
