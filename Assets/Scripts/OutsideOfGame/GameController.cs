@@ -55,6 +55,7 @@ public class GameController : MonoBehaviour
         if (pc.hp <= 0)
         {
             pc.isDead = true;
+            pc.playerUI.SetActive(false);
             if (timer >= 0)
             {
                 

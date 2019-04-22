@@ -15,6 +15,7 @@ public class MonsterPlant : Enemy
     // Start is called before the first frame update
     void Start()
     {
+        isPlant = true;
         anim = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         pc = player.GetComponent<PlayerController>();

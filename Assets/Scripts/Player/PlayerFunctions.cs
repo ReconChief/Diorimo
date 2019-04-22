@@ -11,6 +11,7 @@ public class PlayerFunctions : MonoBehaviour
     public GameObject player;
     public PlayerController pc;
 
+    public GameObject flames;
     public GameObject missile;
     public GameObject[] beamObjects;
     public Transform beamSpawn;
@@ -87,7 +88,7 @@ public class PlayerFunctions : MonoBehaviour
     public void FireMissile()
     {
         GameObject missileShot = (GameObject)Instantiate(missile, beamSpawn.position, beamSpawn.rotation);
-
+        Instantiate(flames, missileShot.transform);
         missileShot.GetComponent<Rigidbody>().velocity = missileShot.transform.forward * 20f;
 
         Destroy(missileShot, 1);

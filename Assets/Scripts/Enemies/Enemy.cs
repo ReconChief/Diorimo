@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     private int randomizer = 0;
     public int enemyHP = 5;
+    public bool isPlant;
 
     public GameObject[] regenerateHPItems = new GameObject [3];
     public GameObject regenerateMissileItem;
@@ -145,11 +146,16 @@ public class Enemy : MonoBehaviour
             Destroy(other.gameObject);
             enemyHurt.Play();
         }
+        if (isPlant && other.gameObject.CompareTag("FireBeam"))
+        {
+            enemyHP = 0;
+            enemyHurt.Play();
+        }
 
         if (other.gameObject.CompareTag("Missile"))
         {
             Instantiate(splat, transform);
-            enemyHP-= 3;
+            enemyHP-= 10;
             Destroy(other.gameObject);
             enemyHurt.Play();
         }
