@@ -89,6 +89,7 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
         player.gameObject.transform.position = respawnPoint.transform.position;
         timer = 300;
+        pc.playerUI.SetActive(true);
     }
 
     public void ReturnToGame()
