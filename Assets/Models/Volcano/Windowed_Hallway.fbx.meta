@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: 5a201e003401c294cb2326f5b3a89ff6
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Hallway_Floor
+    100002: Hallway_Frame
+    100004: Hallway_Tube
+    100006: Hallway_Tube17
+    100008: Hallway_Tube18
+    100010: Hallway_Tube19
+    100012: Hallway_Tube2
+    100014: Hallway_Tube20
+    100016: Hallway_Tube21
+    100018: Hallway_Tube23
+    100020: Hallway_Tube24
+    100022: Hallway_Tube25
+    100024: Hallway_Tube26
+    100026: Hallway_Tube27
+    100028: Hallway_Tube3
+    100030: Hallway_Tube4
+    100032: Hallway_Tube5
+    100034: Hallway_Tube6
+    100036: Hallway_Wall
+    100038: //RootNode
+    400000: Hallway_Floor
+    400002: Hallway_Frame
+    400004: Hallway_Tube
+    400006: Hallway_Tube17
+    400008: Hallway_Tube18
+    400010: Hallway_Tube19
+    400012: Hallway_Tube2
+    400014: Hallway_Tube20
+    400016: Hallway_Tube21
+    400018: Hallway_Tube23
+    400020: Hallway_Tube24
+    400022: Hallway_Tube25
+    400024: Hallway_Tube26
+    400026: Hallway_Tube27
+    400028: Hallway_Tube3
+    400030: Hallway_Tube4
+    400032: Hallway_Tube5
+    400034: Hallway_Tube6
+    400036: Hallway_Wall
+    400038: //RootNode
+    2100000: aiStandardSurface48
+    2100002: aiStandardSurface49
+    2100004: lambert1
+    2300000: Hallway_Floor
+    2300002: Hallway_Tube
+    2300004: Hallway_Tube17
+    2300006: Hallway_Tube18
+    2300008: Hallway_Tube19
+    2300010: Hallway_Tube2
+    2300012: Hallway_Tube20
+    2300014: Hallway_Tube21
+    2300016: Hallway_Tube23
+    2300018: Hallway_Tube24
+    2300020: Hallway_Tube25
+    2300022: Hallway_Tube26
+    2300024: Hallway_Tube27
+    2300026: Hallway_Tube3
+    2300028: Hallway_Tube4
+    2300030: Hallway_Tube5
+    2300032: Hallway_Tube6
+    2300034: Hallway_Wall
+    3300000: Hallway_Floor
+    3300002: Hallway_Tube
+    3300004: Hallway_Tube17
+    3300006: Hallway_Tube18
+    3300008: Hallway_Tube19
+    3300010: Hallway_Tube2
+    3300012: Hallway_Tube20
+    3300014: Hallway_Tube21
+    3300016: Hallway_Tube23
+    3300018: Hallway_Tube24
+    3300020: Hallway_Tube25
+    3300022: Hallway_Tube26
+    3300024: Hallway_Tube27
+    3300026: Hallway_Tube3
+    3300028: Hallway_Tube4
+    3300030: Hallway_Tube5
+    3300032: Hallway_Tube6
+    3300034: Hallway_Wall
+    4300000: Hallway_Floor
+    4300002: Hallway_Wall
+    4300004: Hallway_Tube
+    4300006: Hallway_Tube2
+    4300008: Hallway_Tube3
+    4300010: Hallway_Tube4
+    4300012: Hallway_Tube5
+    4300014: Hallway_Tube6
+    4300016: Hallway_Tube17
+    4300018: Hallway_Tube18
+    4300020: Hallway_Tube19
+    4300022: Hallway_Tube20
+    4300024: Hallway_Tube21
+    4300026: Hallway_Tube23
+    4300028: Hallway_Tube24
+    4300030: Hallway_Tube25
+    4300032: Hallway_Tube26
+    4300034: Hallway_Tube27
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
