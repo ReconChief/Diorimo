@@ -5,6 +5,7 @@ using UnityEngine;
 public class ControlForest : MonoBehaviour
 {
     public GameObject ForestArea;
+    public AudioSource ForestMusic;
     
     void Start()
     {
@@ -16,6 +17,7 @@ public class ControlForest : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             ForestArea.SetActive(true);
+            ForestMusic.Play();
         }
     }
 
@@ -24,6 +26,7 @@ public class ControlForest : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             ForestArea.SetActive(false);
+            ForestMusic.Stop();
         }
     }
 }

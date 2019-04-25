@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject controls;
     public GameObject credits;
+    public GameObject narrative;
 
     //Buttons for next scene
     public GameObject FirstButtonForMenu;
@@ -18,6 +19,7 @@ public class MainMenu : MonoBehaviour
 
     public void ChangeToGame()
     {
+        narrative.SetActive(true);
         SceneManager.LoadScene("Game");
     }
 
