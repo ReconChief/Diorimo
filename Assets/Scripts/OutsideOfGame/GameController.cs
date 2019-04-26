@@ -13,7 +13,17 @@ public class GameController : MonoBehaviour
     public GameObject areYouSureScreen;
     public GameObject playerUIScreen;
 
+    //Spawn Areas
     private GameObject respawnPoint;
+    private GameObject volcanoRespawnPoint;
+    private GameObject waterRespawnPoint;
+    private GameObject forestRespawnPoint;
+
+    //Active Areas
+    public GameObject waterArea;
+    public GameObject volcanoArea;
+    public GameObject forestArea;
+
     private GameObject player;
     private PlayerController pc;
 
@@ -39,10 +49,11 @@ public class GameController : MonoBehaviour
     {
         timer = 300;
         respawnPoint = GameObject.FindGameObjectWithTag("Respawn");
-        
-        eventSystem = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<EventSystem>();
-        
+        volcanoRespawnPoint = GameObject.FindGameObjectWithTag("VolcanoSpawn");
+        waterRespawnPoint = GameObject.FindGameObjectWithTag("WaterSpawn");
+        forestRespawnPoint = GameObject.FindGameObjectWithTag("ForestSpawn");
 
+        eventSystem = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<EventSystem>();
         
         player = GameObject.FindGameObjectWithTag("Player");
         pc = player.GetComponent<PlayerController>();
@@ -83,13 +94,49 @@ public class GameController : MonoBehaviour
 
     public void RespawnPlayer()
     {
-        var colorVal = black.color;
-        colorVal.a =0f;
-        black.color = colorVal;
-        Time.timeScale = 1;
-        player.gameObject.transform.position = respawnPoint.transform.position;
-        timer = 300;
-        pc.playerUI.SetActive(true);
+        if (volcanoArea.activeSelf && pc.tempSuit)
+        {
+            var colorVal = black.color;
+            colorVal.a = 0f;
+            black.color = colorVal;
+            Time.timeScale = 1;
+            player.gameObject.transform.position = volcanoRespawnPoint.transform.position;
+            timer = 300;
+            pc.playerUI.SetActive(true);
+        }
+
+        else if (forestArea.activeSelf)
+        {
+            var colorVal = black.color;
+            colorVal.a = 0f;
+            black.color = colorVal;
+            Time.timeScale = 1;
+            player.gameObject.transform.position = forestRespawnPoint.transform.position;
+            timer = 300;
+            pc.playerUI.SetActive(true);
+        }
+
+        else if (waterArea.activeSelf)
+        {
+            var colorVal = black.color;
+            colorVal.a = 0f;
+            black.color = colorVal;
+            Time.timeScale = 1;
+            player.gameObject.transform.position = waterRespawnPoint.transform.position;
+            timer = 300;
+            pc.playerUI.SetActive(true);
+        }
+
+        else
+        {
+            var colorVal = black.color;
+            colorVal.a = 0f;
+            black.color = colorVal;
+            Time.timeScale = 1;
+            player.gameObject.transform.position = respawnPoint.transform.position;
+            timer = 300;
+            pc.playerUI.SetActive(true);
+        }
     }
 
     public void ReturnToGame()

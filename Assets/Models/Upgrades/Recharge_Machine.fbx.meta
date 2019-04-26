@@ -218,7 +218,102 @@ ModelImporter:
     4300074: Button19
     4300076: Button20
     4300078: Healing_Bottom
-  externalObjects: {}
+    6400000: Base
+    6400002: Base1
+    6400004: Base2
+    6400006: Base3
+    6400008: Base4
+    6400010: Base5
+    6400012: Button
+    6400014: Button1
+    6400016: Button10
+    6400018: Button11
+    6400020: Button13
+    6400022: Button14
+    6400024: Button15
+    6400026: Button16
+    6400028: Button17
+    6400030: Button18
+    6400032: Button19
+    6400034: Button2
+    6400036: Button20
+    6400038: Button3
+    6400040: Button4
+    6400042: Button5
+    6400044: Button6
+    6400046: Button7
+    6400048: Button8
+    6400050: Button9
+    6400052: Healing_Bottom
+    6400054: Healing_Top
+    6400056: Healing_Tube
+    6400058: Lever
+    6400060: Lever1
+    6400062: Lever_Handle
+    6400064: Lever_Handle1
+    6400066: Missile_Container2
+    6400068: Screen_on_Base
+    6400070: Screen_on_Base_Border
+    6400072: Tube
+    6400074: Tube1
+    6400076: TV_Body
+    6400078: TV_Screen
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rube_Goldberg_Animation_Full_aiStandardSurface100
+    second: {fileID: 2100000, guid: c7731ee887c23ad4ea7e1fa5ba58a60c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rube_Goldberg_Animation_Full_aiStandardSurface99
+    second: {fileID: 2100000, guid: 2bc62a6da98676344803b1c1e0e82904, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface74
+    second: {fileID: 2100000, guid: ec4a71c8d81b02f48936843df7f6034f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface75
+    second: {fileID: 2100000, guid: 9d457de2b47c4d24c9b7b86f2cd8887c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface76
+    second: {fileID: 2100000, guid: 719d34a3fefd07a45a111684db4e4141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface77
+    second: {fileID: 2100000, guid: c941b059e7179694faf7bf0e86581015, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface78
+    second: {fileID: 2100000, guid: 663ee9e968ac3d649a2c31caa59d93e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface79
+    second: {fileID: 2100000, guid: 149b07952334d144d94342c56afd06ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface80
+    second: {fileID: 2100000, guid: 5e5a123ffda11da49bd665377c23eb8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface81
+    second: {fileID: 2100000, guid: 1fda02facbdf8fa4a95ddf1dda2a7696, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: b665bb5980d219442a651628ea1fa721, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -249,9 +344,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 80
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

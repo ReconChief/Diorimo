@@ -20,6 +20,9 @@ TagManager:
   - EventSystem
   - Tree
   - Wall
+  - VolcanoSpawn
+  - WaterSpawn
+  - ForestSpawn
   layers:
   - Default
   - TransparentFX

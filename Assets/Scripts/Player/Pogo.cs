@@ -11,7 +11,7 @@ public class Pogo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-            anim = gameObject.GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         pc = player.GetComponent<PlayerController>();
     }
