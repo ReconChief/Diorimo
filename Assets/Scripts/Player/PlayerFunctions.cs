@@ -79,10 +79,9 @@ public class PlayerFunctions : MonoBehaviour
     public void Fire(int currentBeam)
     {
         GameObject bullet = (GameObject)Instantiate(beamObjects[currentBeam], beamSpawn.position, beamSpawn.rotation);
-            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 20f;
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 20f;
 
-            Destroy(bullet, 1);
-        
+        Destroy(bullet, 4);
     }
 
     public void FireMissile()
@@ -91,6 +90,6 @@ public class PlayerFunctions : MonoBehaviour
         Instantiate(flames, missileShot.transform);
         missileShot.GetComponent<Rigidbody>().velocity = missileShot.transform.forward * 20f;
 
-        Destroy(missileShot, 1);
+        Destroy(missileShot, 4);
     }
 }

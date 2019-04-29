@@ -93,10 +93,7 @@ public class PlayerController : MonoBehaviour
     //EventSystem
     public EventSystem eventSystem;
     public GameObject FirstButtonPaused;
-
-
-
-
+    
     //Listen man, sometimes niggas need to know if they dead or nah
     public bool isDead = false;
 
@@ -300,6 +297,7 @@ public class PlayerController : MonoBehaviour
                 hardened = false;
             }
 
+            /*
             //Charger Ability
             else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 5)
             {
@@ -311,11 +309,11 @@ public class PlayerController : MonoBehaviour
             {
                 charging = false;
             }
+            */
 
             //Pogo Ability
             else if (Input.GetButtonUp("AButton") && isGrounded && !ballForm && transformed && transformation == 2)
             {
-
                 released = true;
                 pressed = false;
                 isGrounded = false;
@@ -360,6 +358,7 @@ public class PlayerController : MonoBehaviour
             //Transfomation Modes
 
             //Transformation Code: Charger
+            /*
             if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 1)
             {
                 isGrounded = false;
@@ -370,6 +369,7 @@ public class PlayerController : MonoBehaviour
                 otherCam.SetActive(true);
                 transformationForest.SetActive(true);
             }
+            */
 
             //Transformation Code: Pogo
             else if (Input.GetButtonDown("BButton") && isGrounded && !ballForm && !transformed && transformation == 2)
@@ -464,20 +464,7 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    /*public void OnTriggerStay(Collider other) {
-        if (other.gameObject.CompareTag("Console"))
-        {
-            if (Input.GetButtonDown("XButton"))
-            {
-                consoleInUse = true;
-                playerUI.SetActive(false);
-                
-                console.SetActive(false);
-                terminal.SetActive(true);
-                consoleInUse = true;
-            }
-        }
-    }*/
+
     public void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Console"))

@@ -15,10 +15,9 @@ public class RotateCamera : MonoBehaviour
         pc = player.GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (!pc.ballForm && !pc.transformed && !pc.paused)
+        if (!pc.paused)
         {
             CameraRotation();
         }
