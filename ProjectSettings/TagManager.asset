@@ -23,6 +23,7 @@ TagManager:
   - VolcanoSpawn
   - WaterSpawn
   - ForestSpawn
+  - Console
   layers:
   - Default
   - TransparentFX

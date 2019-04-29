@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 [RequireComponent(typeof(PlayerFunctions))]
 public class PlayerController : MonoBehaviour
 {
+    [Header("Variable stuff")]
     public float playerSpeed = 4.5f;
     private float cameraSensitivity = 3f;
     public bool isGrounded;
@@ -14,16 +15,17 @@ public class PlayerController : MonoBehaviour
     public bool ballForm = false;
 
     public int transformation = 1;
-    public bool transformed= false;
+    public bool transformed = false;
     public bool hardened = false;
 
     public float hp = 99;
     public float missiles = 5;
     public float maxCapHp = 99;
     public float maxMissiles = 5;
-
+    public int currentBeam = 0;
+    [Space]
     #region
-    //Upgrades
+    [Header("Upgrades")]
     public bool electricBeam = false;
     public bool iceBeam = false;
     public bool fireBeam = false;
@@ -34,58 +36,69 @@ public class PlayerController : MonoBehaviour
     public bool tempSuit = false;
     public bool light = false;
     #endregion
-
-    public int currentBeam = 0;
+    [Space]
+    [Header("Cameras")]
+    public GameObject Cam2;
     public GameObject body;
     public GameObject otherCam;
-
+    [Space]
     #region
-    //Transfomation GameObjects
+    [Header("Transfomation GameObjects")]
     public GameObject playerModel;
     public GameObject transformationForest;
     public GameObject transformationLava;
     public GameObject transformationWater;
     #endregion
-
+    [Space]
     #region
-    //Sound Effects
+    [Header("Sound Effects")]
     public AudioSource regularBeamSFX;
     public AudioSource electricBeamSFX;
     public AudioSource fireBeamSFX;
     public AudioSource waterBeamSFX;
     public AudioSource missileAttackSFX;
     #endregion
-
+    [Space]
     public GameObject flashLight;
-
+    public GameObject bs;
+    public GameObject ds;
+    public GameObject s;
     private PlayerFunctions pf;
     public Rigidbody rb;
+    [Space]
 
-    //Animation shit
     private Animator anim;
-    public bool walking=false;
-    public bool pressed=false;
-    public bool released=false;
+    [Header("Animation stuff")]
+    public bool walking = false;
+    public bool pressed = false;
+    public bool released = false;
     public bool charging = false;
-    //PlayerUI
+    [Space]
+    [Header("PlayerUI")]
     public GameObject playerUI;
-
+    public GameObject reticle;
+    public GameObject console;
+    public GameObject terminal;
+    public GameObject Loading;
+    public bool consoleInUse;
+    private bool consoleUsable;
+    private int timer;
     //PauseScreen
     public bool paused = false;
     public bool quit = false;
     public GameObject pauseScreen;
     public GameObject otherScreen;
     public GameObject other2Screen;
-
+    [Space]
     //EventSystem
     public EventSystem eventSystem;
     public GameObject FirstButtonPaused;
 
-    //UI shit-charles
-    public GameObject reticle;
+
+
 
     //Listen man, sometimes niggas need to know if they dead or nah
-    public bool isDead=false;
+    public bool isDead = false;
 
     void Start()
     {
@@ -98,6 +111,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+
         if (paused)
         {
             Time.timeScale = 0;
@@ -118,11 +132,33 @@ public class PlayerController : MonoBehaviour
                 playerUI.SetActive(true);
             }
         }
+        else if (consoleInUse)
+        {
+            Debug.Log("Dafuq");
+            timer--;
+            Time.timeScale = 0;
+            transform.position = bs.transform.position;
+            transform.rotation = Quaternion.LookRotation(s.transform.position-transform.position);
+            if (timer > 0)
+            {
 
+                Loading.SetActive(true);
+            }
+            if (timer == 0) {
+                terminal.SetActive(true);
+            }
+            if (timer <= 0)
+            {
+                Loading.SetActive(false);
+            }
+
+        }
         else
         {
-            if (!isDead) { 
-            Time.timeScale = 1;}
+            if (!isDead)
+            {
+                Time.timeScale = 1;
+            }
 
             //More Animator shit
             anim.SetBool("PogoActive", transformation == 2 && transformed);
@@ -174,7 +210,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
-            //Ball Form
+            /*Ball Form
             if (Input.GetButtonDown("XButton") && !ballForm && morphBall && !transformed)
             {
                 isGrounded = false;
@@ -190,6 +226,7 @@ public class PlayerController : MonoBehaviour
                 body.SetActive(true);
                 otherCam.SetActive(false);
             }
+            */
 
             //Flash Light
             if (Input.GetButtonDown("YButton") && !ballForm && !light && !transformed)
@@ -254,7 +291,7 @@ public class PlayerController : MonoBehaviour
                 }
 
                 pf.Fire(currentBeam);
-                
+
             }
 
             else if (Input.GetAxis("RightTrigger") <= 0.3 && !fire && !ballForm && !transformed)
@@ -264,13 +301,14 @@ public class PlayerController : MonoBehaviour
             }
 
             //Charger Ability
-            else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 1)
+            else if (Input.GetAxis("RightTrigger") >= 0.8 && isGrounded && !ballForm && transformed && transformation == 5)
             {
                 playerSpeed = 8;
                 charging = true;
 
             }
-            else if (Input.GetAxis("RightTrigger") <= 0.8 && isGrounded && !ballForm && transformed && transformation == 1) {
+            else if (Input.GetAxis("RightTrigger") <= 0.8 && isGrounded && !ballForm && transformed && transformation == 5)
+            {
                 charging = false;
             }
 
@@ -385,6 +423,28 @@ public class PlayerController : MonoBehaviour
                 paused = true;
                 eventSystem.SetSelectedGameObject(FirstButtonPaused, null);
             }
+            if (consoleUsable)
+            {
+                if (Input.GetButtonDown("XButton"))
+                {
+                    timer = 150;
+                    consoleInUse = true;
+
+                    playerUI.SetActive(false);
+                    console.SetActive(false);
+                    
+                    if (timer > 0)
+                    {
+                       
+                        Loading.SetActive(true);
+                    }
+                    
+                    if (timer <= 0) {
+                        Loading.SetActive(false);
+                        
+                    }
+                }
+            }
         }
     }
 
@@ -394,5 +454,37 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Console"))
+        {
+            consoleUsable = true;
+            console.SetActive(true);
+        }
+
+    }
+    /*public void OnTriggerStay(Collider other) {
+        if (other.gameObject.CompareTag("Console"))
+        {
+            if (Input.GetButtonDown("XButton"))
+            {
+                consoleInUse = true;
+                playerUI.SetActive(false);
+                
+                console.SetActive(false);
+                terminal.SetActive(true);
+                consoleInUse = true;
+            }
+        }
+    }*/
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Console"))
+        {
+
+            console.SetActive(false);
+        }
+
     }
 }
