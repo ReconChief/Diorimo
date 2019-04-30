@@ -62,7 +62,6 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
         if (pc.hp <= 0)
         {
             pc.isDead = true;
@@ -84,9 +83,6 @@ public class GameController : MonoBehaviour
                 pc.missiles = pc.maxMissiles;
                 RespawnPlayer();
             }
-
-
-
         }
         Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
         Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);

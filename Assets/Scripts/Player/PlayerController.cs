@@ -115,7 +115,8 @@ public class PlayerController : MonoBehaviour
             Time.timeScale = 0;
             playerUI.SetActive(false);
 
-            if (!quit)
+
+            if (!quit && !other2Screen.activeSelf)
             {
                 pauseScreen.SetActive(true);
             }
@@ -130,6 +131,7 @@ public class PlayerController : MonoBehaviour
                 playerUI.SetActive(true);
             }
         }
+
         else if (consoleInUse)
         {
             Debug.Log("Dafuq");
@@ -153,6 +155,7 @@ public class PlayerController : MonoBehaviour
             }
 
         }
+
         else
         {
             if (!isDead)

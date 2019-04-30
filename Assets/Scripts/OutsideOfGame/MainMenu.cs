@@ -17,10 +17,21 @@ public class MainMenu : MonoBehaviour
     public GameObject FirstButtonForControls;
     public GameObject FirstButtonForCredits;
 
+    IEnumerator LoadYourAsyncScene()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Game");
+        
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
     public void ChangeToGame()
     {
         narrative.SetActive(true);
-        SceneManager.LoadScene("Game");
+
+        StartCoroutine(LoadYourAsyncScene());
     }
 
     public void ChangeToSoundTrack()

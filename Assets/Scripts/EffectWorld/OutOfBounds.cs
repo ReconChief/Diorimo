@@ -22,6 +22,7 @@ public class OutOfBounds : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         pc = player.GetComponent<PlayerController>();
     }
+
     void Update()
     {
         if (hit)
@@ -57,7 +58,6 @@ public class OutOfBounds : MonoBehaviour
             Instantiate(fire, pc.transform);
             timer = 300;
             hit = true;
-
         }
     }
 }
