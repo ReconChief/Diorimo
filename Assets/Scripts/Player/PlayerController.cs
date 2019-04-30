@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource missileAttackSFX;
     #endregion
     [Space]
+
     public GameObject flashLight;
     public GameObject bs;
     public GameObject ds;
@@ -93,7 +94,7 @@ public class PlayerController : MonoBehaviour
     //EventSystem
     public EventSystem eventSystem;
     public GameObject FirstButtonPaused;
-    
+    public GameObject FirstButtonForTerminal;
     //Listen man, sometimes niggas need to know if they dead or nah
     public bool isDead = false;
 
@@ -135,6 +136,7 @@ public class PlayerController : MonoBehaviour
             timer--;
             Time.timeScale = 0;
             transform.position = bs.transform.position;
+            
             transform.rotation = Quaternion.LookRotation(s.transform.position-transform.position);
             if (timer > 0)
             {
@@ -143,6 +145,7 @@ public class PlayerController : MonoBehaviour
             }
             if (timer == 0) {
                 terminal.SetActive(true);
+                eventSystem.SetSelectedGameObject(FirstButtonForTerminal, null);
             }
             if (timer <= 0)
             {

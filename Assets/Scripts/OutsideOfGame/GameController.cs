@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    //Canvas
+    //Canvas shit
     public GameObject controlScreen;
     public GameObject pauseScreen;
     public GameObject areYouSureScreen;
@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour
     private PlayerController pc;
 
     //EventSystem
-    public EventSystem eventSystem;
+    private EventSystem eventSystem;
 
     //Buttons for next scene
     public GameObject FirstButtonForMenu;

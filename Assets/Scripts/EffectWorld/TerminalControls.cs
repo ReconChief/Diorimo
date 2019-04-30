@@ -1,15 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.EventSystems;
 public class TerminalControls : MonoBehaviour
 {
-    public GameObject currentDisplay;
-    public GameObject Display;
-    public GameObject other;
+    
     private int timer;
     private GameObject player;
     private PlayerController pc;
+    [Space]
+    [Header("EventSystem")]
+    public EventSystem eventSystem;
+    public GameObject FirstButtonForEnemies;
+    public GameObject FirstButtonForTerminal;
+    public GameObject FirstButtonForUpgrades;
+    [Space]
     [Header("UI")]
     public GameObject terminal;
     public GameObject enemies;
@@ -49,7 +54,7 @@ public class TerminalControls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        eventSystem = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<EventSystem>();
         player = GameObject.FindGameObjectWithTag("Player");
         pc = player.GetComponent<PlayerController>();
     }
@@ -67,17 +72,17 @@ public class TerminalControls : MonoBehaviour
         }
         
     }
-    public void GoToAreasScreen()
+    public void GoToEnemiesScreen()
     {
         terminal.SetActive(false);
         enemies.SetActive(true);
-        
+        eventSystem.SetSelectedGameObject(FirstButtonForEnemies, null);
     }
     public void GoToUpgradesScreen()
     {
         terminal.SetActive(false);
         upgrades.SetActive(true);
-
+        eventSystem.SetSelectedGameObject(FirstButtonForUpgrades, null);
     }
     public void GoToLogsScreen()
     {
@@ -173,6 +178,8 @@ public class TerminalControls : MonoBehaviour
         fishInfo.SetActive(true);
     }
     public void GoBack() {
+        eventSystem.SetSelectedGameObject(FirstButtonForTerminal, null);
+        Clear();
         enemies.SetActive(false);
         logs.SetActive(false);
         upgrades.SetActive(false);
@@ -196,18 +203,18 @@ public class TerminalControls : MonoBehaviour
         
         //text shit
         electricBeamTutorial.SetActive(false);
-        tempSuitTutorial.SetActive(true);
-        gravBootsTutorial.SetActive(true);
-        waterBeamTutorial.SetActive(true);
-        missileTutorial.SetActive(true);
-        fireBeamTutorial.SetActive(true);
+        tempSuitTutorial.SetActive(false);
+        gravBootsTutorial.SetActive(false);
+        waterBeamTutorial.SetActive(false);
+        missileTutorial.SetActive(false);
+        fireBeamTutorial.SetActive(false);
 
-        fishInfo.SetActive(true);
-        dolphinInfo.SetActive(true);
-        plumeInfo.SetActive(true);
-        pyroInfo.SetActive(true);
-        mPInfo.SetActive(true);
-        bugInfo.SetActive(true);
+        fishInfo.SetActive(false);
+        dolphinInfo.SetActive(false);
+        plumeInfo.SetActive(false);
+        pyroInfo.SetActive(false);
+        mPInfo.SetActive(false);
+        bugInfo.SetActive(false);
         
     }
 }
