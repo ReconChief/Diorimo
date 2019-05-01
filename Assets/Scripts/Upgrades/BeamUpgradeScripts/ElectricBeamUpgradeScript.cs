@@ -18,6 +18,7 @@ public class ElectricBeamUpgradeScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             pc.electricBeam = true;
+            pc.upgrades++;
             Destroy(this.gameObject);
         }
     }

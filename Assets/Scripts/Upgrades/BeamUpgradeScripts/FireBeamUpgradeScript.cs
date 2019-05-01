@@ -18,6 +18,7 @@ public class FireBeamUpgradeScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             pc.fireBeam = true;
+            pc.upgrades++;
             Destroy(this.gameObject);
         }
     }

@@ -93,6 +93,7 @@ public class TerminalControls : MonoBehaviour
     public void ExitTerminal() {
         timer = 150;
         terminal.SetActive(false);
+        pc.playerUI.SetActive(true);
         pc.consoleInUse=false;
         pc.transform.position = pc.ds.transform.position;
         if (timer > 0)

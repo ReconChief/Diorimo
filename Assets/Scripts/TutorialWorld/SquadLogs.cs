@@ -6,7 +6,7 @@ public class SquadLogs : MonoBehaviour
 {
     private GameObject player;
     public GameObject log;
-
+    private bool retrieved;
     private PlayerController pc;
     private SquadLogs Trigger;
 
@@ -25,12 +25,21 @@ public class SquadLogs : MonoBehaviour
         {
             Trigger.enabled = true;
             log.SetActive(true);
+            
+
         }
     }
 
     public void OnTriggerExit(Collider other)
     {
+        if (other.gameObject.CompareTag("Player")) { 
+        if (!retrieved)
+        {
+            pc.solidersFound++;
+            retrieved = true;
+
+        }
         log.SetActive(false);
-        Trigger.enabled = false;
+        Trigger.enabled = false; }
     }
 }

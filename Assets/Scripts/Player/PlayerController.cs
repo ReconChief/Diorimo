@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     public float maxCapHp = 99;
     public float maxMissiles = 5;
     public int currentBeam = 0;
+    public byte solidersFound = 0;
+    public byte upgrades = 0;
     [Space]
     #region
     [Header("Upgrades")]
@@ -475,7 +477,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Console"))
         {
-
+            consoleUsable = false;
             console.SetActive(false);
         }
 

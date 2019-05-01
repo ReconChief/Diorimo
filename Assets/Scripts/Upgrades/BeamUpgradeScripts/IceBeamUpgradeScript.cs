@@ -18,6 +18,7 @@ public class IceBeamUpgradeScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             pc.iceBeam = true;
+            pc.upgrades++;
             Destroy(this.gameObject);
         }
     }

@@ -12,7 +12,10 @@ public class GameController : MonoBehaviour
     public GameObject pauseScreen;
     public GameObject areYouSureScreen;
     public GameObject playerUIScreen;
+    public GameObject theEnd;
 
+    public Text UpgradeCount;
+    public Text SoliderCount;
     //Spawn Areas
     private GameObject respawnPoint;
     private GameObject volcanoRespawnPoint;
@@ -40,6 +43,7 @@ public class GameController : MonoBehaviour
     private float slowdownFactor = 0.05f;
     private float slowdownLength = 2f;
     private int timer;
+    private bool setTimer;
 
     //death shit
     public Image black;
@@ -52,6 +56,8 @@ public class GameController : MonoBehaviour
         volcanoRespawnPoint = GameObject.FindGameObjectWithTag("VolcanoSpawn");
         waterRespawnPoint = GameObject.FindGameObjectWithTag("WaterSpawn");
         forestRespawnPoint = GameObject.FindGameObjectWithTag("ForestSpawn");
+
+        
 
         eventSystem = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<EventSystem>();
         
@@ -86,8 +92,42 @@ public class GameController : MonoBehaviour
         }
         Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
         Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
-    }
+        if (pc.solidersFound == 7) {
+            theEnd.SetActive(true);
+            if (!setTimer) { 
+            timer = 300;
+                setTimer = true;
+            }
+            timer--;
+            if (timer >= 0)
+            {
 
+                var colorVal = black.color;
+                colorVal.a += 0.03f;
+                black.color = colorVal;
+                //Time.timeScale = 0.05f;
+                
+
+            }
+            if (timer == 0) {
+                
+                //
+            }
+            if (timer <= 0)
+            {
+                var colorVal = black.color;
+                colorVal.a = 0f;
+                black.color = colorVal;
+                SceneManager.LoadScene("End");
+                
+            }
+            
+
+        }
+        UpgradeCount.text = "Upgrades: " + pc.upgrades.ToString() + "/" + 6;
+        SoliderCount.text = "Data Chips: " + pc.solidersFound.ToString() + "/" + 7;
+    }
+    
     public void RespawnPlayer()
     {
         if (volcanoArea.activeSelf && pc.tempSuit)

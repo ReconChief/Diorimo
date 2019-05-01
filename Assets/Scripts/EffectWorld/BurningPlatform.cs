@@ -6,6 +6,7 @@ public class BurningPlatform : MonoBehaviour
 {
     public bool burning;
     public GameObject fire;
+    public GameObject steam;
     private GameObject player;
     private PlayerController pc;
     private GameController gc;
@@ -63,6 +64,7 @@ public class BurningPlatform : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("WaterBeam")) {
             if (burning) {
+                Instantiate(steam, transform);
                 gameObject.GetComponent<MeshRenderer>().material = charred;
                 burning = false;
                 

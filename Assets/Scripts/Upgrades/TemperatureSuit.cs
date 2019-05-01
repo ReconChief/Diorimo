@@ -18,7 +18,7 @@ public class TemperatureSuit : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             pc.tempSuit = true;
-
+            pc.upgrades++;
             Destroy(this.gameObject);
         }
     }

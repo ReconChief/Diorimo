@@ -25,6 +25,7 @@ public class MissileTank : MonoBehaviour
 
             else
             {
+                pc.upgrades++;
                 pc.missilePickedUp = true;
             }
 
