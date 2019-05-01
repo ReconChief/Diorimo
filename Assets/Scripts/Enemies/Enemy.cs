@@ -146,6 +146,7 @@ public class Enemy : MonoBehaviour
             Destroy(other.gameObject);
             enemyHurt.Play();
         }
+
         if (isPlant && other.gameObject.CompareTag("FireBeam"))
         {
             enemyHP = 0;

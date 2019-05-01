@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource fireBeamSFX;
     public AudioSource waterBeamSFX;
     public AudioSource missileAttackSFX;
+    public AudioSource omiHurt;
     #endregion
     [Space]
 
@@ -97,6 +98,7 @@ public class PlayerController : MonoBehaviour
     public EventSystem eventSystem;
     public GameObject FirstButtonPaused;
     public GameObject FirstButtonForTerminal;
+
     //Listen man, sometimes niggas need to know if they dead or nah
     public bool isDead = false;
 
@@ -277,7 +279,7 @@ public class PlayerController : MonoBehaviour
 
                 if (currentBeam == 0)
                 {
-
+                    regularBeamSFX.Play();
                 }
 
                 if (currentBeam == 1)
@@ -462,7 +464,13 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            omiHurt.Play();
+        }
     }
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Console"))

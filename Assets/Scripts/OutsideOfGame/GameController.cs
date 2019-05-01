@@ -47,6 +47,10 @@ public class GameController : MonoBehaviour
 
     //death shit
     public Image black;
+
+    //Omi Death Sound
+    public AudioSource omiDeath;
+    public int playOnce = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -56,9 +60,7 @@ public class GameController : MonoBehaviour
         volcanoRespawnPoint = GameObject.FindGameObjectWithTag("VolcanoSpawn");
         waterRespawnPoint = GameObject.FindGameObjectWithTag("WaterSpawn");
         forestRespawnPoint = GameObject.FindGameObjectWithTag("ForestSpawn");
-
         
-
         eventSystem = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<EventSystem>();
         
         player = GameObject.FindGameObjectWithTag("Player");
@@ -68,19 +70,23 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (pc.hp <= 0 && playOnce == 0)
+        {
+            omiDeath.Play();
+            playOnce++;
+        }
+
         if (pc.hp <= 0)
         {
             pc.isDead = true;
             pc.playerUI.SetActive(false);
             if (timer >= 0)
-            {
-                
+            {                
                 var colorVal = black.color;
                 colorVal.a += 0.003f;
                 black.color = colorVal;
                 Time.timeScale = 0.05f;
                 timer--;
-
             }
 
             if (timer <= 0)
@@ -88,8 +94,10 @@ public class GameController : MonoBehaviour
                 pc.hp = pc.maxCapHp;
                 pc.missiles = pc.maxMissiles;
                 RespawnPlayer();
+                playOnce = 0;
             }
         }
+
         Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
         Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
         if (pc.solidersFound == 7) {
@@ -101,14 +109,12 @@ public class GameController : MonoBehaviour
             timer--;
             if (timer >= 0)
             {
-
                 var colorVal = black.color;
                 colorVal.a += 0.03f;
                 black.color = colorVal;
-                //Time.timeScale = 0.05f;
-                
-
+                //Time.timeScale = 0.05f
             }
+
             if (timer == 0) {
                 
                 //
@@ -118,10 +124,8 @@ public class GameController : MonoBehaviour
                 var colorVal = black.color;
                 colorVal.a = 0f;
                 black.color = colorVal;
-                SceneManager.LoadScene("End");
-                
-            }
-            
+                SceneManager.LoadScene("End");                
+            }            
 
         }
         UpgradeCount.text = "Upgrades: " + pc.upgrades.ToString() + "/" + 6;
