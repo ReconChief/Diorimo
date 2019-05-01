@@ -42,7 +42,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7750128876142068750
 Transform:
   m_ObjectHideFlags: 0
@@ -104,7 +104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: d9072f2d8b2cedc4b8b66e4de5e36ed6, type: 3}
       propertyPath: m_Name
-      value: Energy_Tank
+      value: Energy_Tank Variant
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d9072f2d8b2cedc4b8b66e4de5e36ed6, type: 3}
       propertyPath: m_LocalPosition.x

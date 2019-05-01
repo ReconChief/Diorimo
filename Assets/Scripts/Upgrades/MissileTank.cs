@@ -19,7 +19,7 @@ public class MissileTank : MonoBehaviour
         {
             if (pc.missilePickedUp)
             {
-                pc.maxMissiles += 5;
+                pc.maxMissiles += 10;
                 pc.missiles = pc.maxMissiles;
             }
 

@@ -19,9 +19,9 @@ public class PlayerController : MonoBehaviour
     public bool hardened = false;
 
     public float hp = 99;
-    public float missiles = 5;
+    public float missiles = 10;
     public float maxCapHp = 99;
-    public float maxMissiles = 5;
+    public float maxMissiles = 10;
     public int currentBeam = 0;
     public byte solidersFound = 0;
     public byte upgrades = 0;
