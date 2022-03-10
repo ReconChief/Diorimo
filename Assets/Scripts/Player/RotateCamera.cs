@@ -17,10 +17,10 @@ public class RotateCamera : MonoBehaviour
 
     void Update()
     {
-        if (!pc.paused)
-        {
-            CameraRotation();
-        }
+        //if (!pc.paused)
+        //{
+        //    CameraRotation();
+        //}
     }
 
     public void CameraRotation()

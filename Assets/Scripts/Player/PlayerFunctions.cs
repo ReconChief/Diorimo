@@ -25,9 +25,11 @@ public class PlayerFunctions : MonoBehaviour
 
     private Rigidbody rb;
 
+    public Rigidbody Rb { get => rb; set => rb = value; }
+
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        Rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
         pc = player.GetComponent<PlayerController>();
     }
@@ -49,21 +51,21 @@ public class PlayerFunctions : MonoBehaviour
 
     void FixedUpdate()
     {
-        PerformMovement();
-        PerformRotation();
+        //PerformMovement();
+        //PerformRotation();
     }
 
     void PerformMovement()
     {
         if (velocity != Vector3.zero && !pc.hardened)
         {
-            rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
+            Rb.MovePosition(Rb.position + velocity * Time.fixedDeltaTime);
         }
     }
 
     void PerformRotation()
     {
-        rb.MoveRotation(rb.rotation * Quaternion.Euler(rotation));
+        Rb.MoveRotation(Rb.rotation * Quaternion.Euler(rotation));
 
         if (playerCam != null)
         {
@@ -73,7 +75,7 @@ public class PlayerFunctions : MonoBehaviour
 
     public void Jump()
     {
-        rb.AddForce(jump * jumpForce, ForceMode.Impulse);           
+        Rb.AddForce(jump * jumpForce, ForceMode.Impulse);           
     }
 
     public void Fire(int currentBeam)
